@@ -1,0 +1,1112 @@
+2012-03-19 20:09:48,154 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Starting Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 20:09:48,170 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 20:09:48,170 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 3m:6s:94ms
+2012-03-19 20:10:43,295 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] (HDScanner) Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=MySqlDS' to JNDI name 'java:MySqlDS'
+2012-03-19 20:11:28,545 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] (HDScanner) Unbound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=MySqlDS' from JNDI name 'java:MySqlDS'
+2012-03-19 20:11:28,732 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] (HDScanner) Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=jdbc/fiap' to JNDI name 'java:jdbc/fiap'
+2012-03-19 20:17:55,310 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2012-03-19 20:17:55,310 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-15) Stopping: JBossAS [6.1.0.Final "Neo"]
+2012-03-19 20:17:55,545 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-15) Pausing Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 20:17:55,560 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-15) Stopping Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 20:17:55,638 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-15) Pausing Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 20:17:55,654 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-15) Stopping Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 20:21:45,170 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Starting Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 20:21:45,185 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 20:21:45,185 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 1m:35s:125ms
+2012-03-19 20:27:16,060 WARN  [org.jboss.profileservice.deployment.hotdeploy.HDScanner] (HDScanner) Scan failed: org.jboss.deployers.client.spi.IncompleteDeploymentException: Summary of incomplete deployments (SEE PREVIOUS ERRORS FOR DETAILS):
+
+DEPLOYMENTS MISSING DEPENDENCIES:
+  Deployment "jboss-switchboard:appName=chamado,module=chamado" is missing the following dependencies:
+    Dependency "jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding" (should be in state "Installed", but is actually in state "** NOT FOUND Depends on 'jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding',whenRequired=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed},dependentState=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed} **")
+  Deployment "jboss.web.deployment:war=/chamado" is missing the following dependencies:
+    Dependency "jboss-switchboard:appName=chamado,module=chamado" (should be in state "Installed", but is actually in state "Deploy")
+
+DEPLOYMENTS IN ERROR:
+  Deployment "jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding" is in error due to the following reason(s): ** NOT FOUND Depends on 'jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding',whenRequired=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed},dependentState=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed} **
+
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.checkComplete(DeployersImpl.java:1370) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.checkComplete(DeployersImpl.java:1316) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.main.MainDeployerImpl.checkComplete(MainDeployerImpl.java:968) [:2.2.2.GA]
+	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.checkComplete(MainDeployerPlugin.java:82) [:6.1.0.Final]
+	at org.jboss.profileservice.dependency.ProfileControllerContext$DelegateDeployer.checkComplete(ProfileControllerContext.java:138) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner$HDScanAction.deploy(HDScanner.java:246) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner$HDScanAction.complete(HDScanner.java:192) [:0.2.2]
+	at org.jboss.profileservice.management.TwoPCActionWrapper.doComplete(TwoPCActionWrapper.java:57) [:0.2.2]
+	at org.jboss.profileservice.management.actions.AbstractTwoPhaseModificationAction.complete(AbstractTwoPhaseModificationAction.java:74) [:0.2.2]
+	at org.jboss.profileservice.management.actions.AbstractTwoPhaseModificationAction.prepare(AbstractTwoPhaseModificationAction.java:95) [:0.2.2]
+	at org.jboss.profileservice.management.ModificationSession.prepare(ModificationSession.java:87) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.internalPerfom(AbstractActionController.java:234) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.performWrite(AbstractActionController.java:213) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.perform(AbstractActionController.java:150) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.perform(AbstractActionController.java:135) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner.scan(HDScanner.java:146) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner.run(HDScanner.java:90) [:0.2.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441) [:1.6.0_30]
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:317) [:1.6.0_30]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:150) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(ScheduledThreadPoolExecutor.java:180) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:204) [:1.6.0_30]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [:1.6.0_30]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [:1.6.0_30]
+	at java.lang.Thread.run(Thread.java:662) [:1.6.0_30]
+
+2012-03-19 20:28:37,935 WARN  [org.jboss.kernel.plugins.dependency.StartStopLifecycleAction] (HDScanner) Error during stop for jboss-switchboard:appName=chamado,module=chamado: javax.naming.NameNotFoundException: env not bound
+	at org.jnp.server.NamingServer.getBinding(NamingServer.java:771) [:5.0.5.Final]
+	at org.jnp.server.NamingServer.getBinding(NamingServer.java:779) [:5.0.5.Final]
+	at org.jnp.server.NamingServer.getObject(NamingServer.java:785) [:5.0.5.Final]
+	at org.jnp.server.NamingServer.unbind(NamingServer.java:315) [:5.0.5.Final]
+	at org.jnp.interfaces.NamingContext.unbind(NamingContext.java:873) [:5.0.5.Final]
+	at org.jboss.util.naming.Util.unbind(Util.java:151) [jboss-common-core.jar:2.2.17.GA]
+	at org.jboss.util.naming.Util.unbind(Util.java:141) [jboss-common-core.jar:2.2.17.GA]
+	at org.jboss.switchboard.mc.SwitchBoardImpl.unbindFromRelevantContext(SwitchBoardImpl.java:303) [:1.0.0-alpha-15]
+	at org.jboss.switchboard.mc.SwitchBoardImpl.stop(SwitchBoardImpl.java:102) [:1.0.0-alpha-15]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.6.0_30]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) [:1.6.0_30]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_30]
+	at java.lang.reflect.Method.invoke(Method.java:597) [:1.6.0_30]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction$JoinpointDispatchWrapper.execute(KernelControllerContextAction.java:257) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.ExecutionWrapper.execute(ExecutionWrapper.java:47) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchExecutionWrapper(KernelControllerContextAction.java:125) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchJoinPoint(KernelControllerContextAction.java:72) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.LifecycleAction.uninstallActionInternal(LifecycleAction.java:286) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.uninstallAction(InstallsAwareAction.java:175) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.uninstallAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleUninstallAction(SimpleControllerContextAction.java:79) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.uninstall(AccessControllerContextAction.java:131) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.uninstall(AbstractControllerContextActions.java:58) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:756) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:669) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.undeploy(BeanMetaDataDeployer.java:230) [:2.2.2.GA]
+	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.undeploy(BeanMetaDataDeployer.java:58) [:2.2.2.GA]
+	at org.jboss.deployers.spi.deployer.helpers.AbstractSimpleRealDeployer.internalUndeploy(AbstractSimpleRealDeployer.java:70) [:2.2.2.GA]
+	at org.jboss.deployers.spi.deployer.helpers.AbstractRealDeployer.undeploy(AbstractRealDeployer.java:117) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployerWrapper.undeploy(DeployerWrapper.java:204) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUndeploy(DeployersImpl.java:1862) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUninstallParentLast(DeployersImpl.java:1769) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUninstallParentLast(DeployersImpl.java:1762) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.uninstall(DeployersImpl.java:1724) [:2.2.2.GA]
+	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:948) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1983) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1968) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.process(DeployersImpl.java:1001) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.main.MainDeployerImpl.process(MainDeployerImpl.java:656) [:2.2.2.GA]
+	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.process(MainDeployerPlugin.java:106) [:6.1.0.Final]
+	at org.jboss.profileservice.dependency.ProfileControllerContext$DelegateDeployer.process(ProfileControllerContext.java:143) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner$HDScanAction.deploy(HDScanner.java:240) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner$HDScanAction.complete(HDScanner.java:192) [:0.2.2]
+	at org.jboss.profileservice.management.TwoPCActionWrapper.doComplete(TwoPCActionWrapper.java:57) [:0.2.2]
+	at org.jboss.profileservice.management.actions.AbstractTwoPhaseModificationAction.complete(AbstractTwoPhaseModificationAction.java:74) [:0.2.2]
+	at org.jboss.profileservice.management.actions.AbstractTwoPhaseModificationAction.prepare(AbstractTwoPhaseModificationAction.java:95) [:0.2.2]
+	at org.jboss.profileservice.management.ModificationSession.prepare(ModificationSession.java:87) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.internalPerfom(AbstractActionController.java:234) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.performWrite(AbstractActionController.java:213) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.perform(AbstractActionController.java:150) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.perform(AbstractActionController.java:135) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner.scan(HDScanner.java:146) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner.run(HDScanner.java:90) [:0.2.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441) [:1.6.0_30]
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:317) [:1.6.0_30]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:150) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(ScheduledThreadPoolExecutor.java:180) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:204) [:1.6.0_30]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [:1.6.0_30]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [:1.6.0_30]
+	at java.lang.Thread.run(Thread.java:662) [:1.6.0_30]
+
+2012-03-19 20:28:43,982 WARN  [org.jboss.profileservice.deployment.hotdeploy.HDScanner] (HDScanner) Scan failed: org.jboss.deployers.client.spi.IncompleteDeploymentException: Summary of incomplete deployments (SEE PREVIOUS ERRORS FOR DETAILS):
+
+DEPLOYMENTS MISSING DEPENDENCIES:
+  Deployment "jboss-switchboard:appName=chamado,module=chamado" is missing the following dependencies:
+    Dependency "jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding" (should be in state "Installed", but is actually in state "** NOT FOUND Depends on 'jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding',whenRequired=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed},dependentState=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed} **")
+  Deployment "jboss.web.deployment:war=/chamado" is missing the following dependencies:
+    Dependency "jboss-switchboard:appName=chamado,module=chamado" (should be in state "Installed", but is actually in state "Deploy")
+
+DEPLOYMENTS IN ERROR:
+  Deployment "jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding" is in error due to the following reason(s): ** NOT FOUND Depends on 'jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding',whenRequired=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed},dependentState=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed} **
+
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.checkComplete(DeployersImpl.java:1370) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.checkComplete(DeployersImpl.java:1316) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.main.MainDeployerImpl.checkComplete(MainDeployerImpl.java:968) [:2.2.2.GA]
+	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.checkComplete(MainDeployerPlugin.java:82) [:6.1.0.Final]
+	at org.jboss.profileservice.dependency.ProfileControllerContext$DelegateDeployer.checkComplete(ProfileControllerContext.java:138) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner$HDScanAction.deploy(HDScanner.java:246) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner$HDScanAction.complete(HDScanner.java:192) [:0.2.2]
+	at org.jboss.profileservice.management.TwoPCActionWrapper.doComplete(TwoPCActionWrapper.java:57) [:0.2.2]
+	at org.jboss.profileservice.management.actions.AbstractTwoPhaseModificationAction.complete(AbstractTwoPhaseModificationAction.java:74) [:0.2.2]
+	at org.jboss.profileservice.management.actions.AbstractTwoPhaseModificationAction.prepare(AbstractTwoPhaseModificationAction.java:95) [:0.2.2]
+	at org.jboss.profileservice.management.ModificationSession.prepare(ModificationSession.java:87) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.internalPerfom(AbstractActionController.java:234) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.performWrite(AbstractActionController.java:213) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.perform(AbstractActionController.java:150) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.perform(AbstractActionController.java:135) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner.scan(HDScanner.java:146) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner.run(HDScanner.java:90) [:0.2.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441) [:1.6.0_30]
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:317) [:1.6.0_30]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:150) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(ScheduledThreadPoolExecutor.java:180) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:204) [:1.6.0_30]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [:1.6.0_30]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [:1.6.0_30]
+	at java.lang.Thread.run(Thread.java:662) [:1.6.0_30]
+
+2012-03-19 20:29:31,326 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (http-127.0.0.1-8080-1) deploy, ctxPath=/admin-console
+2012-03-19 20:29:31,404 INFO  [org.apache.catalina.core.StandardContext] (http-127.0.0.1-8080-1) The listener "com.sun.faces.config.ConfigureListener" is already configured for this context. The duplicate definition has been ignored.
+2012-03-19 20:29:31,685 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (http-127.0.0.1-8080-1) Inicializando Mojarra 2.0.3 ( b05) para o contexto '/admin-console'
+2012-03-19 20:29:49,763 INFO  [javax.servlet.ServletContextListener] (http-127.0.0.1-8080-1) Welcome to Seam 2.1.0.SP1
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/async, package: org.jboss.seam.async, prefix: org.jboss.seam.async
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/framework, package: org.jboss.seam.framework, prefix: org.jboss.seam.core.framework
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/theme, package: org.jboss.seam.theme, prefix: org.jboss.seam.theme
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/security, package: org.jboss.seam.security.management, prefix: org.jboss.seam.security
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/bpm, package: org.jboss.seam.bpm, prefix: org.jboss.seam.bpm
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/mail, package: org.jboss.seam.mail, prefix: org.jboss.seam.mail
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/security, package: org.jboss.seam.security, prefix: org.jboss.seam.security
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/web, package: org.jboss.seam.web, prefix: org.jboss.seam.web
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/captcha, package: org.jboss.seam.captcha, prefix: org.jboss.seam.captcha
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/navigation, package: org.jboss.seam.navigation, prefix: org.jboss.seam.navigation
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/core, package: org.jboss.seam.core, prefix: org.jboss.seam.core
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/international, package: org.jboss.seam.international, prefix: org.jboss.seam.international
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/cache, package: org.jboss.seam.cache, prefix: org.jboss.seam.cache
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/jms, package: org.jboss.seam.jms, prefix: org.jboss.seam.jms
+2012-03-19 20:29:53,841 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/ui, package: org.jboss.seam.ui, prefix: org.jboss.seam.ui
+2012-03-19 20:29:53,857 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/transaction, package: org.jboss.seam.transaction, prefix: org.jboss.seam.transaction
+2012-03-19 20:29:53,857 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/security, package: org.jboss.seam.security.permission, prefix: org.jboss.seam.security
+2012-03-19 20:29:53,857 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/drools, package: org.jboss.seam.drools, prefix: org.jboss.seam.drools
+2012-03-19 20:29:53,857 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/persistence, package: org.jboss.seam.persistence, prefix: org.jboss.seam.persistence
+2012-03-19 20:29:53,857 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Namespace: http://jboss.com/products/seam/document, package: org.jboss.seam.document, prefix: org.jboss.seam.document
+2012-03-19 20:29:53,873 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) reading /WEB-INF/components.xml
+2012-03-19 20:29:53,951 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) reading properties from: /seam.properties
+2012-03-19 20:29:53,951 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) reading properties from: /jndi.properties
+2012-03-19 20:29:53,966 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) initializing Seam
+2012-03-19 20:29:55,607 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) two components with same name, higher precedence wins: org.jboss.seam.persistence.persistenceProvider
+2012-03-19 20:29:55,623 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) two components with same name, higher precedence wins: org.jboss.seam.core.locale
+2012-03-19 20:29:55,623 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) two components with same name, higher precedence wins: org.jboss.seam.core.resourceLoader
+2012-03-19 20:29:55,623 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) two components with same name, higher precedence wins: org.jboss.seam.core.locale
+2012-03-19 20:29:55,623 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) two components with same name, higher precedence wins: org.jboss.seam.web.isUserInRole
+2012-03-19 20:29:55,638 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) two components with same name, higher precedence wins: org.jboss.seam.transaction.synchronizations
+2012-03-19 20:29:55,638 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) two components with same name, higher precedence wins: org.jboss.seam.web.parameters
+2012-03-19 20:29:55,638 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) two components with same name, higher precedence wins: org.jboss.seam.core.manager
+2012-03-19 20:29:55,638 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) two components with same name, higher precedence wins: org.jboss.seam.web.userPrincipal
+2012-03-19 20:29:55,654 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) two components with same name, higher precedence wins: org.jboss.seam.core.expressions
+2012-03-19 20:29:55,701 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.init, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.core.Init
+2012-03-19 20:29:55,966 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) Installing components...
+2012-03-19 20:29:56,060 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: DefaultPageControlSettingsUIBean, scope: APPLICATION, type: JAVA_BEAN, class: org.rhq.core.gui.model.DefaultPageControlSettingsUIBean
+2012-03-19 20:29:56,107 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: addNewOpenMap, scope: EVENT, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.configuration.resource.AddNewOpenMapMemberPropertyToResourceConfigurationUIBean
+2012-03-19 20:29:56,138 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: bootstrapAction, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.BootstrapAction
+2012-03-19 20:29:56,170 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: commonActionUtil, scope: EVENT, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.CommonActionUtil
+2012-03-19 20:29:56,185 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: configHelperFactory, scope: EVENT, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.configuration.resource.ConfigHelperFactory
+2012-03-19 20:29:56,185 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: contentDisplayAction, scope: SESSION, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.SingleResourceContentAction
+2012-03-19 20:29:56,232 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: contentHistoryManager, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.on.embedded.bean.history.content.ContentHistoryManagerBean
+2012-03-19 20:29:56,263 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: createContentBackedResourceAction, scope: CONVERSATION, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.content.CreateContentBackedResourceAction
+2012-03-19 20:29:56,279 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: datascrollerUI, scope: EVENT, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.DatascrollerUIBean
+2012-03-19 20:29:56,279 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: debugAction, scope: EVENT, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.DebugAction
+2012-03-19 20:29:56,279 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: discoveryAction, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.DiscoveryAction
+2012-03-19 20:29:56,295 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: exceptionAction, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.ExceptionAction
+2012-03-19 20:29:56,295 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: historyManager, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.on.embedded.bean.history.operation.OperationHistoryManagerBean
+2012-03-19 20:29:56,310 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: idChunkFactory, scope: EVENT, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.configuration.resource.IdChunkFactory
+2012-03-19 20:29:56,326 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: inventoryEventListener, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.on.embedded.EmbeddedInventoryEventListener
+2012-03-19 20:29:56,326 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: metricAction, scope: EVENT, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.MetricAction
+2012-03-19 20:29:56,357 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: navigationAction, scope: SESSION, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.NavigationAction
+2012-03-19 20:29:56,357 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: navigationContent, scope: EVENT, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.NavigationContent
+2012-03-19 20:29:56,373 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: operationAction, scope: CONVERSATION, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.SingleResourceOperationAction
+2012-03-19 20:29:56,373 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.async.asynchronousExceptionHandler, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.async.AsynchronousExceptionHandler
+2012-03-19 20:29:56,388 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.async.dispatcher, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.async.ThreadPoolDispatcher
+2012-03-19 20:29:56,404 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.captcha.captcha, scope: SESSION, type: JAVA_BEAN, class: org.jboss.seam.captcha.Captcha
+2012-03-19 20:29:56,404 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.captcha.captchaImage, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.captcha.CaptchaImage
+2012-03-19 20:29:56,420 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.ConversationIdGenerator, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.core.ConversationIdGenerator
+2012-03-19 20:29:56,420 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.contexts, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.core.Contexts
+2012-03-19 20:29:56,420 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.conversation, scope: CONVERSATION, type: JAVA_BEAN, class: org.jboss.seam.core.Conversation
+2012-03-19 20:29:56,420 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.conversationEntries, scope: SESSION, type: JAVA_BEAN, class: org.jboss.seam.core.ConversationEntries
+2012-03-19 20:29:56,420 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.conversationListFactory, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.core.ConversationList
+2012-03-19 20:29:56,435 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.conversationPropagation, scope: EVENT, type: JAVA_BEAN, class: org.jboss.seam.core.ConversationPropagation
+2012-03-19 20:29:56,435 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.conversationStackFactory, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.core.ConversationStack
+2012-03-19 20:29:56,435 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.events, scope: EVENT, type: JAVA_BEAN, class: org.jboss.seam.core.Events
+2012-03-19 20:29:56,435 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.expressions, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.faces.FacesExpressions
+2012-03-19 20:29:56,435 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.interpolator, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.core.Interpolator
+2012-03-19 20:29:56,435 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.locale, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.international.Locale
+2012-03-19 20:29:56,451 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.manager, scope: EVENT, type: JAVA_BEAN, class: org.jboss.seam.faces.FacesManager
+2012-03-19 20:29:56,451 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.resourceBundle, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.core.ResourceBundle
+2012-03-19 20:29:56,451 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.resourceLoader, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.faces.ResourceLoader
+2012-03-19 20:29:56,466 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.core.validators, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.core.Validators
+2012-03-19 20:29:56,466 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.document.documentStore, scope: CONVERSATION, type: JAVA_BEAN, class: org.jboss.seam.document.DocumentStore
+2012-03-19 20:29:56,482 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.exception.exceptions, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.exception.Exceptions
+2012-03-19 20:29:56,498 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.faces.dataModels, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.faces.DataModels
+2012-03-19 20:29:56,498 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.faces.facesContext, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.faces.FacesContext
+2012-03-19 20:29:56,498 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.faces.facesPage, scope: PAGE, type: JAVA_BEAN, class: org.jboss.seam.faces.FacesPage
+2012-03-19 20:29:56,513 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.faces.httpError, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.faces.HttpError
+2012-03-19 20:29:56,513 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.faces.redirect, scope: CONVERSATION, type: JAVA_BEAN, class: org.jboss.seam.faces.Redirect
+2012-03-19 20:29:56,513 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.faces.renderer, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.ui.facelet.FaceletsRenderer
+2012-03-19 20:29:56,513 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.faces.switcher, scope: PAGE, type: JAVA_BEAN, class: org.jboss.seam.faces.Switcher
+2012-03-19 20:29:56,529 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.faces.uiComponent, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.faces.UiComponent
+2012-03-19 20:29:56,529 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.faces.validation, scope: EVENT, type: JAVA_BEAN, class: org.jboss.seam.faces.Validation
+2012-03-19 20:29:56,529 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.framework.currentDate, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.framework.CurrentDate
+2012-03-19 20:29:56,529 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.framework.currentDatetime, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.framework.CurrentDatetime
+2012-03-19 20:29:56,529 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.framework.currentTime, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.framework.CurrentTime
+2012-03-19 20:29:56,545 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.graphicImage.image, scope: EVENT, type: JAVA_BEAN, class: org.jboss.seam.ui.graphicImage.Image
+2012-03-19 20:29:56,545 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.international.localeSelector, scope: SESSION, type: JAVA_BEAN, class: org.jboss.seam.international.LocaleSelector
+2012-03-19 20:29:56,560 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.international.messagesFactory, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.international.Messages
+2012-03-19 20:29:56,560 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.international.statusMessages, scope: CONVERSATION, type: JAVA_BEAN, class: org.jboss.seam.faces.FacesMessages
+2012-03-19 20:29:56,576 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.international.timeZone, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.international.TimeZone
+2012-03-19 20:29:56,576 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.international.timeZoneSelector, scope: SESSION, type: JAVA_BEAN, class: org.jboss.seam.international.TimeZoneSelector
+2012-03-19 20:29:56,576 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.mail.mailSession, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.mail.MailSession
+2012-03-19 20:29:56,591 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.navigation.pages, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.navigation.Pages
+2012-03-19 20:29:56,607 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.navigation.safeActions, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.navigation.SafeActions
+2012-03-19 20:29:56,607 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.persistence.persistenceContexts, scope: CONVERSATION, type: JAVA_BEAN, class: org.jboss.seam.persistence.PersistenceContexts
+2012-03-19 20:29:56,654 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.persistence.persistenceProvider, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.persistence.HibernatePersistenceProvider
+2012-03-19 20:29:56,654 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.configurationFactory, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.security.Configuration
+2012-03-19 20:29:56,670 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.credentials, scope: SESSION, type: JAVA_BEAN, class: org.jboss.seam.security.Credentials
+2012-03-19 20:29:56,670 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.entityPermissionChecker, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.security.EntityPermissionChecker
+2012-03-19 20:29:56,670 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.facesSecurityEvents, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.security.FacesSecurityEvents
+2012-03-19 20:29:56,670 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.identifierPolicy, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.security.permission.IdentifierPolicy
+2012-03-19 20:29:56,685 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.identity, scope: SESSION, type: JAVA_BEAN, class: org.jboss.seam.security.Identity
+2012-03-19 20:29:56,685 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.identityManager, scope: EVENT, type: JAVA_BEAN, class: org.jboss.seam.security.management.IdentityManager
+2012-03-19 20:29:56,701 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.management.roleAction, scope: CONVERSATION, type: JAVA_BEAN, class: org.jboss.seam.security.management.action.RoleAction
+2012-03-19 20:29:56,701 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.management.roleSearch, scope: SESSION, type: JAVA_BEAN, class: org.jboss.seam.security.management.action.RoleSearch
+2012-03-19 20:29:56,732 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.management.userAction, scope: CONVERSATION, type: JAVA_BEAN, class: org.jboss.seam.security.management.action.UserAction
+2012-03-19 20:29:56,732 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.management.userSearch, scope: SESSION, type: JAVA_BEAN, class: org.jboss.seam.security.management.action.UserSearch
+2012-03-19 20:29:56,732 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.passwordHash, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.security.management.PasswordHash
+2012-03-19 20:29:56,748 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.permission.permissionSearch, scope: CONVERSATION, type: JAVA_BEAN, class: org.jboss.seam.security.permission.action.PermissionSearch
+2012-03-19 20:29:56,748 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.permissionManager, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.security.permission.PermissionManager
+2012-03-19 20:29:56,763 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.permissionMapper, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.security.permission.PermissionMapper
+2012-03-19 20:29:56,763 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.persistentPermissionResolver, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.security.permission.PersistentPermissionResolver
+2012-03-19 20:29:56,763 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.security.rememberMe, scope: SESSION, type: JAVA_BEAN, class: org.jboss.seam.security.RememberMe
+2012-03-19 20:29:56,763 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.theme.themeFactory, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.theme.Theme
+2012-03-19 20:29:56,779 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.theme.themeSelector, scope: SESSION, type: JAVA_BEAN, class: org.jboss.seam.theme.ThemeSelector
+2012-03-19 20:29:56,779 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.transaction.synchronizations, scope: EVENT, type: JAVA_BEAN, class: org.jboss.seam.transaction.SeSynchronizations
+2012-03-19 20:29:56,779 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.transaction.transaction, scope: EVENT, type: JAVA_BEAN, class: org.jboss.seam.transaction.Transaction
+2012-03-19 20:29:56,795 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.ui.EntityConverter, scope: CONVERSATION, type: JAVA_BEAN, class: org.jboss.seam.ui.EntityConverter
+2012-03-19 20:29:56,795 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.ui.entityIdentifierStore, scope: PAGE, type: JAVA_BEAN, class: org.jboss.seam.ui.EntityIdentifierStore
+2012-03-19 20:29:56,795 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.ui.entityLoader, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.ui.JpaEntityLoader
+2012-03-19 20:29:56,826 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.ui.facelet.faceletCompiler, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.ui.facelet.FaceletCompiler
+2012-03-19 20:29:56,826 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.ui.facelet.facesContextFactory, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.ui.facelet.RendererFacesContextFactory
+2012-03-19 20:29:56,826 WARN  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component class should be serializable: org.jboss.seam.ui.facelet.mockHttpSession
+2012-03-19 20:29:56,826 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.ui.facelet.mockHttpSession, scope: SESSION, type: JAVA_BEAN, class: org.jboss.seam.ui.facelet.HttpSessionManager
+2012-03-19 20:29:56,826 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.ui.facelet.mockServletContext, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.ui.facelet.ServletContextManager
+2012-03-19 20:29:56,841 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.ui.graphicImage.graphicImageResource, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.ui.graphicImage.GraphicImageResource
+2012-03-19 20:29:56,841 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.ui.graphicImage.graphicImageStore, scope: SESSION, type: JAVA_BEAN, class: org.jboss.seam.ui.graphicImage.GraphicImageStore
+2012-03-19 20:29:56,841 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.ui.resource.webResource, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.ui.resource.WebResource
+2012-03-19 20:29:56,857 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.web.ajax4jsfFilter, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.web.Ajax4jsfFilter
+2012-03-19 20:29:56,857 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.web.ajax4jsfFilterInstantiator, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.ui.filter.Ajax4jsfFilterInstantiator
+2012-03-19 20:29:56,857 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.web.exceptionFilter, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.web.ExceptionFilter
+2012-03-19 20:29:56,873 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.web.identityFilter, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.web.IdentityFilter
+2012-03-19 20:29:56,873 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.web.isUserInRole, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.faces.IsUserInRole
+2012-03-19 20:29:56,873 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.web.loggingFilter, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.web.LoggingFilter
+2012-03-19 20:29:56,873 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.web.multipartFilter, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.web.MultipartFilter
+2012-03-19 20:29:56,873 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.web.parameters, scope: STATELESS, type: JAVA_BEAN, class: org.jboss.seam.faces.Parameters
+2012-03-19 20:29:56,873 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.web.redirectFilter, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.web.RedirectFilter
+2012-03-19 20:29:56,873 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.web.servletContexts, scope: EVENT, type: JAVA_BEAN, class: org.jboss.seam.web.ServletContexts
+2012-03-19 20:29:56,888 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.web.session, scope: SESSION, type: JAVA_BEAN, class: org.jboss.seam.web.Session
+2012-03-19 20:29:56,888 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: org.jboss.seam.web.userPrincipal, scope: APPLICATION, type: JAVA_BEAN, class: org.jboss.seam.faces.UserPrincipal
+2012-03-19 20:29:56,888 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: resourceAction, scope: EVENT, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.ResourceAction
+2012-03-19 20:29:56,904 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: resourceCRUDAction, scope: EVENT, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.SingleResourceAction
+2012-03-19 20:29:56,920 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: resourceConfigurationUIBean, scope: CONVERSATION, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.configuration.resource.ResourceConfigurationUIBean
+2012-03-19 20:29:56,920 WARN  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component class should be serializable: sessionInfoAction
+2012-03-19 20:29:56,920 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: sessionInfoAction, scope: SESSION, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.SessionInfoAction
+2012-03-19 20:29:56,920 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: summaryAction, scope: EVENT, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.SummaryAction
+2012-03-19 20:29:56,935 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: tableManager, scope: PAGE, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.TableManager
+2012-03-19 20:29:56,935 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: templateDropDownPopulator, scope: EVENT, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.configuration.resource.TemplateDropDownPopulator
+2012-03-19 20:29:56,966 INFO  [org.jboss.seam.Component] (http-127.0.0.1-8080-1) Component: updateBackingContentAction, scope: CONVERSATION, type: JAVA_BEAN, class: org.jboss.on.embedded.ui.content.UpdateBackingContentAction
+2012-03-19 20:29:56,982 INFO  [org.jboss.seam.contexts.Contexts] (http-127.0.0.1-8080-1) starting up: org.jboss.seam.security.persistentPermissionResolver
+2012-03-19 20:29:56,998 WARN  [org.jboss.seam.security.permission.PersistentPermissionResolver] (http-127.0.0.1-8080-1) no permission store available - please install a PermissionStore with the name 'org.jboss.seam.security.jpaPermissionStore' if persistent permissions are required.
+2012-03-19 20:29:56,998 INFO  [org.jboss.seam.contexts.Contexts] (http-127.0.0.1-8080-1) starting up: org.jboss.seam.security.permissionMapper
+2012-03-19 20:29:56,998 INFO  [org.jboss.seam.contexts.Contexts] (http-127.0.0.1-8080-1) starting up: org.jboss.seam.navigation.pages
+2012-03-19 20:29:57,060 INFO  [org.jboss.seam.contexts.Contexts] (http-127.0.0.1-8080-1) starting up: org.jboss.seam.security.entityPermissionChecker
+2012-03-19 20:29:57,060 INFO  [org.jboss.seam.contexts.Contexts] (http-127.0.0.1-8080-1) starting up: bootstrapAction
+2012-03-19 20:29:57,123 INFO  [org.jboss.seam.contexts.Contexts] (http-127.0.0.1-8080-1) starting up: org.jboss.seam.security.facesSecurityEvents
+2012-03-19 20:29:57,123 INFO  [org.jboss.seam.init.Initialization] (http-127.0.0.1-8080-1) done initializing Seam
+2012-03-19 20:29:57,123 INFO  [org.jboss.seam.servlet.SeamFilter] (http-127.0.0.1-8080-1) Initializing filter: org.jboss.seam.web.loggingFilter
+2012-03-19 20:29:57,123 INFO  [org.jboss.seam.servlet.SeamFilter] (http-127.0.0.1-8080-1) Initializing filter: org.jboss.seam.web.ajax4jsfFilter
+2012-03-19 20:29:57,201 INFO  [org.ajax4jsf.cache.CacheManager] (http-127.0.0.1-8080-1) Selected [org.ajax4jsf.cache.LRUMapCacheFactory] cache factory
+2012-03-19 20:29:57,216 INFO  [org.ajax4jsf.cache.LRUMapCacheFactory] (http-127.0.0.1-8080-1) Creating LRUMap cache instance using parameters: {facelets.DEVELOPMENT=true, facelets.LIBRARIES=/WEB-INF/on.component.taglib.xml, org.jboss.on.embedded.LazyStartupListener=org.jboss.seam.servlet.SeamListener, com.sun.faces.duplicateJARPattern=^tmp\d+(\S*\.jar), javax.faces.CONFIG_FILES=/WEB-INF/navigation.xml, org.richfaces.SKIN=jboss-console, com.sun.faces.injectionProvider=org.jboss.web.jsf.integration.injection.JBossDelegatingInjectionProvider, resteasy.unwrapped.exceptions=javax.ejb.EJBException, javax.faces.STATE_SAVING_METHOD=server, javax.faces.DEFAULT_SUFFIX=.xhtml}
+2012-03-19 20:29:57,216 INFO  [org.ajax4jsf.cache.LRUMapCacheFactory] (http-127.0.0.1-8080-1) Creating LRUMap cache instance of default capacity
+2012-03-19 20:29:57,263 INFO  [org.ajax4jsf.cache.CacheManager] (http-127.0.0.1-8080-1) Selected [org.ajax4jsf.cache.LRUMapCacheFactory] cache factory
+2012-03-19 20:29:57,263 INFO  [org.ajax4jsf.cache.LRUMapCacheFactory] (http-127.0.0.1-8080-1) Creating LRUMap cache instance using parameters: {facelets.DEVELOPMENT=true, facelets.LIBRARIES=/WEB-INF/on.component.taglib.xml, org.jboss.on.embedded.LazyStartupListener=org.jboss.seam.servlet.SeamListener, com.sun.faces.duplicateJARPattern=^tmp\d+(\S*\.jar), javax.faces.CONFIG_FILES=/WEB-INF/navigation.xml, org.richfaces.SKIN=jboss-console, com.sun.faces.injectionProvider=org.jboss.web.jsf.integration.injection.JBossDelegatingInjectionProvider, resteasy.unwrapped.exceptions=javax.ejb.EJBException, javax.faces.STATE_SAVING_METHOD=server, javax.faces.DEFAULT_SUFFIX=.xhtml}
+2012-03-19 20:29:57,263 INFO  [org.ajax4jsf.cache.LRUMapCacheFactory] (http-127.0.0.1-8080-1) Creating LRUMap cache instance of default capacity
+2012-03-19 20:29:57,263 INFO  [org.jboss.seam.servlet.SeamFilter] (http-127.0.0.1-8080-1) Initializing filter: org.jboss.seam.web.redirectFilter
+2012-03-19 20:29:57,263 INFO  [org.jboss.seam.servlet.SeamFilter] (http-127.0.0.1-8080-1) Initializing filter: org.jboss.seam.web.exceptionFilter
+2012-03-19 20:29:57,263 INFO  [org.jboss.seam.servlet.SeamFilter] (http-127.0.0.1-8080-1) Initializing filter: org.jboss.seam.web.multipartFilter
+2012-03-19 20:29:57,263 INFO  [org.jboss.seam.servlet.SeamFilter] (http-127.0.0.1-8080-1) Initializing filter: org.jboss.seam.web.identityFilter
+2012-03-19 20:29:57,326 INFO  [org.jboss.seam.contexts.Contexts] (http-127.0.0.1-8080-1) starting up: org.jboss.seam.security.identity
+2012-03-19 20:29:57,326 INFO  [org.jboss.seam.contexts.Contexts] (http-127.0.0.1-8080-1) starting up: org.jboss.seam.web.session
+2012-03-19 20:29:57,326 INFO  [org.jboss.seam.contexts.Contexts] (http-127.0.0.1-8080-1) starting up: sessionInfoAction
+2012-03-19 20:30:50,701 INFO  [org.jboss.on.embedded.ui.BootstrapAction] (http-127.0.0.1-8080-2) Initializing Administration Console v1.4.0.SP2...
+2012-03-19 20:30:50,732 INFO  [org.rhq.core.pc.PluginContainer] (http-127.0.0.1-8080-2) Initializing Plugin Container v3.0.0...
+2012-03-19 20:30:56,076 INFO  [org.rhq.core.clientapi.agent.metadata.PluginDependencyGraph] (http-127.0.0.1-8080-2) Optional plugin [JBossAS] was requested by plugins [[Hibernate]] but it does not exist in the dependency graph yet and will be ignored
+2012-03-19 20:30:56,091 INFO  [org.rhq.core.clientapi.agent.metadata.PluginDependencyGraph] (http-127.0.0.1-8080-2) Optional plugin [JBossAS] was requested by plugins [[Infinispan]] but it does not exist in the dependency graph yet and will be ignored
+2012-03-19 20:30:59,123 INFO  [org.rhq.core.clientapi.agent.metadata.PluginMetadataParser] (http-127.0.0.1-8080-2) There is no resource type named [JBossAS Server] from a plugin named [JBossAS]. This is probably because that plugin is missing. Resource Type [Infinispan Cache Manager] will not have that missing type as a possible parent.
+2012-03-19 20:30:59,623 INFO  [org.rhq.core.clientapi.agent.metadata.PluginMetadataParser] (http-127.0.0.1-8080-2) There is no resource type named [JBossAS Server] from a plugin named [JBossAS]. This is probably because that plugin is missing. Resource Type [Hibernate Statistics] will not have that missing type as a possible parent.
+2012-03-19 20:30:59,670 INFO  [org.rhq.core.pc.inventory.InventoryManager] (http-127.0.0.1-8080-2) Initializing Inventory Manager...
+2012-03-19 20:30:59,841 INFO  [org.rhq.core.pc.inventory.InventoryManager] (http-127.0.0.1-8080-2) Detected new Platform [Resource[id=-2, type=Windows, key=L03MICRO20.fiap.com.br, name=L03MICRO20.fiap.com.br, parent=<null>, version=Windows 2003 5.2]] - adding to local inventory...
+2012-03-19 20:30:59,920 INFO  [org.rhq.core.pc.inventory.InventoryManager] (http-127.0.0.1-8080-2) Inventory Manager initialized.
+2012-03-19 20:30:59,935 INFO  [org.rhq.core.pc.inventory.ResourceFactoryManager] (http-127.0.0.1-8080-2) Initializing
+2012-03-19 20:30:59,935 INFO  [org.rhq.core.pc.content.ContentManager] (http-127.0.0.1-8080-2) Initializing Content Manager...
+2012-03-19 20:30:59,935 INFO  [org.rhq.core.pc.content.ContentManager] (http-127.0.0.1-8080-2) Content Manager initialized...
+2012-03-19 20:30:59,951 INFO  [org.rhq.core.pc.PluginContainer] (http-127.0.0.1-8080-2) Plugin Container initialized.
+2012-03-19 20:30:59,966 INFO  [org.jboss.on.embedded.manager.pc.PluginContainerResourceManager] (http-127.0.0.1-8080-2) Discovering Resources...
+2012-03-19 20:30:59,966 INFO  [org.rhq.core.pc.inventory.AutoDiscoveryExecutor] (InventoryManager.discovery-1) Executing server discovery scan...
+2012-03-19 20:31:16,107 INFO  [org.rhq.core.pc.inventory.InventoryManager] (InventoryManager.discovery-1) Detected new Server [Resource[id=-3, type=JBossAS Server, key=C:\opensource\jboss6\server\default, name=JBoss AS 6 (default), parent=<null>, version=6.1.0.Final]] - adding to local inventory...
+2012-03-19 20:31:16,388 INFO  [org.rhq.core.pc.inventory.AutoDiscoveryExecutor] (InventoryManager.discovery-1) Found 0 servers.
+2012-03-19 20:31:16,388 INFO  [org.rhq.core.pc.inventory.RuntimeDiscoveryExecutor] (InventoryManager.discovery-1) Running runtime discovery scan rooted at [platform]
+2012-03-19 20:31:16,576 INFO  [org.rhq.core.pc.inventory.InventoryManager] (InventoryManager.discovery-1) Detected new Server [Resource[id=-4, type=JBoss AS JVM, key=JVM, name=JVM, parent=<null>, version=1.6.0_30]] - adding to local inventory...
+2012-03-19 20:31:16,591 INFO  [org.rhq.plugins.jmx.JMXServerComponent] (ResourceContainer.invoker.daemon-1) Starting connection to JMX Server JVM
+2012-03-19 20:31:21,279 INFO  [org.rhq.core.pc.inventory.RuntimeDiscoveryExecutor] (InventoryManager.discovery-1) Scanned [0] servers and found [0] total descendant Resources.
+2012-03-19 20:31:22,654 INFO  [org.rhq.core.pc.inventory.RuntimeDiscoveryExecutor] (InventoryManager.discovery-1) Running runtime discovery scan rooted at [platform]
+2012-03-19 20:31:23,810 INFO  [org.rhq.core.pc.inventory.RuntimeDiscoveryExecutor] (InventoryManager.discovery-1) Scanned [0] servers and found [0] total descendant Resources.
+2012-03-19 20:31:49,295 INFO  [org.hibernate.validator.Version] (http-127.0.0.1-8080-2) Hibernate Validator 3.1.0.GA
+2012-03-19 20:31:49,326 INFO  [org.hibernate.annotations.common.Version] (http-127.0.0.1-8080-2) Hibernate Commons Annotations 3.2.0.Final
+2012-03-19 20:36:33,998 WARN  [org.jboss.kernel.plugins.dependency.StartStopLifecycleAction] (HDScanner) Error during stop for jboss-switchboard:appName=chamado,module=chamado: javax.naming.NameNotFoundException: env not bound
+	at org.jnp.server.NamingServer.getBinding(NamingServer.java:771) [:5.0.5.Final]
+	at org.jnp.server.NamingServer.getBinding(NamingServer.java:779) [:5.0.5.Final]
+	at org.jnp.server.NamingServer.getObject(NamingServer.java:785) [:5.0.5.Final]
+	at org.jnp.server.NamingServer.unbind(NamingServer.java:315) [:5.0.5.Final]
+	at org.jnp.interfaces.NamingContext.unbind(NamingContext.java:873) [:5.0.5.Final]
+	at org.jboss.util.naming.Util.unbind(Util.java:151) [jboss-common-core.jar:2.2.17.GA]
+	at org.jboss.util.naming.Util.unbind(Util.java:141) [jboss-common-core.jar:2.2.17.GA]
+	at org.jboss.switchboard.mc.SwitchBoardImpl.unbindFromRelevantContext(SwitchBoardImpl.java:303) [:1.0.0-alpha-15]
+	at org.jboss.switchboard.mc.SwitchBoardImpl.stop(SwitchBoardImpl.java:102) [:1.0.0-alpha-15]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.6.0_30]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) [:1.6.0_30]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_30]
+	at java.lang.reflect.Method.invoke(Method.java:597) [:1.6.0_30]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction$JoinpointDispatchWrapper.execute(KernelControllerContextAction.java:257) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.ExecutionWrapper.execute(ExecutionWrapper.java:47) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchExecutionWrapper(KernelControllerContextAction.java:125) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchJoinPoint(KernelControllerContextAction.java:72) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.LifecycleAction.uninstallActionInternal(LifecycleAction.java:286) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.uninstallAction(InstallsAwareAction.java:175) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.uninstallAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleUninstallAction(SimpleControllerContextAction.java:79) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.uninstall(AccessControllerContextAction.java:131) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.uninstall(AbstractControllerContextActions.java:58) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1537) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1537) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:756) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:669) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.undeploy(BeanMetaDataDeployer.java:230) [:2.2.2.GA]
+	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.undeploy(BeanMetaDataDeployer.java:58) [:2.2.2.GA]
+	at org.jboss.deployers.spi.deployer.helpers.AbstractSimpleRealDeployer.internalUndeploy(AbstractSimpleRealDeployer.java:70) [:2.2.2.GA]
+	at org.jboss.deployers.spi.deployer.helpers.AbstractRealDeployer.undeploy(AbstractRealDeployer.java:117) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployerWrapper.undeploy(DeployerWrapper.java:204) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUndeploy(DeployersImpl.java:1862) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUninstallParentLast(DeployersImpl.java:1769) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUninstallParentLast(DeployersImpl.java:1762) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.uninstall(DeployersImpl.java:1724) [:2.2.2.GA]
+	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:948) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1983) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1968) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.process(DeployersImpl.java:1001) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.main.MainDeployerImpl.process(MainDeployerImpl.java:656) [:2.2.2.GA]
+	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.process(MainDeployerPlugin.java:106) [:6.1.0.Final]
+	at org.jboss.profileservice.dependency.ProfileControllerContext$DelegateDeployer.process(ProfileControllerContext.java:143) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner$HDScanAction.deploy(HDScanner.java:240) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner$HDScanAction.complete(HDScanner.java:192) [:0.2.2]
+	at org.jboss.profileservice.management.TwoPCActionWrapper.doComplete(TwoPCActionWrapper.java:57) [:0.2.2]
+	at org.jboss.profileservice.management.actions.AbstractTwoPhaseModificationAction.complete(AbstractTwoPhaseModificationAction.java:74) [:0.2.2]
+	at org.jboss.profileservice.management.actions.AbstractTwoPhaseModificationAction.prepare(AbstractTwoPhaseModificationAction.java:95) [:0.2.2]
+	at org.jboss.profileservice.management.ModificationSession.prepare(ModificationSession.java:87) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.internalPerfom(AbstractActionController.java:234) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.performWrite(AbstractActionController.java:213) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.perform(AbstractActionController.java:150) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.perform(AbstractActionController.java:135) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner.scan(HDScanner.java:146) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner.run(HDScanner.java:90) [:0.2.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441) [:1.6.0_30]
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:317) [:1.6.0_30]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:150) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(ScheduledThreadPoolExecutor.java:180) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:204) [:1.6.0_30]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [:1.6.0_30]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [:1.6.0_30]
+	at java.lang.Thread.run(Thread.java:662) [:1.6.0_30]
+
+2012-03-19 20:36:36,560 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) deploy, ctxPath=/chamado
+2012-03-19 20:37:12,232 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) undeploy, ctxPath=/chamado
+2012-03-19 20:37:13,920 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) deploy, ctxPath=/chamado
+2012-03-19 20:37:33,107 INFO  [STDOUT] (http-127.0.0.1-8080-2) Consultando chamado...
+2012-03-19 20:37:33,107 ERROR [STDERR] (http-127.0.0.1-8080-2) java.lang.ClassCastException: org.jboss.resource.adapter.jdbc.WrapperDataSource cannot be cast to javax.sql.DataSource
+2012-03-19 20:37:33,107 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at br.edu.fiap.persistencia.jdbc.ChamadosDBManager.obterConexaoMySQLDataSource(ChamadosDBManager.java:20)
+2012-03-19 20:37:33,107 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at br.edu.fiap.persistencia.jdbc.ChamadosHelper.obterChamado(ChamadosHelper.java:25)
+2012-03-19 20:37:33,107 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at br.edu.fiap.web.ConsultarChamado.doPost(ConsultarChamado.java:60)
+2012-03-19 20:37:33,107 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:754)
+2012-03-19 20:37:33,107 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+2012-03-19 20:37:33,107 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at br.edu.fiap.web.ConsultarChamado.service(ConsultarChamado.java:71)
+2012-03-19 20:37:33,107 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:324)
+2012-03-19 20:37:33,107 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:242)
+2012-03-19 20:37:33,107 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+2012-03-19 20:37:33,107 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.jboss.web.tomcat.security.SecurityAssociationValve.invoke(SecurityAssociationValve.java:181)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.event(CatalinaContext.java:285)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.invoke(CatalinaContext.java:261)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.jboss.web.tomcat.security.JaccContextValve.invoke(JaccContextValve.java:88)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.jboss.web.tomcat.security.SecurityContextEstablishmentValve.invoke(SecurityContextEstablishmentValve.java:100)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.jboss.web.tomcat.service.jca.CachedConnectionValve.invoke(CachedConnectionValve.java:158)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.jboss.web.tomcat.service.request.ActiveRequestResponseCacheValve.invoke(ActiveRequestResponseCacheValve.java:53)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:362)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:654)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:951)
+2012-03-19 20:37:33,123 ERROR [STDERR] (http-127.0.0.1-8080-2) 	at java.lang.Thread.run(Thread.java:662)
+2012-03-19 20:41:05,185 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) undeploy, ctxPath=/chamado
+2012-03-19 20:41:14,404 WARN  [org.jboss.profileservice.deployment.hotdeploy.HDScanner] (HDScanner) Scan failed: org.jboss.deployers.client.spi.IncompleteDeploymentException: Summary of incomplete deployments (SEE PREVIOUS ERRORS FOR DETAILS):
+
+DEPLOYMENTS MISSING DEPENDENCIES:
+  Deployment "jboss-switchboard:appName=chamado,module=chamado" is missing the following dependencies:
+    Dependency "jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding" (should be in state "Installed", but is actually in state "** NOT FOUND Depends on 'jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding',whenRequired=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed},dependentState=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed} **")
+  Deployment "jboss.web.deployment:war=/chamado" is missing the following dependencies:
+    Dependency "jboss-switchboard:appName=chamado,module=chamado" (should be in state "Installed", but is actually in state "Deploy")
+
+DEPLOYMENTS IN ERROR:
+  Deployment "jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding" is in error due to the following reason(s): ** NOT FOUND Depends on 'jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding',whenRequired=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed},dependentState=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed} **
+
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.checkComplete(DeployersImpl.java:1370) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.checkComplete(DeployersImpl.java:1316) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.main.MainDeployerImpl.checkComplete(MainDeployerImpl.java:968) [:2.2.2.GA]
+	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.checkComplete(MainDeployerPlugin.java:82) [:6.1.0.Final]
+	at org.jboss.profileservice.dependency.ProfileControllerContext$DelegateDeployer.checkComplete(ProfileControllerContext.java:138) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner$HDScanAction.deploy(HDScanner.java:246) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner$HDScanAction.complete(HDScanner.java:192) [:0.2.2]
+	at org.jboss.profileservice.management.TwoPCActionWrapper.doComplete(TwoPCActionWrapper.java:57) [:0.2.2]
+	at org.jboss.profileservice.management.actions.AbstractTwoPhaseModificationAction.complete(AbstractTwoPhaseModificationAction.java:74) [:0.2.2]
+	at org.jboss.profileservice.management.actions.AbstractTwoPhaseModificationAction.prepare(AbstractTwoPhaseModificationAction.java:95) [:0.2.2]
+	at org.jboss.profileservice.management.ModificationSession.prepare(ModificationSession.java:87) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.internalPerfom(AbstractActionController.java:234) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.performWrite(AbstractActionController.java:213) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.perform(AbstractActionController.java:150) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.perform(AbstractActionController.java:135) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner.scan(HDScanner.java:146) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner.run(HDScanner.java:90) [:0.2.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441) [:1.6.0_30]
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:317) [:1.6.0_30]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:150) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(ScheduledThreadPoolExecutor.java:180) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:204) [:1.6.0_30]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [:1.6.0_30]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [:1.6.0_30]
+	at java.lang.Thread.run(Thread.java:662) [:1.6.0_30]
+
+2012-03-19 20:46:25,185 WARN  [org.jboss.kernel.plugins.dependency.StartStopLifecycleAction] (HDScanner) Error during stop for jboss-switchboard:appName=chamado,module=chamado: javax.naming.NameNotFoundException: env not bound
+	at org.jnp.server.NamingServer.getBinding(NamingServer.java:771) [:5.0.5.Final]
+	at org.jnp.server.NamingServer.getBinding(NamingServer.java:779) [:5.0.5.Final]
+	at org.jnp.server.NamingServer.getObject(NamingServer.java:785) [:5.0.5.Final]
+	at org.jnp.server.NamingServer.unbind(NamingServer.java:315) [:5.0.5.Final]
+	at org.jnp.interfaces.NamingContext.unbind(NamingContext.java:873) [:5.0.5.Final]
+	at org.jboss.util.naming.Util.unbind(Util.java:151) [jboss-common-core.jar:2.2.17.GA]
+	at org.jboss.util.naming.Util.unbind(Util.java:141) [jboss-common-core.jar:2.2.17.GA]
+	at org.jboss.switchboard.mc.SwitchBoardImpl.unbindFromRelevantContext(SwitchBoardImpl.java:303) [:1.0.0-alpha-15]
+	at org.jboss.switchboard.mc.SwitchBoardImpl.stop(SwitchBoardImpl.java:102) [:1.0.0-alpha-15]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.6.0_30]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) [:1.6.0_30]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_30]
+	at java.lang.reflect.Method.invoke(Method.java:597) [:1.6.0_30]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction$JoinpointDispatchWrapper.execute(KernelControllerContextAction.java:257) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.ExecutionWrapper.execute(ExecutionWrapper.java:47) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchExecutionWrapper(KernelControllerContextAction.java:125) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchJoinPoint(KernelControllerContextAction.java:72) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.LifecycleAction.uninstallActionInternal(LifecycleAction.java:286) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.uninstallAction(InstallsAwareAction.java:175) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.uninstallAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleUninstallAction(SimpleControllerContextAction.java:79) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.uninstall(AccessControllerContextAction.java:131) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.uninstall(AbstractControllerContextActions.java:58) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1537) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1537) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1472) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:756) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:669) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.undeploy(BeanMetaDataDeployer.java:230) [:2.2.2.GA]
+	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.undeploy(BeanMetaDataDeployer.java:58) [:2.2.2.GA]
+	at org.jboss.deployers.spi.deployer.helpers.AbstractSimpleRealDeployer.internalUndeploy(AbstractSimpleRealDeployer.java:70) [:2.2.2.GA]
+	at org.jboss.deployers.spi.deployer.helpers.AbstractRealDeployer.undeploy(AbstractRealDeployer.java:117) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployerWrapper.undeploy(DeployerWrapper.java:204) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUndeploy(DeployersImpl.java:1862) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUninstallParentLast(DeployersImpl.java:1769) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doUninstallParentLast(DeployersImpl.java:1762) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.uninstall(DeployersImpl.java:1724) [:2.2.2.GA]
+	at org.jboss.dependency.plugins.AbstractControllerContext.uninstall(AbstractControllerContext.java:385) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstall(AbstractController.java:2078) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.uninstallContext(AbstractController.java:1624) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:948) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1983) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1968) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.process(DeployersImpl.java:1001) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.main.MainDeployerImpl.process(MainDeployerImpl.java:656) [:2.2.2.GA]
+	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.process(MainDeployerPlugin.java:106) [:6.1.0.Final]
+	at org.jboss.profileservice.dependency.ProfileControllerContext$DelegateDeployer.process(ProfileControllerContext.java:143) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner$HDScanAction.deploy(HDScanner.java:240) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner$HDScanAction.complete(HDScanner.java:192) [:0.2.2]
+	at org.jboss.profileservice.management.TwoPCActionWrapper.doComplete(TwoPCActionWrapper.java:57) [:0.2.2]
+	at org.jboss.profileservice.management.actions.AbstractTwoPhaseModificationAction.complete(AbstractTwoPhaseModificationAction.java:74) [:0.2.2]
+	at org.jboss.profileservice.management.actions.AbstractTwoPhaseModificationAction.prepare(AbstractTwoPhaseModificationAction.java:95) [:0.2.2]
+	at org.jboss.profileservice.management.ModificationSession.prepare(ModificationSession.java:87) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.internalPerfom(AbstractActionController.java:234) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.performWrite(AbstractActionController.java:213) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.perform(AbstractActionController.java:150) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.perform(AbstractActionController.java:135) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner.scan(HDScanner.java:146) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner.run(HDScanner.java:90) [:0.2.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441) [:1.6.0_30]
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:317) [:1.6.0_30]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:150) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(ScheduledThreadPoolExecutor.java:180) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:204) [:1.6.0_30]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [:1.6.0_30]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [:1.6.0_30]
+	at java.lang.Thread.run(Thread.java:662) [:1.6.0_30]
+
+2012-03-19 20:46:44,560 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2012-03-19 20:46:48,435 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-24) Stopping: JBossAS [6.1.0.Final "Neo"]
+2012-03-19 20:46:56,029 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-24) Pausing Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 20:47:02,904 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-24) Stopping Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 20:47:03,201 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-24) Pausing Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 20:47:03,435 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-24) Stopping Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 20:48:23,529 WARN  [org.jboss.profileservice.deployment.hotdeploy.HDScanner] (HDScanner) Scan failed: org.jboss.deployers.client.spi.IncompleteDeploymentException: Summary of incomplete deployments (SEE PREVIOUS ERRORS FOR DETAILS):
+
+DEPLOYMENTS MISSING DEPENDENCIES:
+  Deployment "jboss-switchboard:appName=chamado,module=chamado" is missing the following dependencies:
+    Dependency "jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding" (should be in state "Installed", but is actually in state "** NOT FOUND Depends on 'jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding',whenRequired=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed},dependentState=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed} **")
+  Deployment "jboss.web.deployment:war=/chamado" is missing the following dependencies:
+    Dependency "jboss-switchboard:appName=chamado,module=chamado" (should be in state "Installed", but is actually in state "Deploy")
+
+DEPLOYMENTS IN ERROR:
+  Deployment "jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding" is in error due to the following reason(s): ** NOT FOUND Depends on 'jboss.jca:name=internal/chamado/chamado/env/jdbc/fiap,service=DataSourceBinding',whenRequired=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed},dependentState=MapControllerStateModel$ControllerStateWrapper@1604bfba{Installed} **
+
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.checkComplete(DeployersImpl.java:1370) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.checkComplete(DeployersImpl.java:1316) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.main.MainDeployerImpl.checkComplete(MainDeployerImpl.java:968) [:2.2.2.GA]
+	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.checkComplete(MainDeployerPlugin.java:82) [:6.1.0.Final]
+	at org.jboss.profileservice.dependency.ProfileControllerContext$DelegateDeployer.checkComplete(ProfileControllerContext.java:138) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner$HDScanAction.deploy(HDScanner.java:246) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner$HDScanAction.complete(HDScanner.java:192) [:0.2.2]
+	at org.jboss.profileservice.management.TwoPCActionWrapper.doComplete(TwoPCActionWrapper.java:57) [:0.2.2]
+	at org.jboss.profileservice.management.actions.AbstractTwoPhaseModificationAction.complete(AbstractTwoPhaseModificationAction.java:74) [:0.2.2]
+	at org.jboss.profileservice.management.actions.AbstractTwoPhaseModificationAction.prepare(AbstractTwoPhaseModificationAction.java:95) [:0.2.2]
+	at org.jboss.profileservice.management.ModificationSession.prepare(ModificationSession.java:87) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.internalPerfom(AbstractActionController.java:234) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.performWrite(AbstractActionController.java:213) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.perform(AbstractActionController.java:150) [:0.2.2]
+	at org.jboss.profileservice.management.AbstractActionController.perform(AbstractActionController.java:135) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner.scan(HDScanner.java:146) [:0.2.2]
+	at org.jboss.profileservice.deployment.hotdeploy.HDScanner.run(HDScanner.java:90) [:0.2.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441) [:1.6.0_30]
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:317) [:1.6.0_30]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:150) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(ScheduledThreadPoolExecutor.java:180) [:1.6.0_30]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:204) [:1.6.0_30]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886) [:1.6.0_30]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908) [:1.6.0_30]
+	at java.lang.Thread.run(Thread.java:662) [:1.6.0_30]
+
+2012-03-19 20:55:21,373 ERROR [ProfileServiceBootstrap] (Thread-2) Failed to load profile:: org.jboss.deployers.client.spi.IncompleteDeploymentException: Summary of incomplete deployments (SEE PREVIOUS ERRORS FOR DETAILS):
+
+DEPLOYMENTS MISSING DEPENDENCIES:
+  Deployment "jboss-switchboard:appName=chamado,module=chamado" is missing the following dependencies:
+    Dependency "jdbc/fiap" (should be in state "Installed", but is actually in state "** NOT FOUND Depends on 'jdbc/fiap' **")
+  Deployment "jboss.web.deployment:war=/chamado" is missing the following dependencies:
+    Dependency "jboss-switchboard:appName=chamado,module=chamado" (should be in state "Installed", but is actually in state "Create")
+
+DEPLOYMENTS IN ERROR:
+  Deployment "jdbc/fiap" is in error due to the following reason(s): ** NOT FOUND Depends on 'jdbc/fiap' **
+
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.checkComplete(DeployersImpl.java:1228) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.main.MainDeployerImpl.checkComplete(MainDeployerImpl.java:905) [:2.2.2.GA]
+	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.checkComplete(MainDeployerPlugin.java:87) [:6.1.0.Final]
+	at org.jboss.profileservice.deployment.ProfileDeployerPluginRegistry.checkAllComplete(ProfileDeployerPluginRegistry.java:107) [:0.2.2]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:135) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:56) [:6.1.0.Final]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer.startBootstraps(AbstractServer.java:827) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer$StartServerTask.run(AbstractServer.java:417) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at java.lang.Thread.run(Thread.java:662) [:1.6.0_30]
+
+2012-03-19 20:55:21,654 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Starting Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 20:55:21,670 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 20:55:21,685 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 1m:14s:875ms
+2012-03-19 20:56:36,716 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) deploy, ctxPath=/chamado
+2012-03-19 20:56:58,920 INFO  [STDOUT] (http-127.0.0.1-8080-1) Consultando chamado...
+2012-03-19 20:56:59,091 ERROR [STDERR] (http-127.0.0.1-8080-1) javax.naming.NameNotFoundException: jdbc not bound
+2012-03-19 20:56:59,091 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jnp.server.NamingServer.getBinding(NamingServer.java:771)
+2012-03-19 20:56:59,091 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jnp.server.NamingServer.getBinding(NamingServer.java:779)
+2012-03-19 20:56:59,091 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jnp.server.NamingServer.getObject(NamingServer.java:785)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jnp.server.NamingServer.lookup(NamingServer.java:396)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at java.lang.reflect.Method.invoke(Method.java:597)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:303)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.rmi.transport.Transport$1.run(Transport.java:159)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at java.security.AccessController.doPrivileged(Native Method)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at java.lang.Thread.run(Thread.java:662)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:255)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:233)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:142)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jnp.server.NamingServer_Stub.lookup(Unknown Source)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:728)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:688)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.persistencia.jdbc.ChamadosDBManager.obterConexaoMySQLDataSource(ChamadosDBManager.java:21)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.persistencia.jdbc.ChamadosHelper.obterChamado(ChamadosHelper.java:25)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.web.ConsultarChamado.doPost(ConsultarChamado.java:60)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:754)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.web.ConsultarChamado.service(ConsultarChamado.java:71)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:324)
+2012-03-19 20:56:59,107 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:242)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.SecurityAssociationValve.invoke(SecurityAssociationValve.java:181)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.event(CatalinaContext.java:285)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.invoke(CatalinaContext.java:261)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.JaccContextValve.invoke(JaccContextValve.java:88)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.SecurityContextEstablishmentValve.invoke(SecurityContextEstablishmentValve.java:100)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.service.jca.CachedConnectionValve.invoke(CachedConnectionValve.java:158)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.service.request.ActiveRequestResponseCacheValve.invoke(ActiveRequestResponseCacheValve.java:53)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:362)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:654)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:951)
+2012-03-19 20:56:59,123 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at java.lang.Thread.run(Thread.java:662)
+2012-03-19 20:57:53,263 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) undeploy, ctxPath=/chamado
+2012-03-19 20:57:56,638 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) deploy, ctxPath=/chamado
+2012-03-19 20:58:16,920 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) undeploy, ctxPath=/chamado
+2012-03-19 20:58:18,716 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) deploy, ctxPath=/chamado
+2012-03-19 20:58:32,029 INFO  [STDOUT] (http-127.0.0.1-8080-1) Consultando chamado...
+2012-03-19 20:58:33,451 ERROR [STDERR] (http-127.0.0.1-8080-1) java.lang.ClassCastException: org.jboss.resource.adapter.jdbc.WrapperDataSource cannot be cast to javax.sql.DataSource
+2012-03-19 20:58:33,451 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.persistencia.jdbc.ChamadosDBManager.obterConexaoMySQLDataSource(ChamadosDBManager.java:20)
+2012-03-19 20:58:33,451 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.persistencia.jdbc.ChamadosHelper.obterChamado(ChamadosHelper.java:25)
+2012-03-19 20:58:33,451 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.web.ConsultarChamado.doPost(ConsultarChamado.java:60)
+2012-03-19 20:58:33,451 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:754)
+2012-03-19 20:58:33,451 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.web.ConsultarChamado.service(ConsultarChamado.java:71)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:324)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:242)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.SecurityAssociationValve.invoke(SecurityAssociationValve.java:181)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.event(CatalinaContext.java:285)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.invoke(CatalinaContext.java:261)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.JaccContextValve.invoke(JaccContextValve.java:88)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.SecurityContextEstablishmentValve.invoke(SecurityContextEstablishmentValve.java:100)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.service.jca.CachedConnectionValve.invoke(CachedConnectionValve.java:158)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.service.request.ActiveRequestResponseCacheValve.invoke(ActiveRequestResponseCacheValve.java:53)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:362)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:654)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:951)
+2012-03-19 20:58:33,466 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at java.lang.Thread.run(Thread.java:662)
+2012-03-19 21:03:21,513 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] (HDScanner) Unbound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=jdbc/fiap' from JNDI name 'java:jdbc/fiap'
+2012-03-19 21:03:22,123 INFO  [org.jboss.resource.connectionmanager.ConnectionFactoryBindingService] (HDScanner) Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=jdbc/fiap' to JNDI name 'java:jdbc/fiap'
+2012-03-19 21:04:12,373 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) undeploy, ctxPath=/chamado
+2012-03-19 21:04:15,279 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) deploy, ctxPath=/chamado
+2012-03-19 21:04:28,029 INFO  [STDOUT] (http-127.0.0.1-8080-1) Consultando chamado...
+2012-03-19 21:04:28,029 ERROR [STDERR] (http-127.0.0.1-8080-1) java.lang.ClassCastException: org.jboss.resource.adapter.jdbc.WrapperDataSource cannot be cast to javax.sql.DataSource
+2012-03-19 21:04:28,029 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.persistencia.jdbc.ChamadosDBManager.obterConexaoMySQLDataSource(ChamadosDBManager.java:21)
+2012-03-19 21:04:28,029 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.persistencia.jdbc.ChamadosHelper.obterChamado(ChamadosHelper.java:25)
+2012-03-19 21:04:28,029 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.web.ConsultarChamado.doPost(ConsultarChamado.java:60)
+2012-03-19 21:04:28,029 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:754)
+2012-03-19 21:04:28,029 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+2012-03-19 21:04:28,045 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.web.ConsultarChamado.service(ConsultarChamado.java:71)
+2012-03-19 21:04:28,045 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:324)
+2012-03-19 21:04:28,045 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:242)
+2012-03-19 21:04:28,045 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+2012-03-19 21:04:28,045 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+2012-03-19 21:04:28,045 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.SecurityAssociationValve.invoke(SecurityAssociationValve.java:181)
+2012-03-19 21:04:28,045 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.event(CatalinaContext.java:285)
+2012-03-19 21:04:28,045 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.invoke(CatalinaContext.java:261)
+2012-03-19 21:04:28,045 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.JaccContextValve.invoke(JaccContextValve.java:88)
+2012-03-19 21:04:28,045 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.SecurityContextEstablishmentValve.invoke(SecurityContextEstablishmentValve.java:100)
+2012-03-19 21:04:28,045 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+2012-03-19 21:04:28,045 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+2012-03-19 21:04:28,045 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.service.jca.CachedConnectionValve.invoke(CachedConnectionValve.java:158)
+2012-03-19 21:04:28,060 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+2012-03-19 21:04:28,060 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.service.request.ActiveRequestResponseCacheValve.invoke(ActiveRequestResponseCacheValve.java:53)
+2012-03-19 21:04:28,060 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:362)
+2012-03-19 21:04:28,060 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+2012-03-19 21:04:28,060 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:654)
+2012-03-19 21:04:28,060 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:951)
+2012-03-19 21:04:28,060 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at java.lang.Thread.run(Thread.java:662)
+2012-03-19 21:06:48,170 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2012-03-19 21:06:48,685 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-16) Stopping: JBossAS [6.1.0.Final "Neo"]
+2012-03-19 21:06:50,248 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-16) Pausing Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 21:06:54,013 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-16) Stopping Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 21:06:54,107 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-16) Pausing Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 21:06:54,138 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-16) Stopping Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 21:13:14,638 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Starting Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 21:13:14,670 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 21:13:14,685 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 1m:28s:594ms
+2012-03-19 21:14:15,326 INFO  [STDOUT] (http-127.0.0.1-8080-1) Consultando chamado...
+2012-03-19 21:14:15,341 ERROR [STDERR] (http-127.0.0.1-8080-1) java.lang.ClassCastException: org.jboss.resource.adapter.jdbc.WrapperDataSource cannot be cast to javax.sql.DataSource
+2012-03-19 21:14:15,341 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.persistencia.jdbc.ChamadosDBManager.obterConexaoMySQLDataSource(ChamadosDBManager.java:21)
+2012-03-19 21:14:15,341 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.persistencia.jdbc.ChamadosHelper.obterChamado(ChamadosHelper.java:25)
+2012-03-19 21:14:15,341 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.web.ConsultarChamado.doPost(ConsultarChamado.java:60)
+2012-03-19 21:14:15,341 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:754)
+2012-03-19 21:14:15,341 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+2012-03-19 21:14:15,341 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.web.ConsultarChamado.service(ConsultarChamado.java:71)
+2012-03-19 21:14:15,341 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:324)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:242)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.SecurityAssociationValve.invoke(SecurityAssociationValve.java:181)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.event(CatalinaContext.java:285)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.invoke(CatalinaContext.java:261)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.JaccContextValve.invoke(JaccContextValve.java:88)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.SecurityContextEstablishmentValve.invoke(SecurityContextEstablishmentValve.java:100)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.service.jca.CachedConnectionValve.invoke(CachedConnectionValve.java:158)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.service.request.ActiveRequestResponseCacheValve.invoke(ActiveRequestResponseCacheValve.java:53)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:362)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:654)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:951)
+2012-03-19 21:14:15,357 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at java.lang.Thread.run(Thread.java:662)
+2012-03-19 21:14:22,138 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2012-03-19 21:14:22,138 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-16) Stopping: JBossAS [6.1.0.Final "Neo"]
+2012-03-19 21:14:22,170 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-16) Pausing Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 21:14:22,185 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-16) Stopping Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 21:14:22,201 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-16) Pausing Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 21:14:22,232 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-16) Stopping Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 21:23:19,779 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Starting Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 21:23:19,810 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 21:23:19,826 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 1m:13s:31ms
+2012-03-19 21:23:40,482 INFO  [STDOUT] (http-127.0.0.1-8080-1) Consultando chamado...
+2012-03-19 21:23:40,482 ERROR [STDERR] (http-127.0.0.1-8080-1) java.lang.ClassCastException: org.jboss.resource.adapter.jdbc.WrapperDataSource cannot be cast to javax.sql.DataSource
+2012-03-19 21:23:40,482 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.persistencia.jdbc.ChamadosDBManager.obterConexaoMySQLDataSource(ChamadosDBManager.java:21)
+2012-03-19 21:23:40,482 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.persistencia.jdbc.ChamadosHelper.obterChamado(ChamadosHelper.java:25)
+2012-03-19 21:23:40,482 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.web.ConsultarChamado.doPost(ConsultarChamado.java:60)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:754)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.web.ConsultarChamado.service(ConsultarChamado.java:71)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:324)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:242)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.SecurityAssociationValve.invoke(SecurityAssociationValve.java:181)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.event(CatalinaContext.java:285)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.invoke(CatalinaContext.java:261)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.JaccContextValve.invoke(JaccContextValve.java:88)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.SecurityContextEstablishmentValve.invoke(SecurityContextEstablishmentValve.java:100)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.service.jca.CachedConnectionValve.invoke(CachedConnectionValve.java:158)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.service.request.ActiveRequestResponseCacheValve.invoke(ActiveRequestResponseCacheValve.java:53)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:362)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:654)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:951)
+2012-03-19 21:23:40,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at java.lang.Thread.run(Thread.java:662)
+2012-03-19 21:29:02,466 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) undeploy, ctxPath=/chamado
+2012-03-19 21:29:05,623 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) deploy, ctxPath=/chamado
+2012-03-19 21:29:16,060 INFO  [STDOUT] (http-127.0.0.1-8080-1) Consultando chamado...
+2012-03-19 21:29:39,701 INFO  [STDOUT] (http-127.0.0.1-8080-1) Consultando chamado...
+2012-03-19 21:31:09,404 INFO  [STDOUT] (http-127.0.0.1-8080-1) Consultando chamado...
+2012-03-19 21:31:09,466 WARN  [org.jboss.resource.connectionmanager.TxConnectionManager] (http-127.0.0.1-8080-1) Connection error occured: org.jboss.resource.connectionmanager.TxConnectionManager$TxConnectionEventListener@5839cb0[state=NORMAL mc=org.jboss.resource.adapter.jdbc.local.LocalManagedConnection@699bc302 handles=1 lastUse=1332203379701 permit=true trackByTx=false mcp=org.jboss.resource.connectionmanager.JBossManagedConnectionPool$OnePool@711fee78 context=org.jboss.resource.connectionmanager.InternalManagedConnectionPool@6761424d xaResource=org.jboss.resource.connectionmanager.TxConnectionManager$LocalXAResource@22480241 txSync=null]: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 31 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [:1.6.0_30]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39) [:1.6.0_30]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27) [:1.6.0_30]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513) [:1.6.0_30]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) [:]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074) [:]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2985) [:]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2871) [:]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3414) [:]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936) [:]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060) [:]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2542) [:]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1734) [:]
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1885) [:]
+	at org.jboss.resource.adapter.jdbc.WrappedPreparedStatement.executeQuery(WrappedPreparedStatement.java:342) [:6.1.0.Final]
+	at br.edu.fiap.persistencia.jdbc.ChamadosHelper.obterChamado(ChamadosHelper.java:30) [:]
+	at br.edu.fiap.web.ConsultarChamado.doPost(ConsultarChamado.java:60) [:]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:754) [:1.0.0.Final]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847) [:1.0.0.Final]
+	at br.edu.fiap.web.ConsultarChamado.service(ConsultarChamado.java:71) [:]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:324) [:6.1.0.Final]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:242) [:6.1.0.Final]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275) [:6.1.0.Final]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161) [:6.1.0.Final]
+	at org.jboss.web.tomcat.security.SecurityAssociationValve.invoke(SecurityAssociationValve.java:181) [:6.1.0.Final]
+	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.event(CatalinaContext.java:285) [:1.1.0.Final]
+	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.invoke(CatalinaContext.java:261) [:1.1.0.Final]
+	at org.jboss.web.tomcat.security.JaccContextValve.invoke(JaccContextValve.java:88) [:6.1.0.Final]
+	at org.jboss.web.tomcat.security.SecurityContextEstablishmentValve.invoke(SecurityContextEstablishmentValve.java:100) [:6.1.0.Final]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159) [:6.1.0.Final]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102) [:6.1.0.Final]
+	at org.jboss.web.tomcat.service.jca.CachedConnectionValve.invoke(CachedConnectionValve.java:158) [:6.1.0.Final]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109) [:6.1.0.Final]
+	at org.jboss.web.tomcat.service.request.ActiveRequestResponseCacheValve.invoke(ActiveRequestResponseCacheValve.java:53) [:6.1.0.Final]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:362) [:6.1.0.Final]
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877) [:6.1.0.Final]
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:654) [:6.1.0.Final]
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:951) [:6.1.0.Final]
+	at java.lang.Thread.run(Thread.java:662) [:1.6.0_30]
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method) [:1.6.0_30]
+	at java.net.SocketInputStream.read(SocketInputStream.java:129) [:1.6.0_30]
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:113) [:]
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:160) [:]
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:188) [:]
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2428) [:]
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2882) [:]
+	... 32 more
+
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) Last packet sent to the server was 31 ms ago.
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2985)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2871)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3414)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1936)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2060)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2542)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1734)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1885)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.resource.adapter.jdbc.WrappedPreparedStatement.executeQuery(WrappedPreparedStatement.java:342)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.persistencia.jdbc.ChamadosHelper.obterChamado(ChamadosHelper.java:30)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.web.ConsultarChamado.doPost(ConsultarChamado.java:60)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:754)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:847)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at br.edu.fiap.web.ConsultarChamado.service(ConsultarChamado.java:71)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:324)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:242)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:275)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:161)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.SecurityAssociationValve.invoke(SecurityAssociationValve.java:181)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.event(CatalinaContext.java:285)
+2012-03-19 21:31:09,498 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.modcluster.catalina.CatalinaContext$RequestListenerValve.invoke(CatalinaContext.java:261)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.JaccContextValve.invoke(JaccContextValve.java:88)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.security.SecurityContextEstablishmentValve.invoke(SecurityContextEstablishmentValve.java:100)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:159)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.service.jca.CachedConnectionValve.invoke(CachedConnectionValve.java:158)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.jboss.web.tomcat.service.request.ActiveRequestResponseCacheValve.invoke(ActiveRequestResponseCacheValve.java:53)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:362)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:877)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:654)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:951)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at java.lang.Thread.run(Thread.java:662)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) Caused by: java.net.SocketException: Software caused connection abort: recv failed
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at java.net.SocketInputStream.socketRead0(Native Method)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:113)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:160)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:188)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2428)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2882)
+2012-03-19 21:31:09,513 ERROR [STDERR] (http-127.0.0.1-8080-1) 	... 32 more
+2012-03-19 21:31:20,826 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2012-03-19 21:31:20,841 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-17) Stopping: JBossAS [6.1.0.Final "Neo"]
+2012-03-19 21:31:20,857 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-17) Pausing Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 21:31:20,873 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-17) Stopping Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 21:31:20,888 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-17) Pausing Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 21:31:20,904 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-17) Stopping Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 21:33:04,748 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Starting Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 21:33:04,748 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 21:33:04,748 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 1m:15s:907ms
+2012-03-19 21:33:20,545 INFO  [STDOUT] (http-127.0.0.1-8080-1) Consultando chamado...
+2012-03-19 21:41:24,185 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2012-03-19 21:41:24,201 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-17) Stopping: JBossAS [6.1.0.Final "Neo"]
+2012-03-19 21:41:24,201 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-17) Pausing Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 21:41:24,201 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-17) Stopping Coyote HTTP/1.1 on http-127.0.0.1-8080
+2012-03-19 21:41:24,216 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-17) Pausing Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2012-03-19 21:41:24,216 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-17) Stopping Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2016-09-01 23:54:29,239 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Starting Coyote HTTP/1.1 on http-127.0.0.1-8080
+2016-09-01 23:54:29,239 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2016-09-01 23:54:29,239 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 19s:326ms
+2016-09-01 23:54:34,254 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) undeploy, ctxPath=/chamado
+2016-09-01 23:55:45,266 INFO  [org.jboss.jpa.mcint.beans.metadata.plugins.PersistenceUnitValueMetaData] (HDScanner) iDependOn persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2016-09-01 23:55:45,282 INFO  [org.jboss.jpa.deployment.PersistenceUnitDeployment] (HDScanner) Starting persistence unit persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2016-09-01 23:55:45,469 INFO  [org.hibernate.annotations.common.Version] (HDScanner) Hibernate Commons Annotations 3.2.0.Final
+2016-09-01 23:55:45,469 INFO  [org.hibernate.cfg.Environment] (HDScanner) Hibernate 3.6.6.Final
+2016-09-01 23:55:45,485 INFO  [org.hibernate.cfg.Environment] (HDScanner) hibernate.properties not found
+2016-09-01 23:55:45,485 INFO  [org.hibernate.cfg.Environment] (HDScanner) Bytecode provider name : javassist
+2016-09-01 23:55:45,485 INFO  [org.hibernate.cfg.Environment] (HDScanner) using JDK 1.4 java.sql.Timestamp handling
+2016-09-01 23:55:45,578 INFO  [org.hibernate.ejb.Version] (HDScanner) Hibernate EntityManager 3.6.6.Final
+2016-09-01 23:55:45,594 INFO  [org.hibernate.ejb.Ejb3Configuration] (HDScanner) Processing PersistenceUnitInfo [
+	name: timerdb
+	...]
+2016-09-01 23:55:45,625 WARN  [org.hibernate.ejb.Ejb3Configuration] (HDScanner) Persistence provider caller does not implement the EJB3 spec correctly.PersistenceUnitInfo.getNewTempClassLoader() is null.
+2016-09-01 23:55:45,672 INFO  [org.hibernate.cfg.AnnotationBinder] (HDScanner) Binding entity from annotated class: org.jboss.ejb3.timerservice.mk2.persistence.TimerEntity
+2016-09-01 23:55:45,719 INFO  [org.hibernate.cfg.annotations.EntityBinder] (HDScanner) Bind entity org.jboss.ejb3.timerservice.mk2.persistence.TimerEntity on table timer
+2016-09-01 23:55:45,782 INFO  [org.hibernate.cfg.AnnotationBinder] (HDScanner) Binding entity from annotated class: org.jboss.ejb3.timerservice.mk2.persistence.CalendarTimerEntity
+2016-09-01 23:55:45,797 INFO  [org.hibernate.cfg.annotations.EntityBinder] (HDScanner) Bind entity org.jboss.ejb3.timerservice.mk2.persistence.CalendarTimerEntity on table calendar_timer
+2016-09-01 23:55:45,813 INFO  [org.hibernate.cfg.AnnotationBinder] (HDScanner) Binding entity from annotated class: org.jboss.ejb3.timerservice.mk2.persistence.TimeoutMethod
+2016-09-01 23:55:45,828 INFO  [org.hibernate.cfg.annotations.EntityBinder] (HDScanner) Bind entity org.jboss.ejb3.timerservice.mk2.persistence.TimeoutMethod on table timeout_method
+2016-09-01 23:55:45,875 INFO  [org.hibernate.validator.Version] (HDScanner) Hibernate Validator 3.1.0.GA
+2016-09-01 23:55:45,907 INFO  [org.hibernate.validator.util.Version] (HDScanner) Hibernate Validator 4.1.0.Final
+2016-09-01 23:55:45,922 INFO  [org.hibernate.validator.engine.resolver.DefaultTraversableResolver] (HDScanner) Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2016-09-01 23:55:46,032 INFO  [org.hibernate.validator.engine.resolver.DefaultTraversableResolver] (HDScanner) Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2016-09-01 23:55:46,032 INFO  [org.hibernate.validator.engine.resolver.DefaultTraversableResolver] (HDScanner) Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2016-09-01 23:55:46,047 INFO  [org.hibernate.cfg.search.HibernateSearchEventListenerRegister] (HDScanner) Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2016-09-01 23:55:46,063 INFO  [org.hibernate.connection.ConnectionProviderFactory] (HDScanner) Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2016-09-01 23:55:46,063 INFO  [org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider] (HDScanner) Using provided datasource
+2016-09-01 23:55:46,110 INFO  [org.hibernate.dialect.Dialect] (HDScanner) Using dialect: org.hibernate.dialect.HSQLDialect
+2016-09-01 23:55:46,125 INFO  [org.hibernate.engine.jdbc.JdbcSupportLoader] (HDScanner) Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-09-01 23:55:46,125 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Database ->
+       name : HSQL Database Engine
+    version : 1.8.0
+      major : 1
+      minor : 8
+2016-09-01 23:55:46,125 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Driver ->
+       name : HSQL Database Engine Driver
+    version : 1.8.0
+      major : 1
+      minor : 8
+2016-09-01 23:55:46,141 INFO  [org.hibernate.transaction.TransactionFactoryFactory] (HDScanner) Transaction strategy: org.hibernate.ejb.transaction.JoinableCMTTransactionFactory
+2016-09-01 23:55:46,157 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] (HDScanner) instantiating TransactionManagerLookup: org.hibernate.transaction.JBossTransactionManagerLookup
+2016-09-01 23:55:46,157 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] (HDScanner) instantiated TransactionManagerLookup
+2016-09-01 23:55:46,157 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Automatic flush during beforeCompletion(): disabled
+2016-09-01 23:55:46,172 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Automatic session close at end of transaction: disabled
+2016-09-01 23:55:46,172 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) JDBC batch size: 15
+2016-09-01 23:55:46,172 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) JDBC batch updates for versioned data: disabled
+2016-09-01 23:55:46,188 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Scrollable result sets: enabled
+2016-09-01 23:55:46,188 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) JDBC3 getGeneratedKeys(): disabled
+2016-09-01 23:55:46,188 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Connection release mode: auto
+2016-09-01 23:55:46,203 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Default batch fetch size: 1
+2016-09-01 23:55:46,203 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Generate SQL with comments: disabled
+2016-09-01 23:55:46,203 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Order SQL updates by primary key: disabled
+2016-09-01 23:55:46,219 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Order SQL inserts for batching: disabled
+2016-09-01 23:55:46,235 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2016-09-01 23:55:46,250 INFO  [org.hibernate.hql.ast.ASTQueryTranslatorFactory] (HDScanner) Using ASTQueryTranslatorFactory
+2016-09-01 23:55:46,250 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Query language substitutions: {}
+2016-09-01 23:55:46,250 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) JPA-QL strict compliance: enabled
+2016-09-01 23:55:46,266 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Second-level cache: enabled
+2016-09-01 23:55:46,266 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Query cache: disabled
+2016-09-01 23:55:46,266 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+2016-09-01 23:55:46,282 INFO  [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge] (HDScanner) Cache provider: org.hibernate.cache.HashtableCacheProvider
+2016-09-01 23:55:46,282 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Optimize cache for minimal puts: disabled
+2016-09-01 23:55:46,297 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Cache region prefix: persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2016-09-01 23:55:46,297 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Structured second-level cache entries: disabled
+2016-09-01 23:55:46,313 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Statistics: disabled
+2016-09-01 23:55:46,313 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Deleted entity synthetic identifier rollback: disabled
+2016-09-01 23:55:46,313 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Default entity-mode: pojo
+2016-09-01 23:55:46,328 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Named query checking : enabled
+2016-09-01 23:55:46,328 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2016-09-01 23:55:46,360 INFO  [org.hibernate.impl.SessionFactoryImpl] (HDScanner) building session factory
+2016-09-01 23:55:46,360 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@10c0ad7
+2016-09-01 23:55:46,375 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [clob] overrides previous : org.hibernate.type.ClobType@19bade4
+2016-09-01 23:55:46,375 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@19bade4
+2016-09-01 23:55:46,375 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@1b5900e
+2016-09-01 23:55:46,391 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@104a7cf
+2016-09-01 23:55:46,391 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@a51c12
+2016-09-01 23:55:46,407 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1d61b84
+2016-09-01 23:55:46,407 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [blob] overrides previous : org.hibernate.type.BlobType@1a8ac5e
+2016-09-01 23:55:46,407 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1a8ac5e
+2016-09-01 23:55:46,610 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (HDScanner) Factory name: persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2016-09-01 23:55:46,610 INFO  [org.hibernate.util.NamingHelper] (HDScanner) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2016-09-01 23:55:46,625 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (HDScanner) Bound factory to JNDI name: persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2016-09-01 23:55:46,625 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (HDScanner) Running hbm2ddl schema update
+2016-09-01 23:55:46,625 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (HDScanner) fetching database metadata
+2016-09-01 23:55:46,641 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (HDScanner) updating schema
+2016-09-01 23:55:46,641 INFO  [org.hibernate.validator.engine.resolver.DefaultTraversableResolver] (HDScanner) Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2016-09-01 23:55:46,657 INFO  [org.hibernate.tool.hbm2ddl.DatabaseMetadata] (HDScanner) table not found: TimeoutMethod_methodParams
+2016-09-01 23:55:46,657 INFO  [org.hibernate.tool.hbm2ddl.DatabaseMetadata] (HDScanner) table not found: calendar_timer
+2016-09-01 23:55:46,657 INFO  [org.hibernate.tool.hbm2ddl.DatabaseMetadata] (HDScanner) table not found: timeout_method
+2016-09-01 23:55:46,672 INFO  [org.hibernate.tool.hbm2ddl.DatabaseMetadata] (HDScanner) table not found: timer
+2016-09-01 23:55:46,672 INFO  [org.hibernate.tool.hbm2ddl.DatabaseMetadata] (HDScanner) table not found: TimeoutMethod_methodParams
+2016-09-01 23:55:46,672 INFO  [org.hibernate.tool.hbm2ddl.DatabaseMetadata] (HDScanner) table not found: calendar_timer
+2016-09-01 23:55:46,688 INFO  [org.hibernate.tool.hbm2ddl.DatabaseMetadata] (HDScanner) table not found: timeout_method
+2016-09-01 23:55:46,688 INFO  [org.hibernate.tool.hbm2ddl.DatabaseMetadata] (HDScanner) table not found: timer
+2016-09-01 23:55:46,703 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (HDScanner) schema update complete
+2016-09-01 23:55:46,703 INFO  [org.hibernate.util.NamingHelper] (HDScanner) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2016-09-01 23:55:46,797 WARN  [org.jboss.ejb3.interceptor.InterceptorInfoRepository] (HDScanner) EJBTHREE-1852: InterceptorInfoRepository is deprecated
+2016-09-01 23:55:47,078 WARN  [org.jboss.wsf.stack.cxf.deployment.aspect.DescriptorDeploymentAspect] (HDScanner) Spring not available, skipping check for user provided jbossws-cxf.xml / cxf.xml configuration files.
+2016-09-01 23:55:47,094 INFO  [org.jboss.wsf.stack.cxf.metadata.MetadataBuilder] (HDScanner) Add Service
+ id=Converter
+ address=http://localhost:8080/aula2-webservice/converter
+ implementor=br.com.fiap.ejb3.Converter
+ invoker=org.jboss.wsf.stack.cxf.InvokerEJB3
+ serviceName={http://ejb3.fiap.com.br/}ConverterService
+ portName={http://ejb3.fiap.com.br/}converterPort
+ wsdlLocation=null
+ mtomEnabled=false
+2016-09-01 23:55:47,141 INFO  [org.jboss.wsf.framework.management.DefaultEndpointRegistry] (HDScanner) register: jboss.ws:context=aula2-webservice,endpoint=Converter
+2016-09-01 23:55:47,266 INFO  [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] (HDScanner) Creating Service {http://ejb3.fiap.com.br/}ConverterService from class br.com.fiap.ejb3.Converter
+2016-09-01 23:55:47,719 INFO  [org.apache.cxf.endpoint.ServerImpl] (HDScanner) Setting the server's publish address to be http://localhost:8080/aula2-webservice/converter
+2016-09-01 23:55:47,875 INFO  [org.jboss.wsf.stack.cxf.deployment.WSDLFilePublisher] (HDScanner) WSDL published to: file:/C:/jboss6/server/default/data/wsdl/aula2-webservice.jar/ConverterService.wsdl
+2016-09-01 23:55:47,891 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Created KernelDeployment for: aula2-webservice.jar
+2016-09-01 23:55:47,891 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) installing bean: jboss.j2ee:jar=aula2-webservice.jar,name=Converter,service=EJB3
+2016-09-01 23:55:47,891 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   with dependencies:
+2016-09-01 23:55:47,891 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and demands:
+2016-09-01 23:55:47,907 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss.ejb:service=EJBTimerService; Required: Described
+2016-09-01 23:55:47,907 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss-switchboard:appName=aula2-webservice,module=aula2-webservice; Required: Create
+2016-09-01 23:55:47,922 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and supplies:
+2016-09-01 23:55:47,922 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:Converter
+2016-09-01 23:55:47,922 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:Converter/remote-br.com.fiap.ejb3.ConverterRemote
+2016-09-01 23:55:47,938 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:Converter/remote
+2016-09-01 23:55:47,938 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	Class:br.com.fiap.ejb3.ConverterRemote
+2016-09-01 23:55:47,938 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Added bean(jboss.j2ee:jar=aula2-webservice.jar,name=Converter,service=EJB3) to KernelDeployment of: aula2-webservice.jar
+2016-09-01 23:55:47,985 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Starting jboss.j2ee:jar=aula2-webservice.jar,name=Converter,service=EJB3
+2016-09-01 23:55:48,000 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STARTED EJB: br.com.fiap.ejb3.Converter ejbName: Converter
+2016-09-01 23:55:48,032 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (HDScanner) Binding the following Entries in Global JNDI:
+
+	Converter/remote - EJB3.x Default Remote Business Interface
+	Converter/remote-br.com.fiap.ejb3.ConverterRemote - EJB3.x Remote Business Interface
+
+2016-09-01 23:55:48,032 WARN  [org.jboss.ejb3.TimerServiceContainer] (HDScanner) EJBTHREE-2193: using deprecated TimerServiceFactory for restoring timers
+2016-09-01 23:55:48,297 INFO  [org.jboss.web.tomcat.service.deployers.TomcatDeployment] (HDScanner) deploy, ctxPath=/aula2-webservice
+2016-09-01 23:58:22,544 INFO  [org.apache.cxf.transport.servlet.AbstractCXFServlet] (http-127.0.0.1-8080-1) Servlet transport factory already registered 

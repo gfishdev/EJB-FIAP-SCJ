@@ -1,0 +1,404 @@
+2016-09-02 00:18:59,000 WARN  [org.jboss.ejb3.interceptor.InterceptorInfoRepository] (HDScanner) EJBTHREE-1852: InterceptorInfoRepository is deprecated
+2016-09-02 00:18:59,031 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Created KernelDeployment for: aula2-EJB.jar
+2016-09-02 00:18:59,047 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) installing bean: jboss.j2ee:jar=aula2-EJB.jar,name=calculadora,service=EJB3
+2016-09-02 00:18:59,047 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   with dependencies:
+2016-09-02 00:18:59,047 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and demands:
+2016-09-02 00:18:59,047 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss.ejb:service=EJBTimerService; Required: Described
+2016-09-02 00:18:59,047 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss-switchboard:appName=aula2-EJB,module=aula2-EJB,name=calculadora; Required: Create
+2016-09-02 00:18:59,062 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and supplies:
+2016-09-02 00:18:59,062 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:calculadora
+2016-09-02 00:18:59,062 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:calculadora/remote-br.com.fiap.ejb3.CalculadoraRemote
+2016-09-02 00:18:59,062 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:calculadora/remote
+2016-09-02 00:18:59,062 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	Class:br.com.fiap.ejb3.CalculadoraRemote
+2016-09-02 00:18:59,078 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Added bean(jboss.j2ee:jar=aula2-EJB.jar,name=calculadora,service=EJB3) to KernelDeployment of: aula2-EJB.jar
+2016-09-02 00:18:59,078 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) installing bean: jboss.j2ee:jar=aula2-EJB.jar,name=chamado,service=EJB3
+2016-09-02 00:18:59,093 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   with dependencies:
+2016-09-02 00:18:59,093 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and demands:
+2016-09-02 00:18:59,093 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss-switchboard:appName=aula2-EJB,module=aula2-EJB,name=chamado; Required: Create
+2016-09-02 00:18:59,109 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss.ejb:service=EJBTimerService; Required: Described
+2016-09-02 00:18:59,109 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and supplies:
+2016-09-02 00:18:59,109 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:chamado/remote
+2016-09-02 00:18:59,125 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	Class:br.com.fiap.ejb3.ChamadoRemote
+2016-09-02 00:18:59,125 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:chamado
+2016-09-02 00:18:59,125 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:chamado/remote-br.com.fiap.ejb3.ChamadoRemote
+2016-09-02 00:18:59,140 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Added bean(jboss.j2ee:jar=aula2-EJB.jar,name=chamado,service=EJB3) to KernelDeployment of: aula2-EJB.jar
+2016-09-02 00:18:59,172 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Starting jboss.j2ee:jar=aula2-EJB.jar,name=calculadora,service=EJB3
+2016-09-02 00:18:59,172 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STARTED EJB: br.com.fiap.ejb3.CalculadoraBean ejbName: calculadora
+2016-09-02 00:18:59,187 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (HDScanner) Binding the following Entries in Global JNDI:
+
+	calculadora/remote - EJB3.x Default Remote Business Interface
+	calculadora/remote-br.com.fiap.ejb3.CalculadoraRemote - EJB3.x Remote Business Interface
+
+2016-09-02 00:18:59,218 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Starting jboss.j2ee:jar=aula2-EJB.jar,name=chamado,service=EJB3
+2016-09-02 00:18:59,218 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STARTED EJB: br.com.fiap.ejb3.ChamadoBean ejbName: chamado
+2016-09-02 00:18:59,234 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (HDScanner) Binding the following Entries in Global JNDI:
+
+	chamado/remote - EJB3.x Default Remote Business Interface
+	chamado/remote-br.com.fiap.ejb3.ChamadoRemote - EJB3.x Remote Business Interface
+
+2016-09-02 00:31:10,096 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Stopping jboss.j2ee:jar=aula2-EJB.jar,name=calculadora,service=EJB3
+2016-09-02 00:31:10,096 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STOPPED EJB: br.com.fiap.ejb3.CalculadoraBean ejbName: calculadora
+2016-09-02 00:31:10,096 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Stopping jboss.j2ee:jar=aula2-EJB.jar,name=chamado,service=EJB3
+2016-09-02 00:31:10,111 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STOPPED EJB: br.com.fiap.ejb3.ChamadoBean ejbName: chamado
+2016-09-02 00:31:20,220 WARN  [org.jboss.ejb3.interceptor.InterceptorInfoRepository] (HDScanner) EJBTHREE-1852: InterceptorInfoRepository is deprecated
+2016-09-02 00:31:20,236 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Created KernelDeployment for: aula2JMeterEJB.jar
+2016-09-02 00:31:20,236 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) installing bean: jboss.j2ee:jar=aula2JMeterEJB.jar,name=calculadora,service=EJB3
+2016-09-02 00:31:20,251 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   with dependencies:
+2016-09-02 00:31:20,251 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and demands:
+2016-09-02 00:31:20,267 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss-switchboard:appName=aula2JMeterEJB,module=aula2JMeterEJB,name=calculadora; Required: Create
+2016-09-02 00:31:20,267 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss.ejb:service=EJBTimerService; Required: Described
+2016-09-02 00:31:20,267 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and supplies:
+2016-09-02 00:31:20,283 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:calculadora
+2016-09-02 00:31:20,283 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:calculadora/remote-br.com.fiap.ejb3.CalculadoraRemote
+2016-09-02 00:31:20,298 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:calculadora/remote
+2016-09-02 00:31:20,298 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	Class:br.com.fiap.ejb3.CalculadoraRemote
+2016-09-02 00:31:20,314 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Added bean(jboss.j2ee:jar=aula2JMeterEJB.jar,name=calculadora,service=EJB3) to KernelDeployment of: aula2JMeterEJB.jar
+2016-09-02 00:31:20,314 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) installing bean: jboss.j2ee:jar=aula2JMeterEJB.jar,name=chamado,service=EJB3
+2016-09-02 00:31:20,314 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   with dependencies:
+2016-09-02 00:31:20,314 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and demands:
+2016-09-02 00:31:20,314 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss.ejb:service=EJBTimerService; Required: Described
+2016-09-02 00:31:20,330 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss-switchboard:appName=aula2JMeterEJB,module=aula2JMeterEJB,name=chamado; Required: Create
+2016-09-02 00:31:20,330 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and supplies:
+2016-09-02 00:31:20,330 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:chamado/remote
+2016-09-02 00:31:20,330 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	Class:br.com.fiap.ejb3.ChamadoRemote
+2016-09-02 00:31:20,330 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:chamado
+2016-09-02 00:31:20,330 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:chamado/remote-br.com.fiap.ejb3.ChamadoRemote
+2016-09-02 00:31:20,330 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Added bean(jboss.j2ee:jar=aula2JMeterEJB.jar,name=chamado,service=EJB3) to KernelDeployment of: aula2JMeterEJB.jar
+2016-09-02 00:31:20,345 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Starting jboss.j2ee:jar=aula2JMeterEJB.jar,name=calculadora,service=EJB3
+2016-09-02 00:31:20,361 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STARTED EJB: br.com.fiap.ejb3.CalculadoraBean ejbName: calculadora
+2016-09-02 00:31:20,361 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (HDScanner) Binding the following Entries in Global JNDI:
+
+	calculadora/remote - EJB3.x Default Remote Business Interface
+	calculadora/remote-br.com.fiap.ejb3.CalculadoraRemote - EJB3.x Remote Business Interface
+
+2016-09-02 00:31:20,376 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Starting jboss.j2ee:jar=aula2JMeterEJB.jar,name=chamado,service=EJB3
+2016-09-02 00:31:20,376 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STARTED EJB: br.com.fiap.ejb3.ChamadoBean ejbName: chamado
+2016-09-02 00:31:20,376 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (HDScanner) Binding the following Entries in Global JNDI:
+
+	chamado/remote - EJB3.x Default Remote Business Interface
+	chamado/remote-br.com.fiap.ejb3.ChamadoRemote - EJB3.x Remote Business Interface
+
+2016-09-02 00:38:04,334 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2016-09-02 00:38:04,334 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-18) Stopping: JBossAS [6.1.0.Final "Neo"]
+2016-09-02 00:38:04,754 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-18) Pausing Coyote HTTP/1.1 on http-127.0.0.1-8080
+2016-09-02 00:38:04,754 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-18) Stopping Coyote HTTP/1.1 on http-127.0.0.1-8080
+2016-09-02 00:38:04,785 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-18) Pausing Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2016-09-02 00:38:04,785 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-18) Stopping Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2017-08-14 20:36:06,691 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Starting Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-14 20:36:06,694 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-14 20:36:06,694 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 20s:374ms
+2017-08-14 20:47:52,611 INFO  [org.jboss.system.server.jmx.JMXKernel] (Thread-20) Server exit called, exiting the JVM now!
+2017-08-14 20:47:52,614 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2017-08-14 20:47:52,614 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-21) Stopping: JBossAS [6.1.0.Final "Neo"]
+2017-08-14 20:47:52,617 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-21) Pausing Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-14 20:47:52,618 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-21) Stopping Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-14 20:47:52,621 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-21) Pausing Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-14 20:47:52,622 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-21) Stopping Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-14 20:48:22,437 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Starting Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-14 20:48:22,441 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-14 20:48:22,442 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 9s:427ms
+2017-08-14 22:14:02,031 INFO  [org.jboss.jpa.mcint.beans.metadata.plugins.PersistenceUnitValueMetaData] (HDScanner) iDependOn persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2017-08-14 22:14:02,036 INFO  [org.jboss.jpa.deployment.PersistenceUnitDeployment] (HDScanner) Starting persistence unit persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2017-08-14 22:14:02,164 INFO  [org.hibernate.annotations.common.Version] (HDScanner) Hibernate Commons Annotations 3.2.0.Final
+2017-08-14 22:14:02,171 INFO  [org.hibernate.cfg.Environment] (HDScanner) Hibernate 3.6.6.Final
+2017-08-14 22:14:02,175 INFO  [org.hibernate.cfg.Environment] (HDScanner) hibernate.properties not found
+2017-08-14 22:14:02,178 INFO  [org.hibernate.cfg.Environment] (HDScanner) Bytecode provider name : javassist
+2017-08-14 22:14:02,181 INFO  [org.hibernate.cfg.Environment] (HDScanner) using JDK 1.4 java.sql.Timestamp handling
+2017-08-14 22:14:02,251 INFO  [org.hibernate.ejb.Version] (HDScanner) Hibernate EntityManager 3.6.6.Final
+2017-08-14 22:14:02,272 INFO  [org.hibernate.ejb.Ejb3Configuration] (HDScanner) Processing PersistenceUnitInfo [
+	name: timerdb
+	...]
+2017-08-14 22:14:02,295 WARN  [org.hibernate.ejb.Ejb3Configuration] (HDScanner) Persistence provider caller does not implement the EJB3 spec correctly.PersistenceUnitInfo.getNewTempClassLoader() is null.
+2017-08-14 22:14:02,335 INFO  [org.hibernate.cfg.AnnotationBinder] (HDScanner) Binding entity from annotated class: org.jboss.ejb3.timerservice.mk2.persistence.TimerEntity
+2017-08-14 22:14:02,381 INFO  [org.hibernate.cfg.annotations.EntityBinder] (HDScanner) Bind entity org.jboss.ejb3.timerservice.mk2.persistence.TimerEntity on table timer
+2017-08-14 22:14:02,423 INFO  [org.hibernate.cfg.AnnotationBinder] (HDScanner) Binding entity from annotated class: org.jboss.ejb3.timerservice.mk2.persistence.TimeoutMethod
+2017-08-14 22:14:02,426 INFO  [org.hibernate.cfg.annotations.EntityBinder] (HDScanner) Bind entity org.jboss.ejb3.timerservice.mk2.persistence.TimeoutMethod on table timeout_method
+2017-08-14 22:14:02,448 INFO  [org.hibernate.cfg.AnnotationBinder] (HDScanner) Binding entity from annotated class: org.jboss.ejb3.timerservice.mk2.persistence.CalendarTimerEntity
+2017-08-14 22:14:02,449 INFO  [org.hibernate.cfg.annotations.EntityBinder] (HDScanner) Bind entity org.jboss.ejb3.timerservice.mk2.persistence.CalendarTimerEntity on table calendar_timer
+2017-08-14 22:14:02,474 INFO  [org.hibernate.validator.Version] (HDScanner) Hibernate Validator 3.1.0.GA
+2017-08-14 22:14:02,500 INFO  [org.hibernate.validator.util.Version] (HDScanner) Hibernate Validator 4.1.0.Final
+2017-08-14 22:14:02,506 INFO  [org.hibernate.validator.engine.resolver.DefaultTraversableResolver] (HDScanner) Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-08-14 22:14:02,580 INFO  [org.hibernate.validator.engine.resolver.DefaultTraversableResolver] (HDScanner) Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-08-14 22:14:02,584 INFO  [org.hibernate.validator.engine.resolver.DefaultTraversableResolver] (HDScanner) Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-08-14 22:14:02,589 INFO  [org.hibernate.cfg.search.HibernateSearchEventListenerRegister] (HDScanner) Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2017-08-14 22:14:02,598 INFO  [org.hibernate.connection.ConnectionProviderFactory] (HDScanner) Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2017-08-14 22:14:02,602 INFO  [org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider] (HDScanner) Using provided datasource
+2017-08-14 22:14:02,629 INFO  [org.hibernate.dialect.Dialect] (HDScanner) Using dialect: org.hibernate.dialect.HSQLDialect
+2017-08-14 22:14:02,642 INFO  [org.hibernate.engine.jdbc.JdbcSupportLoader] (HDScanner) Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-08-14 22:14:02,643 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Database ->
+       name : HSQL Database Engine
+    version : 1.8.0
+      major : 1
+      minor : 8
+2017-08-14 22:14:02,643 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Driver ->
+       name : HSQL Database Engine Driver
+    version : 1.8.0
+      major : 1
+      minor : 8
+2017-08-14 22:14:02,644 INFO  [org.hibernate.transaction.TransactionFactoryFactory] (HDScanner) Transaction strategy: org.hibernate.ejb.transaction.JoinableCMTTransactionFactory
+2017-08-14 22:14:02,646 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] (HDScanner) instantiating TransactionManagerLookup: org.hibernate.transaction.JBossTransactionManagerLookup
+2017-08-14 22:14:02,647 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] (HDScanner) instantiated TransactionManagerLookup
+2017-08-14 22:14:02,648 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Automatic flush during beforeCompletion(): disabled
+2017-08-14 22:14:02,648 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Automatic session close at end of transaction: disabled
+2017-08-14 22:14:02,648 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) JDBC batch size: 15
+2017-08-14 22:14:02,648 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) JDBC batch updates for versioned data: disabled
+2017-08-14 22:14:02,648 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Scrollable result sets: enabled
+2017-08-14 22:14:02,648 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) JDBC3 getGeneratedKeys(): disabled
+2017-08-14 22:14:02,648 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Connection release mode: auto
+2017-08-14 22:14:02,649 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Default batch fetch size: 1
+2017-08-14 22:14:02,649 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Generate SQL with comments: disabled
+2017-08-14 22:14:02,649 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Order SQL updates by primary key: disabled
+2017-08-14 22:14:02,649 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Order SQL inserts for batching: disabled
+2017-08-14 22:14:02,649 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2017-08-14 22:14:02,651 INFO  [org.hibernate.hql.ast.ASTQueryTranslatorFactory] (HDScanner) Using ASTQueryTranslatorFactory
+2017-08-14 22:14:02,652 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Query language substitutions: {}
+2017-08-14 22:14:02,652 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) JPA-QL strict compliance: enabled
+2017-08-14 22:14:02,652 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Second-level cache: enabled
+2017-08-14 22:14:02,652 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Query cache: disabled
+2017-08-14 22:14:02,652 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+2017-08-14 22:14:02,657 INFO  [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge] (HDScanner) Cache provider: org.hibernate.cache.HashtableCacheProvider
+2017-08-14 22:14:02,658 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Optimize cache for minimal puts: disabled
+2017-08-14 22:14:02,658 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Cache region prefix: persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2017-08-14 22:14:02,658 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Structured second-level cache entries: disabled
+2017-08-14 22:14:02,662 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Statistics: disabled
+2017-08-14 22:14:02,662 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Deleted entity synthetic identifier rollback: disabled
+2017-08-14 22:14:02,662 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Default entity-mode: pojo
+2017-08-14 22:14:02,662 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Named query checking : enabled
+2017-08-14 22:14:02,662 INFO  [org.hibernate.cfg.SettingsFactory] (HDScanner) Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2017-08-14 22:14:02,680 INFO  [org.hibernate.impl.SessionFactoryImpl] (HDScanner) building session factory
+2017-08-14 22:14:02,686 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@4b782a7d
+2017-08-14 22:14:02,686 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@5c2e302c
+2017-08-14 22:14:02,686 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [clob] overrides previous : org.hibernate.type.ClobType@1939591
+2017-08-14 22:14:02,686 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@1939591
+2017-08-14 22:14:02,686 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@156f2808
+2017-08-14 22:14:02,686 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1f4ec31a
+2017-08-14 22:14:02,686 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [blob] overrides previous : org.hibernate.type.BlobType@324c3f8f
+2017-08-14 22:14:02,686 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@324c3f8f
+2017-08-14 22:14:02,686 INFO  [org.hibernate.type.BasicTypeRegistry] (HDScanner) Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@2fee0b4a
+2017-08-14 22:14:02,830 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (HDScanner) Factory name: persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2017-08-14 22:14:02,831 INFO  [org.hibernate.util.NamingHelper] (HDScanner) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2017-08-14 22:14:02,834 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (HDScanner) Bound factory to JNDI name: persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2017-08-14 22:14:02,839 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (HDScanner) Running hbm2ddl schema update
+2017-08-14 22:14:02,840 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (HDScanner) fetching database metadata
+2017-08-14 22:14:02,841 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (HDScanner) updating schema
+2017-08-14 22:14:02,842 INFO  [org.hibernate.validator.engine.resolver.DefaultTraversableResolver] (HDScanner) Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-08-14 22:14:02,855 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) table found: PUBLIC.TIMEOUTMETHOD_METHODPARAMS
+2017-08-14 22:14:02,855 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) columns: [timeoutmethod_id, methodparams]
+2017-08-14 22:14:02,855 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) foreign keys: [fkf294c964b7de2d8a]
+2017-08-14 22:14:02,855 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) indexes: [sys_idx_55]
+2017-08-14 22:14:02,860 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) table found: PUBLIC.CALENDAR_TIMER
+2017-08-14 22:14:02,860 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) columns: [timeoutmethod_id, scheduleexprmonth, scheduleexprtimezone, scheduleexprminute, scheduleexprsecond, scheduleexprdayofmonth, scheduleexprenddate, scheduleexprhour, scheduleexprstartdate, scheduleexprdayofweek, scheduleexpryear, id, autotimer]
+2017-08-14 22:14:02,860 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) foreign keys: [fk2b697f04b7de2d8a, fk2b697f04e6e6ef93]
+2017-08-14 22:14:02,860 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) indexes: [sys_idx_57, sys_idx_49, sys_idx_59]
+2017-08-14 22:14:02,865 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) table found: PUBLIC.TIMEOUT_METHOD
+2017-08-14 22:14:02,865 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) columns: [declaringclass, id, methodname]
+2017-08-14 22:14:02,865 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) foreign keys: []
+2017-08-14 22:14:02,865 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) indexes: [sys_idx_51]
+2017-08-14 22:14:02,869 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) table found: PUBLIC.TIMER
+2017-08-14 22:14:02,869 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) columns: [timedobjectid, previousrun, initialdate, id, nextdate, timerstate, repeatinterval, info]
+2017-08-14 22:14:02,869 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) foreign keys: []
+2017-08-14 22:14:02,869 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (HDScanner) indexes: [sys_idx_53]
+2017-08-14 22:14:02,870 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (HDScanner) schema update complete
+2017-08-14 22:14:02,873 INFO  [org.hibernate.util.NamingHelper] (HDScanner) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2017-08-14 22:14:02,942 WARN  [org.jboss.ejb3.interceptor.InterceptorInfoRepository] (HDScanner) EJBTHREE-1852: InterceptorInfoRepository is deprecated
+2017-08-14 22:14:03,125 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Created KernelDeployment for: 2.1-ejb.jar
+2017-08-14 22:14:03,129 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) installing bean: jboss.j2ee:jar=2.1-ejb.jar,name=CarrinhoBean,service=EJB3
+2017-08-14 22:14:03,129 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   with dependencies:
+2017-08-14 22:14:03,129 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and demands:
+2017-08-14 22:14:03,129 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss.ejb:service=EJBTimerService; Required: Described
+2017-08-14 22:14:03,129 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss-switchboard:appName=2.1-ejb,module=2.1-ejb,name=CarrinhoBean; Required: Create
+2017-08-14 22:14:03,129 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and supplies:
+2017-08-14 22:14:03,129 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:CarrinhoBean/remote-br.com.fiap.professor.Carrinho
+2017-08-14 22:14:03,129 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:CarrinhoBean/remote
+2017-08-14 22:14:03,129 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:CarrinhoBean
+2017-08-14 22:14:03,129 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	Class:br.com.fiap.professor.Carrinho
+2017-08-14 22:14:03,131 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Added bean(jboss.j2ee:jar=2.1-ejb.jar,name=CarrinhoBean,service=EJB3) to KernelDeployment of: 2.1-ejb.jar
+2017-08-14 22:14:03,159 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Starting jboss.j2ee:jar=2.1-ejb.jar,name=CarrinhoBean,service=EJB3
+2017-08-14 22:14:03,163 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STARTED EJB: br.com.fiap.professor.CarrinhoBean ejbName: CarrinhoBean
+2017-08-14 22:14:03,186 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (HDScanner) Binding the following Entries in Global JNDI:
+
+	CarrinhoBean/remote - EJB3.x Default Remote Business Interface
+	CarrinhoBean/remote-br.com.fiap.professor.Carrinho - EJB3.x Remote Business Interface
+
+2017-08-14 22:14:03,187 WARN  [org.jboss.ejb3.TimerServiceContainer] (HDScanner) EJBTHREE-2193: using deprecated TimerServiceFactory for restoring timers
+2017-08-14 22:20:13,163 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Stopping jboss.j2ee:jar=2.1-ejb.jar,name=CarrinhoBean,service=EJB3
+2017-08-14 22:20:13,168 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STOPPED EJB: br.com.fiap.professor.CarrinhoBean ejbName: CarrinhoBean
+2017-08-14 22:20:29,894 WARN  [org.jboss.ejb3.interceptor.InterceptorInfoRepository] (HDScanner) EJBTHREE-1852: InterceptorInfoRepository is deprecated
+2017-08-14 22:20:29,909 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Created KernelDeployment for: 2.1-ejb.jar
+2017-08-14 22:20:29,909 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) installing bean: jboss.j2ee:jar=2.1-ejb.jar,name=CarrinhoBean,service=EJB3
+2017-08-14 22:20:29,909 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   with dependencies:
+2017-08-14 22:20:29,909 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and demands:
+2017-08-14 22:20:29,909 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss.ejb:service=EJBTimerService; Required: Described
+2017-08-14 22:20:29,909 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss-switchboard:appName=2.1-ejb,module=2.1-ejb,name=CarrinhoBean; Required: Create
+2017-08-14 22:20:29,909 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and supplies:
+2017-08-14 22:20:29,909 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:CarrinhoBean/remote-br.com.fiap.professor.Carrinho
+2017-08-14 22:20:29,910 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:CarrinhoBean/remote
+2017-08-14 22:20:29,910 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:CarrinhoBean
+2017-08-14 22:20:29,910 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	Class:br.com.fiap.professor.Carrinho
+2017-08-14 22:20:29,910 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Added bean(jboss.j2ee:jar=2.1-ejb.jar,name=CarrinhoBean,service=EJB3) to KernelDeployment of: 2.1-ejb.jar
+2017-08-14 22:20:29,916 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Starting jboss.j2ee:jar=2.1-ejb.jar,name=CarrinhoBean,service=EJB3
+2017-08-14 22:20:29,917 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STARTED EJB: br.com.fiap.professor.CarrinhoBean ejbName: CarrinhoBean
+2017-08-14 22:20:29,919 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (HDScanner) Binding the following Entries in Global JNDI:
+
+	CarrinhoBean/remote - EJB3.x Default Remote Business Interface
+	CarrinhoBean/remote-br.com.fiap.professor.Carrinho - EJB3.x Remote Business Interface
+
+2017-08-14 22:20:29,919 WARN  [org.jboss.ejb3.TimerServiceContainer] (HDScanner) EJBTHREE-2193: using deprecated TimerServiceFactory for restoring timers
+2017-08-14 22:36:09,610 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6496]) Item cadastrado com sucesso: Doril
+2017-08-14 22:36:09,615 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6497]) Item cadastrado com sucesso: Dorflex
+2017-08-14 22:36:09,623 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6499]) 
+2017-08-14 22:36:09,623 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6499]) 
+2017-08-14 22:36:09,623 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6499]) 
+2017-08-14 22:36:09,623 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6499]) ======= EMAILS CADASTRADOS =======
+2017-08-14 22:36:09,623 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6499]) albert.xavier@gmail.com
+2017-08-14 22:36:09,623 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6499]) ======= TOTAL: 1 =======
+2017-08-14 22:37:00,805 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6515]) Item cadastrado com sucesso: Doril
+2017-08-14 22:37:00,809 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6516]) Item cadastrado com sucesso: Dorflex
+2017-08-14 22:37:00,816 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6518]) 
+2017-08-14 22:37:00,816 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6518]) 
+2017-08-14 22:37:00,816 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6518]) 
+2017-08-14 22:37:00,816 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6518]) ======= EMAILS CADASTRADOS =======
+2017-08-14 22:37:00,816 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6518]) albert.xavier@gmail.com
+2017-08-14 22:37:00,816 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6518]) ======= TOTAL: 1 =======
+2017-08-14 22:38:04,762 INFO  [org.jboss.system.server.jmx.JMXKernel] (Thread-24) Server exit called, exiting the JVM now!
+2017-08-14 22:38:04,763 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2017-08-14 22:38:04,763 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-25) Stopping: JBossAS [6.1.0.Final "Neo"]
+2017-08-14 22:38:04,767 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-25) Pausing Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-14 22:38:04,768 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-25) Stopping Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-14 22:38:04,771 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-25) Pausing Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-14 22:38:04,772 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-25) Stopping Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-14 22:38:17,417 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Starting Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-14 22:38:17,420 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-14 22:38:17,421 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 9s:458ms
+2017-08-14 22:38:17,762 INFO  [org.jboss.jpa.mcint.beans.metadata.plugins.PersistenceUnitValueMetaData] (RMI TCP Connection(3)-127.0.0.1) iDependOn persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2017-08-14 22:38:17,768 INFO  [org.jboss.jpa.deployment.PersistenceUnitDeployment] (RMI TCP Connection(3)-127.0.0.1) Starting persistence unit persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2017-08-14 22:38:17,909 INFO  [org.hibernate.annotations.common.Version] (RMI TCP Connection(3)-127.0.0.1) Hibernate Commons Annotations 3.2.0.Final
+2017-08-14 22:38:17,916 INFO  [org.hibernate.cfg.Environment] (RMI TCP Connection(3)-127.0.0.1) Hibernate 3.6.6.Final
+2017-08-14 22:38:17,920 INFO  [org.hibernate.cfg.Environment] (RMI TCP Connection(3)-127.0.0.1) hibernate.properties not found
+2017-08-14 22:38:17,924 INFO  [org.hibernate.cfg.Environment] (RMI TCP Connection(3)-127.0.0.1) Bytecode provider name : javassist
+2017-08-14 22:38:17,928 INFO  [org.hibernate.cfg.Environment] (RMI TCP Connection(3)-127.0.0.1) using JDK 1.4 java.sql.Timestamp handling
+2017-08-14 22:38:17,986 INFO  [org.hibernate.ejb.Version] (RMI TCP Connection(3)-127.0.0.1) Hibernate EntityManager 3.6.6.Final
+2017-08-14 22:38:18,003 INFO  [org.hibernate.ejb.Ejb3Configuration] (RMI TCP Connection(3)-127.0.0.1) Processing PersistenceUnitInfo [
+	name: timerdb
+	...]
+2017-08-14 22:38:18,028 WARN  [org.hibernate.ejb.Ejb3Configuration] (RMI TCP Connection(3)-127.0.0.1) Persistence provider caller does not implement the EJB3 spec correctly.PersistenceUnitInfo.getNewTempClassLoader() is null.
+2017-08-14 22:38:18,069 INFO  [org.hibernate.cfg.AnnotationBinder] (RMI TCP Connection(3)-127.0.0.1) Binding entity from annotated class: org.jboss.ejb3.timerservice.mk2.persistence.TimerEntity
+2017-08-14 22:38:18,111 INFO  [org.hibernate.cfg.annotations.EntityBinder] (RMI TCP Connection(3)-127.0.0.1) Bind entity org.jboss.ejb3.timerservice.mk2.persistence.TimerEntity on table timer
+2017-08-14 22:38:18,159 INFO  [org.hibernate.cfg.AnnotationBinder] (RMI TCP Connection(3)-127.0.0.1) Binding entity from annotated class: org.jboss.ejb3.timerservice.mk2.persistence.TimeoutMethod
+2017-08-14 22:38:18,163 INFO  [org.hibernate.cfg.annotations.EntityBinder] (RMI TCP Connection(3)-127.0.0.1) Bind entity org.jboss.ejb3.timerservice.mk2.persistence.TimeoutMethod on table timeout_method
+2017-08-14 22:38:18,186 INFO  [org.hibernate.cfg.AnnotationBinder] (RMI TCP Connection(3)-127.0.0.1) Binding entity from annotated class: org.jboss.ejb3.timerservice.mk2.persistence.CalendarTimerEntity
+2017-08-14 22:38:18,187 INFO  [org.hibernate.cfg.annotations.EntityBinder] (RMI TCP Connection(3)-127.0.0.1) Bind entity org.jboss.ejb3.timerservice.mk2.persistence.CalendarTimerEntity on table calendar_timer
+2017-08-14 22:38:18,214 INFO  [org.hibernate.validator.Version] (RMI TCP Connection(3)-127.0.0.1) Hibernate Validator 3.1.0.GA
+2017-08-14 22:38:18,246 INFO  [org.hibernate.validator.util.Version] (RMI TCP Connection(3)-127.0.0.1) Hibernate Validator 4.1.0.Final
+2017-08-14 22:38:18,253 INFO  [org.hibernate.validator.engine.resolver.DefaultTraversableResolver] (RMI TCP Connection(3)-127.0.0.1) Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-08-14 22:38:18,332 INFO  [org.hibernate.validator.engine.resolver.DefaultTraversableResolver] (RMI TCP Connection(3)-127.0.0.1) Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-08-14 22:38:18,337 INFO  [org.hibernate.validator.engine.resolver.DefaultTraversableResolver] (RMI TCP Connection(3)-127.0.0.1) Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-08-14 22:38:18,342 INFO  [org.hibernate.cfg.search.HibernateSearchEventListenerRegister] (RMI TCP Connection(3)-127.0.0.1) Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2017-08-14 22:38:18,348 INFO  [org.hibernate.connection.ConnectionProviderFactory] (RMI TCP Connection(3)-127.0.0.1) Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2017-08-14 22:38:18,353 INFO  [org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider] (RMI TCP Connection(3)-127.0.0.1) Using provided datasource
+2017-08-14 22:38:18,377 INFO  [org.hibernate.dialect.Dialect] (RMI TCP Connection(3)-127.0.0.1) Using dialect: org.hibernate.dialect.HSQLDialect
+2017-08-14 22:38:18,389 INFO  [org.hibernate.engine.jdbc.JdbcSupportLoader] (RMI TCP Connection(3)-127.0.0.1) Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-08-14 22:38:18,390 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Database ->
+       name : HSQL Database Engine
+    version : 1.8.0
+      major : 1
+      minor : 8
+2017-08-14 22:38:18,390 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Driver ->
+       name : HSQL Database Engine Driver
+    version : 1.8.0
+      major : 1
+      minor : 8
+2017-08-14 22:38:18,392 INFO  [org.hibernate.transaction.TransactionFactoryFactory] (RMI TCP Connection(3)-127.0.0.1) Transaction strategy: org.hibernate.ejb.transaction.JoinableCMTTransactionFactory
+2017-08-14 22:38:18,395 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] (RMI TCP Connection(3)-127.0.0.1) instantiating TransactionManagerLookup: org.hibernate.transaction.JBossTransactionManagerLookup
+2017-08-14 22:38:18,397 INFO  [org.hibernate.transaction.TransactionManagerLookupFactory] (RMI TCP Connection(3)-127.0.0.1) instantiated TransactionManagerLookup
+2017-08-14 22:38:18,397 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Automatic flush during beforeCompletion(): disabled
+2017-08-14 22:38:18,397 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Automatic session close at end of transaction: disabled
+2017-08-14 22:38:18,398 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) JDBC batch size: 15
+2017-08-14 22:38:18,398 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) JDBC batch updates for versioned data: disabled
+2017-08-14 22:38:18,398 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Scrollable result sets: enabled
+2017-08-14 22:38:18,398 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) JDBC3 getGeneratedKeys(): disabled
+2017-08-14 22:38:18,399 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Connection release mode: auto
+2017-08-14 22:38:18,399 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Default batch fetch size: 1
+2017-08-14 22:38:18,400 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Generate SQL with comments: disabled
+2017-08-14 22:38:18,400 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Order SQL updates by primary key: disabled
+2017-08-14 22:38:18,400 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Order SQL inserts for batching: disabled
+2017-08-14 22:38:18,400 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2017-08-14 22:38:18,402 INFO  [org.hibernate.hql.ast.ASTQueryTranslatorFactory] (RMI TCP Connection(3)-127.0.0.1) Using ASTQueryTranslatorFactory
+2017-08-14 22:38:18,402 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Query language substitutions: {}
+2017-08-14 22:38:18,402 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) JPA-QL strict compliance: enabled
+2017-08-14 22:38:18,402 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Second-level cache: enabled
+2017-08-14 22:38:18,402 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Query cache: disabled
+2017-08-14 22:38:18,403 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+2017-08-14 22:38:18,407 INFO  [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge] (RMI TCP Connection(3)-127.0.0.1) Cache provider: org.hibernate.cache.HashtableCacheProvider
+2017-08-14 22:38:18,408 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Optimize cache for minimal puts: disabled
+2017-08-14 22:38:18,409 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Cache region prefix: persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2017-08-14 22:38:18,409 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Structured second-level cache entries: disabled
+2017-08-14 22:38:18,426 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Statistics: disabled
+2017-08-14 22:38:18,427 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Deleted entity synthetic identifier rollback: disabled
+2017-08-14 22:38:18,427 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Default entity-mode: pojo
+2017-08-14 22:38:18,427 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Named query checking : enabled
+2017-08-14 22:38:18,427 INFO  [org.hibernate.cfg.SettingsFactory] (RMI TCP Connection(3)-127.0.0.1) Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2017-08-14 22:38:18,448 INFO  [org.hibernate.impl.SessionFactoryImpl] (RMI TCP Connection(3)-127.0.0.1) building session factory
+2017-08-14 22:38:18,453 INFO  [org.hibernate.type.BasicTypeRegistry] (RMI TCP Connection(3)-127.0.0.1) Type registration [blob] overrides previous : org.hibernate.type.BlobType@5d6e6c5f
+2017-08-14 22:38:18,453 INFO  [org.hibernate.type.BasicTypeRegistry] (RMI TCP Connection(3)-127.0.0.1) Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@5d6e6c5f
+2017-08-14 22:38:18,453 INFO  [org.hibernate.type.BasicTypeRegistry] (RMI TCP Connection(3)-127.0.0.1) Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@ee8936e
+2017-08-14 22:38:18,453 INFO  [org.hibernate.type.BasicTypeRegistry] (RMI TCP Connection(3)-127.0.0.1) Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@106a5696
+2017-08-14 22:38:18,453 INFO  [org.hibernate.type.BasicTypeRegistry] (RMI TCP Connection(3)-127.0.0.1) Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@183d77aa
+2017-08-14 22:38:18,453 INFO  [org.hibernate.type.BasicTypeRegistry] (RMI TCP Connection(3)-127.0.0.1) Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@369ffc66
+2017-08-14 22:38:18,453 INFO  [org.hibernate.type.BasicTypeRegistry] (RMI TCP Connection(3)-127.0.0.1) Type registration [clob] overrides previous : org.hibernate.type.ClobType@7c266a38
+2017-08-14 22:38:18,453 INFO  [org.hibernate.type.BasicTypeRegistry] (RMI TCP Connection(3)-127.0.0.1) Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@7c266a38
+2017-08-14 22:38:18,453 INFO  [org.hibernate.type.BasicTypeRegistry] (RMI TCP Connection(3)-127.0.0.1) Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@3eba4dcc
+2017-08-14 22:38:18,589 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (RMI TCP Connection(3)-127.0.0.1) Factory name: persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2017-08-14 22:38:18,590 INFO  [org.hibernate.util.NamingHelper] (RMI TCP Connection(3)-127.0.0.1) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2017-08-14 22:38:18,604 INFO  [org.hibernate.impl.SessionFactoryObjectFactory] (RMI TCP Connection(3)-127.0.0.1) Bound factory to JNDI name: persistence.unit:unitName=jboss-ejb3-timerservice-mk2.jar#timerdb
+2017-08-14 22:38:18,611 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (RMI TCP Connection(3)-127.0.0.1) Running hbm2ddl schema update
+2017-08-14 22:38:18,611 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (RMI TCP Connection(3)-127.0.0.1) fetching database metadata
+2017-08-14 22:38:18,613 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (RMI TCP Connection(3)-127.0.0.1) updating schema
+2017-08-14 22:38:18,615 INFO  [org.hibernate.validator.engine.resolver.DefaultTraversableResolver] (RMI TCP Connection(3)-127.0.0.1) Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+2017-08-14 22:38:18,630 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) table found: PUBLIC.TIMEOUTMETHOD_METHODPARAMS
+2017-08-14 22:38:18,630 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) columns: [timeoutmethod_id, methodparams]
+2017-08-14 22:38:18,630 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) foreign keys: [fkf294c964b7de2d8a]
+2017-08-14 22:38:18,630 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) indexes: [sys_idx_55]
+2017-08-14 22:38:18,635 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) table found: PUBLIC.CALENDAR_TIMER
+2017-08-14 22:38:18,635 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) columns: [timeoutmethod_id, scheduleexprmonth, scheduleexprtimezone, scheduleexprminute, scheduleexprsecond, scheduleexprdayofmonth, scheduleexprenddate, scheduleexprhour, scheduleexprstartdate, scheduleexprdayofweek, scheduleexpryear, id, autotimer]
+2017-08-14 22:38:18,635 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) foreign keys: [fk2b697f04b7de2d8a, fk2b697f04e6e6ef93]
+2017-08-14 22:38:18,635 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) indexes: [sys_idx_57, sys_idx_49, sys_idx_59]
+2017-08-14 22:38:18,640 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) table found: PUBLIC.TIMEOUT_METHOD
+2017-08-14 22:38:18,640 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) columns: [declaringclass, id, methodname]
+2017-08-14 22:38:18,640 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) foreign keys: []
+2017-08-14 22:38:18,640 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) indexes: [sys_idx_51]
+2017-08-14 22:38:18,643 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) table found: PUBLIC.TIMER
+2017-08-14 22:38:18,643 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) columns: [timedobjectid, previousrun, initialdate, id, nextdate, timerstate, repeatinterval, info]
+2017-08-14 22:38:18,643 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) foreign keys: []
+2017-08-14 22:38:18,643 INFO  [org.hibernate.tool.hbm2ddl.TableMetadata] (RMI TCP Connection(3)-127.0.0.1) indexes: [sys_idx_53]
+2017-08-14 22:38:18,644 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (RMI TCP Connection(3)-127.0.0.1) schema update complete
+2017-08-14 22:38:18,647 INFO  [org.hibernate.util.NamingHelper] (RMI TCP Connection(3)-127.0.0.1) JNDI InitialContext properties:{java.naming.factory.initial=org.jnp.interfaces.NamingContextFactory, java.naming.factory.url.pkgs=org.jboss.naming:org.jnp.interfaces}
+2017-08-14 22:38:18,722 WARN  [org.jboss.ejb3.interceptor.InterceptorInfoRepository] (RMI TCP Connection(3)-127.0.0.1) EJBTHREE-1852: InterceptorInfoRepository is deprecated
+2017-08-14 22:38:18,924 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (RMI TCP Connection(3)-127.0.0.1) Created KernelDeployment for: 2.1-ejb.jar
+2017-08-14 22:38:18,927 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (RMI TCP Connection(3)-127.0.0.1) installing bean: jboss.j2ee:jar=2.1-ejb.jar,name=carrinho,service=EJB3
+2017-08-14 22:38:18,927 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (RMI TCP Connection(3)-127.0.0.1)   with dependencies:
+2017-08-14 22:38:18,927 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (RMI TCP Connection(3)-127.0.0.1)   and demands:
+2017-08-14 22:38:18,927 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (RMI TCP Connection(3)-127.0.0.1) 	jboss.ejb:service=EJBTimerService; Required: Described
+2017-08-14 22:38:18,927 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (RMI TCP Connection(3)-127.0.0.1) 	jboss-switchboard:appName=2.1-ejb,module=2.1-ejb,name=carrinho; Required: Create
+2017-08-14 22:38:18,927 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (RMI TCP Connection(3)-127.0.0.1)   and supplies:
+2017-08-14 22:38:18,927 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (RMI TCP Connection(3)-127.0.0.1) 	jndi:carrinho/remote-br.com.fiap.professor.Carrinho
+2017-08-14 22:38:18,927 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (RMI TCP Connection(3)-127.0.0.1) 	jndi:carrinho
+2017-08-14 22:38:18,927 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (RMI TCP Connection(3)-127.0.0.1) 	jndi:carrinho/remote
+2017-08-14 22:38:18,927 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (RMI TCP Connection(3)-127.0.0.1) 	Class:br.com.fiap.professor.Carrinho
+2017-08-14 22:38:18,930 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (RMI TCP Connection(3)-127.0.0.1) Added bean(jboss.j2ee:jar=2.1-ejb.jar,name=carrinho,service=EJB3) to KernelDeployment of: 2.1-ejb.jar
+2017-08-14 22:38:18,960 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (RMI TCP Connection(3)-127.0.0.1) Starting jboss.j2ee:jar=2.1-ejb.jar,name=carrinho,service=EJB3
+2017-08-14 22:38:18,964 INFO  [org.jboss.ejb3.EJBContainer] (RMI TCP Connection(3)-127.0.0.1) STARTED EJB: br.com.fiap.professor.CarrinhoBean ejbName: carrinho
+2017-08-14 22:38:18,991 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (RMI TCP Connection(3)-127.0.0.1) Binding the following Entries in Global JNDI:
+
+	carrinho/remote - EJB3.x Default Remote Business Interface
+	carrinho/remote-br.com.fiap.professor.Carrinho - EJB3.x Remote Business Interface
+
+2017-08-14 22:38:18,992 WARN  [org.jboss.ejb3.TimerServiceContainer] (RMI TCP Connection(3)-127.0.0.1) EJBTHREE-2193: using deprecated TimerServiceFactory for restoring timers
+2017-08-14 22:38:32,122 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6577]) Item cadastrado com sucesso: Doril
+2017-08-14 22:38:32,128 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6578]) Item cadastrado com sucesso: Dorflex
+2017-08-14 22:38:32,135 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6580]) 
+2017-08-14 22:38:32,135 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6580]) 
+2017-08-14 22:38:32,135 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6580]) 
+2017-08-14 22:38:32,135 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6580]) ======= EMAILS CADASTRADOS =======
+2017-08-14 22:38:32,135 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6580]) albert.xavier@gmail.com
+2017-08-14 22:38:32,136 INFO  [STDOUT] (WorkerThread#0[127.0.0.1:6580]) ======= TOTAL: 1 =======
