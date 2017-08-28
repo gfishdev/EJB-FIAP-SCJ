@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/xdoclet/commons-collections-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/xdoclet/commons-logging.jar"/>
+	<classpathentry kind="lib" path="lib/xdoclet/log4j.jar"/>
+	<classpathentry kind="lib" path="lib/xdoclet/maven-xdoclet-plugin-1.2b4.jar"/>
+	<classpathentry kind="lib" path="lib/xdoclet/xdoclet-1.2b4.jar"/>
+	<classpathentry kind="lib" path="lib/xdoclet/xdoclet-apache-module-1.2b4.jar"/>
+	<classpathentry kind="lib" path="lib/xdoclet/xdoclet-ejb-module-1.2b4.jar"/>
+	<classpathentry kind="lib" path="lib/xdoclet/xdoclet-hibernate-module-1.2b4.jar"/>
+	<classpathentry kind="lib" path="lib/xdoclet/xdoclet-java-module-1.2b4.jar"/>
+	<classpathentry kind="lib" path="lib/xdoclet/xdoclet-jboss-module-1.2b4.jar"/>
+	<classpathentry kind="lib" path="lib/xdoclet/xdoclet-jdo-module-1.2b4.jar"/>
+	<classpathentry kind="lib" path="lib/xdoclet/xdoclet-jmx-module-1.2b4.jar"/>
+	<classpathentry kind="lib" path="lib/xdoclet/xdoclet-web-module-1.2b4.jar"/>
+	<classpathentry kind="lib" path="lib/xdoclet/xdoclet-xdoclet-module-1.2b4.jar"/>
+	<classpathentry kind="lib" path="lib/xdoclet/xjavadoc-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="lib/commons/commons-digester.jar"/>
+	<classpathentry kind="lib" path="lib/junit/junit.jar"/>
+	<classpathentry kind="lib" path="lib/junit/junitejb.jar"/>
+	<classpathentry kind="src" path=".apt_generated">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.jboss.ide.eclipse.as.core.server.runtime.runtimeTarget/JBoss 6.x Runtime"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

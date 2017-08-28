@@ -1,0 +1,86 @@
+2016-09-02 00:18:59,000 WARN  [org.jboss.ejb3.interceptor.InterceptorInfoRepository] (HDScanner) EJBTHREE-1852: InterceptorInfoRepository is deprecated
+2016-09-02 00:18:59,031 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Created KernelDeployment for: aula2-EJB.jar
+2016-09-02 00:18:59,047 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) installing bean: jboss.j2ee:jar=aula2-EJB.jar,name=calculadora,service=EJB3
+2016-09-02 00:18:59,047 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   with dependencies:
+2016-09-02 00:18:59,047 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and demands:
+2016-09-02 00:18:59,047 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss.ejb:service=EJBTimerService; Required: Described
+2016-09-02 00:18:59,047 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss-switchboard:appName=aula2-EJB,module=aula2-EJB,name=calculadora; Required: Create
+2016-09-02 00:18:59,062 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and supplies:
+2016-09-02 00:18:59,062 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:calculadora
+2016-09-02 00:18:59,062 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:calculadora/remote-br.com.fiap.ejb3.CalculadoraRemote
+2016-09-02 00:18:59,062 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:calculadora/remote
+2016-09-02 00:18:59,062 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	Class:br.com.fiap.ejb3.CalculadoraRemote
+2016-09-02 00:18:59,078 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Added bean(jboss.j2ee:jar=aula2-EJB.jar,name=calculadora,service=EJB3) to KernelDeployment of: aula2-EJB.jar
+2016-09-02 00:18:59,078 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) installing bean: jboss.j2ee:jar=aula2-EJB.jar,name=chamado,service=EJB3
+2016-09-02 00:18:59,093 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   with dependencies:
+2016-09-02 00:18:59,093 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and demands:
+2016-09-02 00:18:59,093 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss-switchboard:appName=aula2-EJB,module=aula2-EJB,name=chamado; Required: Create
+2016-09-02 00:18:59,109 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss.ejb:service=EJBTimerService; Required: Described
+2016-09-02 00:18:59,109 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and supplies:
+2016-09-02 00:18:59,109 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:chamado/remote
+2016-09-02 00:18:59,125 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	Class:br.com.fiap.ejb3.ChamadoRemote
+2016-09-02 00:18:59,125 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:chamado
+2016-09-02 00:18:59,125 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:chamado/remote-br.com.fiap.ejb3.ChamadoRemote
+2016-09-02 00:18:59,140 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Added bean(jboss.j2ee:jar=aula2-EJB.jar,name=chamado,service=EJB3) to KernelDeployment of: aula2-EJB.jar
+2016-09-02 00:18:59,172 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Starting jboss.j2ee:jar=aula2-EJB.jar,name=calculadora,service=EJB3
+2016-09-02 00:18:59,172 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STARTED EJB: br.com.fiap.ejb3.CalculadoraBean ejbName: calculadora
+2016-09-02 00:18:59,187 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (HDScanner) Binding the following Entries in Global JNDI:
+
+	calculadora/remote - EJB3.x Default Remote Business Interface
+	calculadora/remote-br.com.fiap.ejb3.CalculadoraRemote - EJB3.x Remote Business Interface
+
+2016-09-02 00:18:59,218 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Starting jboss.j2ee:jar=aula2-EJB.jar,name=chamado,service=EJB3
+2016-09-02 00:18:59,218 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STARTED EJB: br.com.fiap.ejb3.ChamadoBean ejbName: chamado
+2016-09-02 00:18:59,234 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (HDScanner) Binding the following Entries in Global JNDI:
+
+	chamado/remote - EJB3.x Default Remote Business Interface
+	chamado/remote-br.com.fiap.ejb3.ChamadoRemote - EJB3.x Remote Business Interface
+
+2016-09-02 00:31:10,096 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Stopping jboss.j2ee:jar=aula2-EJB.jar,name=calculadora,service=EJB3
+2016-09-02 00:31:10,096 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STOPPED EJB: br.com.fiap.ejb3.CalculadoraBean ejbName: calculadora
+2016-09-02 00:31:10,096 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Stopping jboss.j2ee:jar=aula2-EJB.jar,name=chamado,service=EJB3
+2016-09-02 00:31:10,111 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STOPPED EJB: br.com.fiap.ejb3.ChamadoBean ejbName: chamado
+2016-09-02 00:31:20,220 WARN  [org.jboss.ejb3.interceptor.InterceptorInfoRepository] (HDScanner) EJBTHREE-1852: InterceptorInfoRepository is deprecated
+2016-09-02 00:31:20,236 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Created KernelDeployment for: aula2JMeterEJB.jar
+2016-09-02 00:31:20,236 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) installing bean: jboss.j2ee:jar=aula2JMeterEJB.jar,name=calculadora,service=EJB3
+2016-09-02 00:31:20,251 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   with dependencies:
+2016-09-02 00:31:20,251 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and demands:
+2016-09-02 00:31:20,267 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss-switchboard:appName=aula2JMeterEJB,module=aula2JMeterEJB,name=calculadora; Required: Create
+2016-09-02 00:31:20,267 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss.ejb:service=EJBTimerService; Required: Described
+2016-09-02 00:31:20,267 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and supplies:
+2016-09-02 00:31:20,283 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:calculadora
+2016-09-02 00:31:20,283 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:calculadora/remote-br.com.fiap.ejb3.CalculadoraRemote
+2016-09-02 00:31:20,298 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:calculadora/remote
+2016-09-02 00:31:20,298 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	Class:br.com.fiap.ejb3.CalculadoraRemote
+2016-09-02 00:31:20,314 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Added bean(jboss.j2ee:jar=aula2JMeterEJB.jar,name=calculadora,service=EJB3) to KernelDeployment of: aula2JMeterEJB.jar
+2016-09-02 00:31:20,314 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) installing bean: jboss.j2ee:jar=aula2JMeterEJB.jar,name=chamado,service=EJB3
+2016-09-02 00:31:20,314 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   with dependencies:
+2016-09-02 00:31:20,314 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and demands:
+2016-09-02 00:31:20,314 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss.ejb:service=EJBTimerService; Required: Described
+2016-09-02 00:31:20,330 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jboss-switchboard:appName=aula2JMeterEJB,module=aula2JMeterEJB,name=chamado; Required: Create
+2016-09-02 00:31:20,330 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner)   and supplies:
+2016-09-02 00:31:20,330 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:chamado/remote
+2016-09-02 00:31:20,330 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	Class:br.com.fiap.ejb3.ChamadoRemote
+2016-09-02 00:31:20,330 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:chamado
+2016-09-02 00:31:20,330 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) 	jndi:chamado/remote-br.com.fiap.ejb3.ChamadoRemote
+2016-09-02 00:31:20,330 INFO  [org.jboss.ejb3.deployers.JBossASKernel] (HDScanner) Added bean(jboss.j2ee:jar=aula2JMeterEJB.jar,name=chamado,service=EJB3) to KernelDeployment of: aula2JMeterEJB.jar
+2016-09-02 00:31:20,345 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Starting jboss.j2ee:jar=aula2JMeterEJB.jar,name=calculadora,service=EJB3
+2016-09-02 00:31:20,361 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STARTED EJB: br.com.fiap.ejb3.CalculadoraBean ejbName: calculadora
+2016-09-02 00:31:20,361 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (HDScanner) Binding the following Entries in Global JNDI:
+
+	calculadora/remote - EJB3.x Default Remote Business Interface
+	calculadora/remote-br.com.fiap.ejb3.CalculadoraRemote - EJB3.x Remote Business Interface
+
+2016-09-02 00:31:20,376 INFO  [org.jboss.ejb3.session.SessionSpecContainer] (HDScanner) Starting jboss.j2ee:jar=aula2JMeterEJB.jar,name=chamado,service=EJB3
+2016-09-02 00:31:20,376 INFO  [org.jboss.ejb3.EJBContainer] (HDScanner) STARTED EJB: br.com.fiap.ejb3.ChamadoBean ejbName: chamado
+2016-09-02 00:31:20,376 INFO  [org.jboss.ejb3.proxy.impl.jndiregistrar.JndiSessionRegistrarBase] (HDScanner) Binding the following Entries in Global JNDI:
+
+	chamado/remote - EJB3.x Default Remote Business Interface
+	chamado/remote-br.com.fiap.ejb3.ChamadoRemote - EJB3.x Remote Business Interface
+
+2016-09-02 00:38:04,334 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2016-09-02 00:38:04,334 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-18) Stopping: JBossAS [6.1.0.Final "Neo"]
+2016-09-02 00:38:04,754 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-18) Pausing Coyote HTTP/1.1 on http-127.0.0.1-8080
+2016-09-02 00:38:04,754 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-18) Stopping Coyote HTTP/1.1 on http-127.0.0.1-8080
+2016-09-02 00:38:04,785 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-18) Pausing Coyote AJP/1.3 on ajp-127.0.0.1-8009
+2016-09-02 00:38:04,785 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-18) Stopping Coyote AJP/1.3 on ajp-127.0.0.1-8009

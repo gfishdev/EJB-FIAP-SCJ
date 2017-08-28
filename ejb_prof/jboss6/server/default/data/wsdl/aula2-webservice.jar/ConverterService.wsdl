@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions name="ConverterService" targetNamespace="http://ejb3.fiap.com.br/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://ejb3.fiap.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+<xs:schema elementFormDefault="unqualified" targetNamespace="http://ejb3.fiap.com.br/" version="1.0" xmlns:tns="http://ejb3.fiap.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="celsiusToFarenheit" type="tns:celsiusToFarenheit" />
+<xs:element name="celsiusToFarenheitResponse" type="tns:celsiusToFarenheitResponse" />
+<xs:element name="farenheitToCelsius" type="tns:farenheitToCelsius" />
+<xs:element name="farenheitToCelsiusResponse" type="tns:farenheitToCelsiusResponse" />
+<xs:complexType name="farenheitToCelsius">
+<xs:sequence>
+<xs:element name="farenheit" type="xs:float" />
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="farenheitToCelsiusResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:float" />
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="celsiusToFarenheit">
+<xs:sequence>
+<xs:element name="celsius3" type="xs:float" />
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="celsiusToFarenheitResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:float" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="celsiusToFarenheit">
+    <wsdl:part element="tns:celsiusToFarenheit" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="farenheitToCelsius">
+    <wsdl:part element="tns:farenheitToCelsius" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="farenheitToCelsiusResponse">
+    <wsdl:part element="tns:farenheitToCelsiusResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="celsiusToFarenheitResponse">
+    <wsdl:part element="tns:celsiusToFarenheitResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="converter">
+    <wsdl:operation name="farenheitToCelsius">
+      <wsdl:input message="tns:farenheitToCelsius" name="farenheitToCelsius">
+    </wsdl:input>
+      <wsdl:output message="tns:farenheitToCelsiusResponse" name="farenheitToCelsiusResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="celsiusToFarenheit">
+      <wsdl:input message="tns:celsiusToFarenheit" name="celsiusToFarenheit">
+    </wsdl:input>
+      <wsdl:output message="tns:celsiusToFarenheitResponse" name="celsiusToFarenheitResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ConverterServiceSoapBinding" type="tns:converter">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="farenheitToCelsius">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="farenheitToCelsius">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="farenheitToCelsiusResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="celsiusToFarenheit">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="celsiusToFarenheit">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="celsiusToFarenheitResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ConverterService">
+    <wsdl:port binding="tns:ConverterServiceSoapBinding" name="converterPort">
+      <soap:address location="http://localhost:8080/aula2-webservice/converter" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- See http://www.jboss.org/community/wiki/Multiple1PC for information about local-tx-datasource -->
-<!-- $Id: mysql-ds.xml 97536 2009-12-08 14:05:07Z jesper.pedersen $ -->
+<!-- $Id: mysql-ds.xml 88948 2009-05-15 14:09:08Z jesper.pedersen $ -->
 <!--  Datasource config for MySQL using 3.0.9 available from:
 http://www.mysql.com/downloads/api-jdbc-stable.html
 -->
@@ -9,12 +9,11 @@ http://www.mysql.com/downloads/api-jdbc-stable.html
 <datasources>
   <local-tx-datasource>
     <jndi-name>jdbc/fiap</jndi-name>
-    <connection-url>jdbc:mysql://localhost:3306/fiap</connection-url>
+    <connection-url>jdbc:mysql://localhost:3306/fiap?createDatabaseIfNotExist=true</connection-url>
     <driver-class>com.mysql.jdbc.Driver</driver-class>
     <user-name>root</user-name>
     <password>fiap</password>
     <exception-sorter-class-name>org.jboss.resource.adapter.jdbc.vendor.MySQLExceptionSorter</exception-sorter-class-name>
-	<use-java-context>true</use-java-context>
     <!-- should only be used on drivers after 3.22.1 with "ping" support
     <valid-connection-checker-class-name>org.jboss.resource.adapter.jdbc.vendor.MySQLValidConnectionChecker</valid-connection-checker-class-name>
     -->

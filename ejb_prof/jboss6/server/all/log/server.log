@@ -1,0 +1,281 @@
+2017-08-28 20:31:09,052 ERROR [org.jboss.kernel.plugins.dependency.AbstractKernelController] (Thread-2) Error installing to Create: name=b85784b8 aliases=[ProfileKey@5fc91b67[domain=default, server=default, name=farm]] state=Configured mode=Manual requiredState=Installed: java.lang.IllegalStateException: Must register RepositoryClusteringHandler before calling create()
+	at org.jboss.system.server.profileservice.repository.clustered.ClusteredDeploymentRepository.create(ClusteredDeploymentRepository.java:193) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.repository.clustered.ClusteredDeploymentRepository.load(ClusteredDeploymentRepository.java:242) [:6.1.0.Final]
+	at org.jboss.profileservice.repository.legacy.DelegateProfile.create(DelegateProfile.java:138) [:0.2.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction$JoinpointDispatchWrapper.execute(KernelControllerContextAction.java:257) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.ExecutionWrapper.execute(ExecutionWrapper.java:47) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchExecutionWrapper(KernelControllerContextAction.java:125) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchJoinPoint(KernelControllerContextAction.java:72) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.LifecycleAction.installActionInternal(LifecycleAction.java:202) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:54) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.start(ProfileActivationWrapper.java:190) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper.start(ProfileActivationWrapper.java:87) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activateProfile(ProfileActivationService.java:215) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activate(ProfileActivationService.java:159) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.activate(AbstractProfileServiceBootstrap.java:112) [:0.2.2]
+	at org.jboss.profileservice.resolver.BasicResolverFactory$ProfileResolverFacade.deploy(BasicResolverFactory.java:87) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.start(AbstractProfileServiceBootstrap.java:91) [:0.2.2]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:132) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:56) [:6.1.0.Final]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer.startBootstraps(AbstractServer.java:827) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer$StartServerTask.run(AbstractServer.java:417) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at java.lang.Thread.run(Unknown Source) [:1.8.0_111]
+
+2017-08-28 20:31:09,054 ERROR [ProfileServiceBootstrap] (Thread-2) failed to start server: java.lang.IllegalStateException: Incompletely deployed:
+
+*** PROFILES IN ERROR: Name -> Error
+Profile: ProfileKey@5fc91b67[domain=default, server=default, name=farm] in error due to java.lang.IllegalStateException: Must register RepositoryClusteringHandler before calling create()
+
+	at org.jboss.profileservice.dependency.ProfileValidationUtil.logErrors(ProfileValidationUtil.java:186) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileValidationUtil.validate(ProfileValidationUtil.java:61) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.validate(ProfileActivationWrapper.java:220) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper.validate(ProfileActivationWrapper.java:116) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.validate(ProfileActivationService.java:194) [:0.2.2]
+	at org.jboss.profileservice.AbstractProfileService.validateProfile(AbstractProfileService.java:190) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.activate(AbstractProfileServiceBootstrap.java:116) [:0.2.2]
+	at org.jboss.profileservice.resolver.BasicResolverFactory$ProfileResolverFacade.deploy(BasicResolverFactory.java:87) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.start(AbstractProfileServiceBootstrap.java:91) [:0.2.2]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:132) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:56) [:6.1.0.Final]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer.startBootstraps(AbstractServer.java:827) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer$StartServerTask.run(AbstractServer.java:417) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at java.lang.Thread.run(Unknown Source) [:1.8.0_111]
+
+2017-08-28 20:31:09,064 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Starting Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-28 20:31:09,068 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-28 20:31:09,068 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 11s:128ms
+2017-08-28 20:32:09,272 INFO  [org.jboss.system.server.jmx.JMXKernel] (Thread-21) Server exit called, exiting the JVM now!
+2017-08-28 20:32:09,275 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2017-08-28 20:32:09,275 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-22) Stopping: JBossAS [6.1.0.Final "Neo"]
+2017-08-28 20:32:09,279 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-22) Pausing Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-28 20:32:09,280 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-22) Stopping Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-28 20:32:09,282 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-22) Pausing Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-28 20:32:09,283 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-22) Stopping Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-28 20:32:42,102 ERROR [org.jboss.kernel.plugins.dependency.AbstractKernelController] (Thread-2) Error installing to Create: name=b85784b8 aliases=[ProfileKey@cecfe80[domain=default, server=default, name=farm]] state=Configured mode=Manual requiredState=Installed: java.lang.IllegalStateException: Must register RepositoryClusteringHandler before calling create()
+	at org.jboss.system.server.profileservice.repository.clustered.ClusteredDeploymentRepository.create(ClusteredDeploymentRepository.java:193) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.repository.clustered.ClusteredDeploymentRepository.load(ClusteredDeploymentRepository.java:242) [:6.1.0.Final]
+	at org.jboss.profileservice.repository.legacy.DelegateProfile.create(DelegateProfile.java:138) [:0.2.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction$JoinpointDispatchWrapper.execute(KernelControllerContextAction.java:257) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.ExecutionWrapper.execute(ExecutionWrapper.java:47) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchExecutionWrapper(KernelControllerContextAction.java:125) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchJoinPoint(KernelControllerContextAction.java:72) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.LifecycleAction.installActionInternal(LifecycleAction.java:202) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:54) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.start(ProfileActivationWrapper.java:190) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper.start(ProfileActivationWrapper.java:87) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activateProfile(ProfileActivationService.java:215) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activate(ProfileActivationService.java:159) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.activate(AbstractProfileServiceBootstrap.java:112) [:0.2.2]
+	at org.jboss.profileservice.resolver.BasicResolverFactory$ProfileResolverFacade.deploy(BasicResolverFactory.java:87) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.start(AbstractProfileServiceBootstrap.java:91) [:0.2.2]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:132) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:56) [:6.1.0.Final]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer.startBootstraps(AbstractServer.java:827) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer$StartServerTask.run(AbstractServer.java:417) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at java.lang.Thread.run(Unknown Source) [:1.8.0_111]
+
+2017-08-28 20:32:42,104 ERROR [ProfileServiceBootstrap] (Thread-2) failed to start server: java.lang.IllegalStateException: Incompletely deployed:
+
+*** PROFILES IN ERROR: Name -> Error
+Profile: ProfileKey@cecfe80[domain=default, server=default, name=farm] in error due to java.lang.IllegalStateException: Must register RepositoryClusteringHandler before calling create()
+
+	at org.jboss.profileservice.dependency.ProfileValidationUtil.logErrors(ProfileValidationUtil.java:186) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileValidationUtil.validate(ProfileValidationUtil.java:61) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.validate(ProfileActivationWrapper.java:220) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper.validate(ProfileActivationWrapper.java:116) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.validate(ProfileActivationService.java:194) [:0.2.2]
+	at org.jboss.profileservice.AbstractProfileService.validateProfile(AbstractProfileService.java:190) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.activate(AbstractProfileServiceBootstrap.java:116) [:0.2.2]
+	at org.jboss.profileservice.resolver.BasicResolverFactory$ProfileResolverFacade.deploy(BasicResolverFactory.java:87) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.start(AbstractProfileServiceBootstrap.java:91) [:0.2.2]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:132) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:56) [:6.1.0.Final]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer.startBootstraps(AbstractServer.java:827) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer$StartServerTask.run(AbstractServer.java:417) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at java.lang.Thread.run(Unknown Source) [:1.8.0_111]
+
+2017-08-28 20:32:42,114 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Starting Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-28 20:32:42,119 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-28 20:32:42,119 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 10s:87ms
+2017-08-28 20:36:39,497 INFO  [org.jboss.system.server.jmx.JMXKernel] (Thread-21) Server exit called, exiting the JVM now!
+2017-08-28 20:36:39,499 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2017-08-28 20:36:39,500 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-22) Stopping: JBossAS [6.1.0.Final "Neo"]
+2017-08-28 20:36:39,556 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-22) Pausing Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-28 20:36:39,557 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-22) Stopping Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-28 20:36:39,658 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-22) Pausing Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-28 20:36:39,659 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-22) Stopping Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-28 20:36:53,008 ERROR [org.jboss.kernel.plugins.dependency.AbstractKernelController] (Thread-2) Error installing to Create: name=b85784b8 aliases=[ProfileKey@1561d7d3[domain=default, server=default, name=farm]] state=Configured mode=Manual requiredState=Installed: java.lang.IllegalStateException: Must register RepositoryClusteringHandler before calling create()
+	at org.jboss.system.server.profileservice.repository.clustered.ClusteredDeploymentRepository.create(ClusteredDeploymentRepository.java:193) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.repository.clustered.ClusteredDeploymentRepository.load(ClusteredDeploymentRepository.java:242) [:6.1.0.Final]
+	at org.jboss.profileservice.repository.legacy.DelegateProfile.create(DelegateProfile.java:138) [:0.2.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction$JoinpointDispatchWrapper.execute(KernelControllerContextAction.java:257) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.ExecutionWrapper.execute(ExecutionWrapper.java:47) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchExecutionWrapper(KernelControllerContextAction.java:125) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchJoinPoint(KernelControllerContextAction.java:72) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.LifecycleAction.installActionInternal(LifecycleAction.java:202) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:54) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.start(ProfileActivationWrapper.java:190) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper.start(ProfileActivationWrapper.java:87) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activateProfile(ProfileActivationService.java:215) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activate(ProfileActivationService.java:159) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.activate(AbstractProfileServiceBootstrap.java:112) [:0.2.2]
+	at org.jboss.profileservice.resolver.BasicResolverFactory$ProfileResolverFacade.deploy(BasicResolverFactory.java:87) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.start(AbstractProfileServiceBootstrap.java:91) [:0.2.2]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:132) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:56) [:6.1.0.Final]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer.startBootstraps(AbstractServer.java:827) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer$StartServerTask.run(AbstractServer.java:417) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at java.lang.Thread.run(Unknown Source) [:1.8.0_111]
+
+2017-08-28 20:36:53,010 ERROR [ProfileServiceBootstrap] (Thread-2) failed to start server: java.lang.IllegalStateException: Incompletely deployed:
+
+*** PROFILES IN ERROR: Name -> Error
+Profile: ProfileKey@1561d7d3[domain=default, server=default, name=farm] in error due to java.lang.IllegalStateException: Must register RepositoryClusteringHandler before calling create()
+
+	at org.jboss.profileservice.dependency.ProfileValidationUtil.logErrors(ProfileValidationUtil.java:186) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileValidationUtil.validate(ProfileValidationUtil.java:61) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.validate(ProfileActivationWrapper.java:220) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper.validate(ProfileActivationWrapper.java:116) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.validate(ProfileActivationService.java:194) [:0.2.2]
+	at org.jboss.profileservice.AbstractProfileService.validateProfile(AbstractProfileService.java:190) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.activate(AbstractProfileServiceBootstrap.java:116) [:0.2.2]
+	at org.jboss.profileservice.resolver.BasicResolverFactory$ProfileResolverFacade.deploy(BasicResolverFactory.java:87) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.start(AbstractProfileServiceBootstrap.java:91) [:0.2.2]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:132) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:56) [:6.1.0.Final]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer.startBootstraps(AbstractServer.java:827) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer$StartServerTask.run(AbstractServer.java:417) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at java.lang.Thread.run(Unknown Source) [:1.8.0_111]
+
+2017-08-28 20:36:53,020 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Starting Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-28 20:36:53,024 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-28 20:36:53,025 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 10s:443ms
+2017-08-28 20:41:01,582 INFO  [org.jboss.system.server.jmx.JMXKernel] (Thread-21) Server exit called, exiting the JVM now!
+2017-08-28 20:41:01,584 INFO  [STDOUT] (Thread-1) Posting Shutdown Request to the server...
+2017-08-28 20:41:01,585 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-22) Stopping: JBossAS [6.1.0.Final "Neo"]
+2017-08-28 20:41:01,588 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-22) Pausing Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-28 20:41:01,589 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-22) Stopping Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-28 20:41:01,592 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-22) Pausing Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-28 20:41:01,593 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-22) Stopping Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-28 20:41:29,911 ERROR [org.jboss.kernel.plugins.dependency.AbstractKernelController] (Thread-2) Error installing to Create: name=b85784b8 aliases=[ProfileKey@1f7a8e07[domain=default, server=default, name=farm]] state=Configured mode=Manual requiredState=Installed: java.lang.IllegalStateException: Must register RepositoryClusteringHandler before calling create()
+	at org.jboss.system.server.profileservice.repository.clustered.ClusteredDeploymentRepository.create(ClusteredDeploymentRepository.java:193) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.repository.clustered.ClusteredDeploymentRepository.load(ClusteredDeploymentRepository.java:242) [:6.1.0.Final]
+	at org.jboss.profileservice.repository.legacy.DelegateProfile.create(DelegateProfile.java:138) [:0.2.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction$JoinpointDispatchWrapper.execute(KernelControllerContextAction.java:257) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.ExecutionWrapper.execute(ExecutionWrapper.java:47) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchExecutionWrapper(KernelControllerContextAction.java:125) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchJoinPoint(KernelControllerContextAction.java:72) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.LifecycleAction.installActionInternal(LifecycleAction.java:202) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:54) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.start(ProfileActivationWrapper.java:190) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper.start(ProfileActivationWrapper.java:87) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activateProfile(ProfileActivationService.java:215) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activate(ProfileActivationService.java:159) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.activate(AbstractProfileServiceBootstrap.java:112) [:0.2.2]
+	at org.jboss.profileservice.resolver.BasicResolverFactory$ProfileResolverFacade.deploy(BasicResolverFactory.java:87) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.start(AbstractProfileServiceBootstrap.java:91) [:0.2.2]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:132) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:56) [:6.1.0.Final]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer.startBootstraps(AbstractServer.java:827) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer$StartServerTask.run(AbstractServer.java:417) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at java.lang.Thread.run(Unknown Source) [:1.8.0_111]
+
+2017-08-28 20:41:29,913 ERROR [ProfileServiceBootstrap] (Thread-2) failed to start server: java.lang.IllegalStateException: Incompletely deployed:
+
+*** PROFILES IN ERROR: Name -> Error
+Profile: ProfileKey@1f7a8e07[domain=default, server=default, name=farm] in error due to java.lang.IllegalStateException: Must register RepositoryClusteringHandler before calling create()
+
+	at org.jboss.profileservice.dependency.ProfileValidationUtil.logErrors(ProfileValidationUtil.java:186) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileValidationUtil.validate(ProfileValidationUtil.java:61) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.validate(ProfileActivationWrapper.java:220) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper.validate(ProfileActivationWrapper.java:116) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.validate(ProfileActivationService.java:194) [:0.2.2]
+	at org.jboss.profileservice.AbstractProfileService.validateProfile(AbstractProfileService.java:190) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.activate(AbstractProfileServiceBootstrap.java:116) [:0.2.2]
+	at org.jboss.profileservice.resolver.BasicResolverFactory$ProfileResolverFacade.deploy(BasicResolverFactory.java:87) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.start(AbstractProfileServiceBootstrap.java:91) [:0.2.2]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:132) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:56) [:6.1.0.Final]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer.startBootstraps(AbstractServer.java:827) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer$StartServerTask.run(AbstractServer.java:417) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at java.lang.Thread.run(Unknown Source) [:1.8.0_111]
+
+2017-08-28 20:41:29,924 INFO  [org.apache.coyote.http11.Http11Protocol] (Thread-2) Starting Coyote HTTP/1.1 on http-localhost%2F127.0.0.1-8080
+2017-08-28 20:41:29,928 INFO  [org.apache.coyote.ajp.AjpProtocol] (Thread-2) Starting Coyote AJP/1.3 on ajp-localhost%2F127.0.0.1-8009
+2017-08-28 20:41:29,928 INFO  [org.jboss.bootstrap.impl.base.server.AbstractServer] (Thread-2) JBossAS [6.1.0.Final "Neo"] Started in 10s:363ms

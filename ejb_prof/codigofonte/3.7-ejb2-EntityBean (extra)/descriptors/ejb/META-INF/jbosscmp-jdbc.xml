@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jbosscmp-jdbc PUBLIC "-//JBoss//DTD JBOSSCMP-JDBC 3.2//EN" "http://www.jboss.org/j2ee/dtd/jbosscmp-jdbc_3_2.dtd">
+
+<jbosscmp-jdbc>
+   <defaults>
+     <datasource>java:/jdbc/fiap</datasource>
+     <datasource-mapping>MySQL</datasource-mapping>
+   </defaults>
+
+   <enterprise-beans>
+
+     <!--
+       To add beans that you have deployment descriptor info for, add
+       a file to your XDoclet merge directory called jbosscmp-jdbc-beans.xml
+       that contains the <entity></entity> markup for those beans.
+     -->
+
+      <entity>
+         <ejb-name>Curso</ejb-name>
+         <create-table>true</create-table>
+         <remove-table>true</remove-table>
+         <table-name>CURSO</table-name>
+
+         <cmp-field>
+            <field-name>nome</field-name>
+            <column-name>NOME</column-name>
+
+        </cmp-field>
+
+<!-- jboss 3.2 features -->
+<!-- optimistic locking does not express the exclusions needed -->
+      </entity>
+
+      <entity>
+         <ejb-name>Produto</ejb-name>
+         <create-table>true</create-table>
+         <remove-table>true</remove-table>
+         <table-name>PRODUTO</table-name>
+
+         <cmp-field>
+            <field-name>id</field-name>
+            <column-name>ID</column-name>
+
+        </cmp-field>
+         <cmp-field>
+            <field-name>nome</field-name>
+            <column-name>NOME</column-name>
+
+        </cmp-field>
+         <cmp-field>
+            <field-name>preco</field-name>
+            <column-name>PRECO</column-name>
+
+        </cmp-field>
+         <cmp-field>
+            <field-name>descricao</field-name>
+            <column-name>DESCRICAO</column-name>
+
+        </cmp-field>
+
+<!-- jboss 3.2 features -->
+<!-- optimistic locking does not express the exclusions needed -->
+      </entity>
+
+      <entity>
+         <ejb-name>Professor</ejb-name>
+         <create-table>true</create-table>
+         <remove-table>true</remove-table>
+         <table-name>PROFESSOR</table-name>
+
+         <cmp-field>
+            <field-name>nome</field-name>
+            <column-name>NOME</column-name>
+
+        </cmp-field>
+
+<!-- jboss 3.2 features -->
+<!-- optimistic locking does not express the exclusions needed -->
+      </entity>
+
+      <entity>
+         <ejb-name>Estudante</ejb-name>
+         <create-table>true</create-table>
+         <remove-table>true</remove-table>
+         <table-name>ESTUDANTE</table-name>
+
+         <cmp-field>
+            <field-name>nome</field-name>
+            <column-name>NOME</column-name>
+
+        </cmp-field>
+
+<!-- jboss 3.2 features -->
+<!-- optimistic locking does not express the exclusions needed -->
+      </entity>
+
+   </enterprise-beans>
+
+  <relationships>
+    <ejb-relation>
+      <ejb-relation-name>curso-estudante</ejb-relation-name>
+      <relation-table-mapping>
+        <table-name>CURSO_ESTUDANTE</table-name>
+      </relation-table-mapping>
+
+      <ejb-relationship-role>
+          <ejb-relationship-role-name>curso-tem-estudantes</ejb-relationship-role-name>
+          <key-fields>
+             <key-field>
+               <field-name>nome</field-name>
+               <column-name>FK_CURSO</column-name>
+             </key-field>
+          </key-fields>
+
+      </ejb-relationship-role>
+      <ejb-relationship-role>
+          <ejb-relationship-role-name>estudante-tem-cursos</ejb-relationship-role-name>
+          <key-fields>
+             <key-field>
+               <field-name>nome</field-name>
+               <column-name>FK_ESTUDANTE</column-name>
+             </key-field>
+          </key-fields>
+
+      </ejb-relationship-role>
+    </ejb-relation>
+    <ejb-relation>
+      <ejb-relation-name>professor-cursos</ejb-relation-name>
+
+      <ejb-relationship-role>
+          <ejb-relationship-role-name>curso-tem-professor</ejb-relationship-role-name>
+		  <key-fields/>
+
+      </ejb-relationship-role>
+      <ejb-relationship-role>
+          <ejb-relationship-role-name>professor-tem-cursos</ejb-relationship-role-name>
+          <key-fields>
+             <key-field>
+               <field-name>nome</field-name>
+               <column-name>PROFESSOR_FK</column-name>
+             </key-field>
+          </key-fields>
+
+      </ejb-relationship-role>
+    </ejb-relation>
+  </relationships>
+
+</jbosscmp-jdbc>

@@ -1,0 +1,890 @@
+20:41:19,561 INFO  [AbstractJBossASServerBase] Server Configuration:
+
+	JBOSS_HOME URL: file:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/
+	Bootstrap: $JBOSS_HOME\server/all/conf/bootstrap.xml
+	Common Base: $JBOSS_HOME\common/
+	Common Library: $JBOSS_HOME\common/lib/
+	Server Name: all
+	Server Base: $JBOSS_HOME\server/
+	Server Library: $JBOSS_HOME\server/all/lib/
+	Server Config: $JBOSS_HOME\server/all/conf/
+	Server Home: $JBOSS_HOME\server/all/
+	Server Data: $JBOSS_HOME\server/all/data/
+	Server Log: $JBOSS_HOME\server/all/log/
+	Server Temp: $JBOSS_HOME\server/all/tmp/
+
+20:41:19,563 INFO  [AbstractServer] Starting: JBossAS [6.1.0.Final "Neo"]
+20:41:20,266 INFO  [ServerInfo] Java version: 1.8.0_111,Oracle Corporation
+20:41:20,266 INFO  [ServerInfo] Java Runtime: Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+20:41:20,266 INFO  [ServerInfo] Java VM: Java HotSpot(TM) 64-Bit Server VM 25.111-b14,Oracle Corporation
+20:41:20,267 INFO  [ServerInfo] OS-System: Windows 8.1 6.3,amd64
+20:41:20,267 INFO  [ServerInfo] VM arguments: -Dprogram.name=JBossTools: JBoss AS 6.x -Djava.awt.headless=true -Xms256m -Xmx768m -XX:MaxPermSize=256m -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djava.endorsed.dirs=D:\EJB-FIAP-SCJ\ejb_prof\jboss6\lib\endorsed -Djava.library.path=D:/EJB-FIAP-SCJ/ejb_prof/jboss6/bin/native -Dlogging.configuration=file:D:/EJB-FIAP-SCJ/ejb_prof/jboss6/bin/logging.properties -Dfile.encoding=Cp1252 
+20:41:20,267 DEBUG [ServerInfo] Full System Properties Dump
+20:41:20,267 DEBUG [ServerInfo]     awt.toolkit: sun.awt.windows.WToolkit
+20:41:20,268 DEBUG [ServerInfo]     bind.address: localhost
+20:41:20,268 DEBUG [ServerInfo]     file.encoding: Cp1252
+20:41:20,268 DEBUG [ServerInfo]     file.encoding.pkg: sun.io
+20:41:20,268 DEBUG [ServerInfo]     file.separator: \
+20:41:20,268 DEBUG [ServerInfo]     java.awt.graphicsenv: sun.awt.Win32GraphicsEnvironment
+20:41:20,268 DEBUG [ServerInfo]     java.awt.headless: true
+20:41:20,268 DEBUG [ServerInfo]     java.awt.printerjob: sun.awt.windows.WPrinterJob
+20:41:20,268 DEBUG [ServerInfo]     java.class.path: D:\EJB-FIAP-SCJ\ejb_prof\jboss6\bin\run.jar
+20:41:20,268 DEBUG [ServerInfo]     java.class.version: 52.0
+20:41:20,269 DEBUG [ServerInfo]     java.endorsed.dirs: D:\EJB-FIAP-SCJ\ejb_prof\jboss6\lib\endorsed
+20:41:20,269 DEBUG [ServerInfo]     java.ext.dirs: C:\Program Files\Java\jre1.8.0_111\lib\ext;C:\windows\Sun\Java\lib\ext
+20:41:20,269 DEBUG [ServerInfo]     java.home: C:\Program Files\Java\jre1.8.0_111
+20:41:20,269 DEBUG [ServerInfo]     java.io.tmpdir: C:\Users\logonrm\AppData\Local\Temp\
+20:41:20,269 DEBUG [ServerInfo]     java.library.path: D:/EJB-FIAP-SCJ/ejb_prof/jboss6/bin/native
+20:41:20,269 DEBUG [ServerInfo]     java.protocol.handler.pkgs: org.jboss.net.protocol|org.jboss.vfs.protocol
+20:41:20,269 DEBUG [ServerInfo]     java.rmi.server.RMIClassLoaderSpi: org.jboss.system.JBossRMIClassLoader
+20:41:20,269 DEBUG [ServerInfo]     java.rmi.server.hostname: localhost
+20:41:20,269 DEBUG [ServerInfo]     java.runtime.name: Java(TM) SE Runtime Environment
+20:41:20,270 DEBUG [ServerInfo]     java.runtime.version: 1.8.0_111-b14
+20:41:20,270 DEBUG [ServerInfo]     java.specification.name: Java Platform API Specification
+20:41:20,270 DEBUG [ServerInfo]     java.specification.vendor: Oracle Corporation
+20:41:20,270 DEBUG [ServerInfo]     java.specification.version: 1.8
+20:41:20,270 DEBUG [ServerInfo]     java.util.logging.manager: org.jboss.logmanager.LogManager
+20:41:20,270 DEBUG [ServerInfo]     java.vendor: Oracle Corporation
+20:41:20,270 DEBUG [ServerInfo]     java.vendor.url: http://java.oracle.com/
+20:41:20,270 DEBUG [ServerInfo]     java.vendor.url.bug: http://bugreport.sun.com/bugreport/
+20:41:20,271 DEBUG [ServerInfo]     java.version: 1.8.0_111
+20:41:20,271 DEBUG [ServerInfo]     java.vm.info: mixed mode
+20:41:20,271 DEBUG [ServerInfo]     java.vm.name: Java HotSpot(TM) 64-Bit Server VM
+20:41:20,271 DEBUG [ServerInfo]     java.vm.specification.name: Java Virtual Machine Specification
+20:41:20,271 DEBUG [ServerInfo]     java.vm.specification.vendor: Oracle Corporation
+20:41:20,271 DEBUG [ServerInfo]     java.vm.specification.version: 1.8
+20:41:20,271 DEBUG [ServerInfo]     java.vm.vendor: Oracle Corporation
+20:41:20,271 DEBUG [ServerInfo]     java.vm.version: 25.111-b14
+20:41:20,271 DEBUG [ServerInfo]     javax.management.builder.initial: org.jboss.mx.server.MBeanServerBuilderImpl
+20:41:20,272 DEBUG [ServerInfo]     jboss.bind.address: localhost
+20:41:20,272 DEBUG [ServerInfo]     jboss.boot.server.log.dir: D:\EJB-FIAP-SCJ\ejb_prof\jboss6\server\all\log
+20:41:20,272 DEBUG [ServerInfo]     jboss.bootstrap.home.url: file:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/server/all/conf/
+20:41:20,272 DEBUG [ServerInfo]     jboss.bootstrap.name: bootstrap.xml
+20:41:20,272 DEBUG [ServerInfo]     jboss.bootstrap.url: file:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/server/all/conf/bootstrap.xml
+20:41:20,272 DEBUG [ServerInfo]     jboss.common.base.url: file:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/common/
+20:41:20,272 DEBUG [ServerInfo]     jboss.common.lib.url: file:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/common/lib/
+20:41:20,272 DEBUG [ServerInfo]     jboss.home: D:\EJB-FIAP-SCJ\ejb_prof\jboss6
+20:41:20,273 DEBUG [ServerInfo]     jboss.home.dir: D:\EJB-FIAP-SCJ\ejb_prof\jboss6
+20:41:20,273 DEBUG [ServerInfo]     jboss.home.url: file:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/
+20:41:20,273 DEBUG [ServerInfo]     jboss.host.name: l2704micro02
+20:41:20,273 DEBUG [ServerInfo]     jboss.lib.url: file:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/lib/
+20:41:20,273 DEBUG [ServerInfo]     jboss.native.dir: D:\EJB-FIAP-SCJ\ejb_prof\jboss6\server\all\tmp\native
+20:41:20,273 DEBUG [ServerInfo]     jboss.native.load: false
+20:41:20,273 DEBUG [ServerInfo]     jboss.node.name: l2704micro02
+20:41:20,273 DEBUG [ServerInfo]     jboss.partition.name: DefaultPartition
+20:41:20,273 DEBUG [ServerInfo]     jboss.platform.mbeanserver: true
+20:41:20,273 DEBUG [ServerInfo]     jboss.qualified.host.name: l2704micro02
+20:41:20,274 DEBUG [ServerInfo]     jboss.server.base.dir: D:\EJB-FIAP-SCJ\ejb_prof\jboss6\server
+20:41:20,274 DEBUG [ServerInfo]     jboss.server.base.url: file:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/server/
+20:41:20,274 DEBUG [ServerInfo]     jboss.server.config.url: file:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/server/all/conf/
+20:41:20,274 DEBUG [ServerInfo]     jboss.server.data.dir: D:\EJB-FIAP-SCJ\ejb_prof\jboss6\server\all\data
+20:41:20,274 DEBUG [ServerInfo]     jboss.server.home.dir: D:\EJB-FIAP-SCJ\ejb_prof\jboss6\server\all
+20:41:20,274 DEBUG [ServerInfo]     jboss.server.home.url: file:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/server/all/
+20:41:20,274 DEBUG [ServerInfo]     jboss.server.lib.url: file:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/server/all/lib/
+20:41:20,274 DEBUG [ServerInfo]     jboss.server.log.dir: D:\EJB-FIAP-SCJ\ejb_prof\jboss6\server\all\log
+20:41:20,274 DEBUG [ServerInfo]     jboss.server.name: all
+20:41:20,275 DEBUG [ServerInfo]     jboss.server.temp.dir: D:\EJB-FIAP-SCJ\ejb_prof\jboss6\server\all\tmp
+20:41:20,275 DEBUG [ServerInfo]     jboss.vfs.forceCopy: true
+20:41:20,275 DEBUG [ServerInfo]     jbossmx.loader.repository.class: org.jboss.mx.loading.UnifiedLoaderRepository3
+20:41:20,275 DEBUG [ServerInfo]     jgroups.bind_addr: localhost
+20:41:20,275 DEBUG [ServerInfo]     line.separator: 
+
+20:41:20,275 DEBUG [ServerInfo]     log4j.defaultInitOverride: true
+20:41:20,275 DEBUG [ServerInfo]     logging.configuration: file:D:/EJB-FIAP-SCJ/ejb_prof/jboss6/bin/logging.properties
+20:41:20,275 DEBUG [ServerInfo]     org.jboss.deployers.spi.deployer.matchers.NameIgnoreMechanism: org.jboss.deployers.spi.deployer.helpers.DummyNameIgnoreMechanism
+20:41:20,275 DEBUG [ServerInfo]     org.jboss.logging.Logger.pluginClass: org.jboss.logging.logmanager.LoggerPluginImpl
+20:41:20,276 DEBUG [ServerInfo]     org.jboss.reflect.spi.TypeInfoFactory: org.jboss.reflect.plugins.introspection.IntrospectionTypeInfoFactory
+20:41:20,276 DEBUG [ServerInfo]     os.arch: amd64
+20:41:20,276 DEBUG [ServerInfo]     os.name: Windows 8.1
+20:41:20,276 DEBUG [ServerInfo]     os.version: 6.3
+20:41:20,276 DEBUG [ServerInfo]     path.separator: ;
+20:41:20,276 DEBUG [ServerInfo]     program.name: JBossTools: JBoss AS 6.x
+20:41:20,276 DEBUG [ServerInfo]     sun.arch.data.model: 64
+20:41:20,276 DEBUG [ServerInfo]     sun.boot.class.path: D:\EJB-FIAP-SCJ\ejb_prof\jboss6\lib\endorsed\activation.jar;D:\EJB-FIAP-SCJ\ejb_prof\jboss6\lib\endorsed\jboss-annotations-api_1.1_spec.jar;D:\EJB-FIAP-SCJ\ejb_prof\jboss6\lib\endorsed\jboss-jaxb-api_2.2_spec.jar;D:\EJB-FIAP-SCJ\ejb_prof\jboss6\lib\endorsed\jboss-jaxws-api_2.2_spec.jar;D:\EJB-FIAP-SCJ\ejb_prof\jboss6\lib\endorsed\jbossws-cxf-factories.jar;D:\EJB-FIAP-SCJ\ejb_prof\jboss6\lib\endorsed\stax-api.jar;C:\Program Files\Java\jre1.8.0_111\lib\resources.jar;C:\Program Files\Java\jre1.8.0_111\lib\rt.jar;C:\Program Files\Java\jre1.8.0_111\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_111\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_111\lib\jce.jar;C:\Program Files\Java\jre1.8.0_111\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_111\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_111\classes
+20:41:20,276 DEBUG [ServerInfo]     sun.boot.library.path: C:\Program Files\Java\jre1.8.0_111\bin
+20:41:20,276 DEBUG [ServerInfo]     sun.cpu.endian: little
+20:41:20,277 DEBUG [ServerInfo]     sun.cpu.isalist: amd64
+20:41:20,277 DEBUG [ServerInfo]     sun.desktop: windows
+20:41:20,277 DEBUG [ServerInfo]     sun.io.unicode.encoding: UnicodeLittle
+20:41:20,277 DEBUG [ServerInfo]     sun.java.command: org.jboss.Main --configuration=all --host=localhost -Djboss.server.base.url=file:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/server/
+20:41:20,277 DEBUG [ServerInfo]     sun.java.launcher: SUN_STANDARD
+20:41:20,277 DEBUG [ServerInfo]     sun.jnu.encoding: Cp1252
+20:41:20,277 DEBUG [ServerInfo]     sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+20:41:20,277 DEBUG [ServerInfo]     sun.os.patch.level: 
+20:41:20,277 DEBUG [ServerInfo]     sun.rmi.dgc.client.gcInterval: 3600000
+20:41:20,277 DEBUG [ServerInfo]     sun.rmi.dgc.server.gcInterval: 3600000
+20:41:20,278 DEBUG [ServerInfo]     user.country: US
+20:41:20,278 DEBUG [ServerInfo]     user.country.format: BR
+20:41:20,278 DEBUG [ServerInfo]     user.dir: D:\EJB-FIAP-SCJ\ejb_prof\jboss6\bin
+20:41:20,278 DEBUG [ServerInfo]     user.home: C:\Users\logonrm
+20:41:20,278 DEBUG [ServerInfo]     user.language: en
+20:41:20,278 DEBUG [ServerInfo]     user.language.format: pt
+20:41:20,278 DEBUG [ServerInfo]     user.name: logonrm
+20:41:20,278 DEBUG [ServerInfo]     user.script: 
+20:41:20,278 DEBUG [ServerInfo]     user.timezone: America/Sao_Paulo
+20:41:20,278 DEBUG [ServerInfo]     user.variant: 
+20:41:20,279 DEBUG [ServerInfo]     xb.builder.repeatableParticleHandlers: false
+20:41:20,279 DEBUG [ServerInfo]     xb.builder.useUnorderedSequence: true
+20:41:20,293 INFO  [JMXKernel] Legacy JMX core initialized
+20:41:22,729 INFO  [AbstractServerConfig] JBoss Web Services - Stack CXF Server 3.4.1.GA
+20:41:22,971 INFO  [JSFImplManagementDeployer] Initialized 3 JSF configurations: [Mojarra-1.2, MyFaces-2.0, Mojarra-2.0]
+20:41:26,110 INFO  [SnmpAgentService] SNMP agent going active
+20:41:26,428 WARNING [FileConfigurationParser] AIO wasn't located on this platform, it will fall back to using pure Java NIO. If your platform is Linux, install LibAIO to enable the AIO journal
+20:41:26,500 WARN  [config] jacorb.home unset! Will use '.'
+20:41:26,500 WARN  [config] File .\jacorb.properties for configuration jacorb not found
+20:41:26,501 INFO  [config] configuration jacorb loaded from classpath
+20:41:26,526 INFO  [orb] Property "jacorb.hashtable_class" is set to: java.util.Hashtable
+20:41:26,535 WARN  [codeset] Warning - unknown codeset (Cp1252) - defaulting to ISO-8859-1
+20:41:26,538 WARN  [config] jacorb.home unset! Will use '.'
+20:41:26,538 WARN  [config] File .\jacorb.properties for configuration jacorb not found
+20:41:26,538 INFO  [config] configuration jacorb loaded from classpath
+20:41:26,539 INFO  [singleton] created ORBSingleton
+20:41:26,578 INFO  [interceptors] InterceptorManager started with 2 Server Interceptors, 2 Client Interceptors and 4 IOR Interceptors
+20:41:26,619 INFO  [orb] ORB run
+20:41:26,701 INFO  [JMXConnector] starting JMXConnector on host localhost:1090
+20:41:26,755 ERROR [AbstractKernelController] Error installing to Start: name=RemoteNamingBean state=Create: java.rmi.server.ExportException: Port already in use: 1098; nested exception is: 
+	java.net.BindException: Address already in use: JVM_Bind
+	at sun.rmi.transport.tcp.TCPTransport.listen(Unknown Source) [:1.8.0_111]
+	at sun.rmi.transport.tcp.TCPTransport.exportObject(Unknown Source) [:1.8.0_111]
+	at sun.rmi.transport.tcp.TCPEndpoint.exportObject(Unknown Source) [:1.8.0_111]
+	at sun.rmi.transport.LiveRef.exportObject(Unknown Source) [:1.8.0_111]
+	at sun.rmi.server.UnicastServerRef.exportObject(Unknown Source) [:1.8.0_111]
+	at java.rmi.server.UnicastRemoteObject.exportObject(Unknown Source) [:1.8.0_111]
+	at java.rmi.server.UnicastRemoteObject.exportObject(Unknown Source) [:1.8.0_111]
+	at org.jnp.server.Main.initJnpInvoker(Main.java:462) [:5.0.5.Final]
+	at org.jnp.server.Main.start(Main.java:422) [:5.0.5.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction$JoinpointDispatchWrapper.execute(KernelControllerContextAction.java:257) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.ExecutionWrapper.execute(ExecutionWrapper.java:47) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchExecutionWrapper(KernelControllerContextAction.java:125) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchJoinPoint(KernelControllerContextAction.java:72) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.LifecycleAction.installActionInternal(LifecycleAction.java:202) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:54) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:894) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:641) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.deploy(BeanMetaDataDeployer.java:182) [:2.2.2.GA]
+	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.deploy(BeanMetaDataDeployer.java:58) [:2.2.2.GA]
+	at org.jboss.deployers.spi.deployer.helpers.AbstractSimpleRealDeployer.internalDeploy(AbstractSimpleRealDeployer.java:63) [:2.2.2.GA]
+	at org.jboss.deployers.spi.deployer.helpers.AbstractRealDeployer.deploy(AbstractRealDeployer.java:55) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployerWrapper.deploy(DeployerWrapper.java:179) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doDeploy(DeployersImpl.java:1832) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doInstallParentFirst(DeployersImpl.java:1550) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doInstallParentFirst(DeployersImpl.java:1571) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.install(DeployersImpl.java:1491) [:2.2.2.GA]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1983) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.process(DeployersImpl.java:1076) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.main.MainDeployerImpl.process(MainDeployerImpl.java:679) [:2.2.2.GA]
+	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.process(MainDeployerPlugin.java:106) [:6.1.0.Final]
+	at org.jboss.profileservice.dependency.ProfileControllerContext$DelegateDeployer.process(ProfileControllerContext.java:143) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileDeployAction.deploy(ProfileDeployAction.java:151) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileDeployAction.installActionInternal(ProfileDeployAction.java:94) [:0.2.2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:54) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.start(ProfileActivationWrapper.java:190) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper.start(ProfileActivationWrapper.java:87) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activateProfile(ProfileActivationService.java:215) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activate(ProfileActivationService.java:159) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.activate(AbstractProfileServiceBootstrap.java:112) [:0.2.2]
+	at org.jboss.profileservice.resolver.BasicResolverFactory$ProfileResolverFacade.deploy(BasicResolverFactory.java:87) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.start(AbstractProfileServiceBootstrap.java:91) [:0.2.2]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:132) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:56) [:6.1.0.Final]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer.startBootstraps(AbstractServer.java:827) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer$StartServerTask.run(AbstractServer.java:417) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at java.lang.Thread.run(Unknown Source) [:1.8.0_111]
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method) [:1.8.0_111]
+	at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source) [:1.8.0_111]
+	at java.net.AbstractPlainSocketImpl.bind(Unknown Source) [:1.8.0_111]
+	at java.net.PlainSocketImpl.bind(Unknown Source) [:1.8.0_111]
+	at java.net.ServerSocket.bind(Unknown Source) [:1.8.0_111]
+	at java.net.ServerSocket.<init>(Unknown Source) [:1.8.0_111]
+	at org.jboss.net.sockets.DefaultSocketFactory.createServerSocket(DefaultSocketFactory.java:124) [jboss-common-core.jar:2.2.17.GA]
+	at org.jboss.net.sockets.DefaultSocketFactory.createServerSocket(DefaultSocketFactory.java:99) [jboss-common-core.jar:2.2.17.GA]
+	at sun.rmi.transport.tcp.TCPEndpoint.newServerSocket(Unknown Source) [:1.8.0_111]
+	... 83 more
+
+20:41:26,889 INFO  [UnifiedInvokerHA] Service name is jboss:service=invoker,type=unifiedha
+20:41:27,126 INFO  [HornetQServerImpl] live server is starting with configuration HornetQ Configuration (clustered=true,backup=false,sharedStore=true,journalDirectory=D:\EJB-FIAP-SCJ\ejb_prof\jboss6\server\all\data/hornetq/journal,bindingsDirectory=D:\EJB-FIAP-SCJ\ejb_prof\jboss6\server\all\data/hornetq/bindings,largeMessagesDirectory=D:\EJB-FIAP-SCJ\ejb_prof\jboss6\server\all\data/hornetq/largemessages,pagingDirectory=D:\EJB-FIAP-SCJ\ejb_prof\jboss6\server\all\data/hornetq/paging)
+20:41:27,127 INFO  [HornetQServerImpl] Waiting to obtain live lock
+20:41:27,161 INFO  [JournalStorageManager] Using NIO Journal
+20:41:27,171 WARNING [HornetQServerImpl] Security risk! It has been detected that the cluster admin user and password have not been changed from the installation default. Please see the HornetQ user guide, cluster chapter, for instructions on how to do this.
+20:41:27,290 INFO  [FileLockNodeManager] Waiting to obtain live lock
+20:41:27,290 INFO  [FileLockNodeManager] Live Server Obtained live lock
+20:41:27,704 INFO  [NettyAcceptor] Started Netty Acceptor version 3.2.3.Final-r${buildNumber} localhost:5445 for CORE protocol
+20:41:27,707 INFO  [NettyAcceptor] Started Netty Acceptor version 3.2.3.Final-r${buildNumber} localhost:5455 for CORE protocol
+20:41:27,733 INFO  [HornetQServerImpl] Server is now live
+20:41:27,734 INFO  [HornetQServerImpl] HornetQ Server version 2.2.5.Final (HQ_2_2_5_FINAL_AS7, 121) [f66ea6ec-8c48-11e7-bf82-0a0027000003] started
+20:41:27,762 INFO  [WebService] Using RMI server codebase: http://localhost:8083/
+20:41:27,876 INFO  [jbossatx] ARJUNA-32010 JBossTS Recovery Service (tag: JBOSSTS_4_14_0_Final) - JBoss Inc.
+20:41:27,879 INFO  [arjuna] ARJUNA-12324 Start RecoveryActivators
+20:41:27,891 INFO  [arjuna] ARJUNA-12296 ExpiredEntryMonitor running at Seg, 28 ago 2017 20:41:27
+20:41:27,937 INFO  [arjuna] ARJUNA-12310 Recovery manager listening on endpoint 127.0.0.1:4712
+20:41:27,938 INFO  [arjuna] ARJUNA-12344 RecoveryManagerImple is ready on port 4712
+20:41:27,938 INFO  [jbossatx] ARJUNA-32013 Starting transaction recovery manager
+20:41:27,945 INFO  [arjuna] ARJUNA-12163 Starting service com.arjuna.ats.arjuna.recovery.ActionStatusService on port 4713
+20:41:27,974 INFO  [arjuna] ARJUNA-12337 TransactionStatusManagerItem host: 127.0.0.1 port: 4713
+20:41:28,004 INFO  [arjuna] ARJUNA-12170 TransactionStatusManager started on port 4713 and host 127.0.0.1 with service com.arjuna.ats.arjuna.recovery.ActionStatusService
+20:41:28,025 INFO  [jbossatx] ARJUNA-32017 JBossTS Transaction Service (JTA version - tag: JBOSSTS_4_14_0_Final) - JBoss Inc.
+20:41:28,062 INFO  [arjuna] ARJUNA-12202 registering bean jboss.jta:type=ObjectStore.
+20:41:28,170 INFO  [AprLifecycleListener] The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:/EJB-FIAP-SCJ/ejb_prof/jboss6/bin/native
+20:41:28,249 INFO  [TomcatDeployment] deploy, ctxPath=/invoker
+20:41:28,390 ERROR [ReadOnlyAccessFilter] Failed to init ReadOnlyAccessFilter: javax.management.InstanceNotFoundException: jboss:service=NamingBeanImpl is not registered.
+	at org.jboss.mx.server.registry.BasicMBeanRegistry.get(BasicMBeanRegistry.java:529) [:6.0.0.GA]
+	at org.jboss.mx.server.MBeanServerImpl.getAttribute(MBeanServerImpl.java:561) [:6.0.0.GA]
+	at org.jboss.invocation.http.servlet.ReadOnlyAccessFilter.init(ReadOnlyAccessFilter.java:72) [:]
+	at org.apache.catalina.core.ApplicationFilterConfig.getFilter(ApplicationFilterConfig.java:447) [:6.1.0.Final]
+	at org.apache.catalina.core.StandardContext.filterStart(StandardContext.java:3246) [:6.1.0.Final]
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:3843) [:6.1.0.Final]
+	at org.jboss.web.tomcat.service.deployers.TomcatDeployment.performDeployInternal(TomcatDeployment.java:294) [:6.1.0.Final]
+	at org.jboss.web.tomcat.service.deployers.TomcatDeployment.performDeploy(TomcatDeployment.java:146) [:6.1.0.Final]
+	at org.jboss.web.deployers.AbstractWarDeployment.start(AbstractWarDeployment.java:476) [:6.1.0.Final]
+	at org.jboss.web.deployers.WebModule.startModule(WebModule.java:118) [:6.1.0.Final]
+	at org.jboss.web.deployers.WebModule.start(WebModule.java:95) [:6.1.0.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:157) [:6.0.0.GA]
+	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:96) [:6.0.0.GA]
+	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88) [:6.0.0.GA]
+	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:271) [:6.0.0.GA]
+	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:670) [:6.0.0.GA]
+	at org.jboss.system.microcontainer.ServiceProxy.invoke(ServiceProxy.java:206) [:2.2.0.SP2]
+	at com.sun.proxy.$Proxy43.start(Unknown Source)
+	at org.jboss.system.microcontainer.StartStopLifecycleAction.installAction(StartStopLifecycleAction.java:53) [:2.2.0.SP2]
+	at org.jboss.system.microcontainer.StartStopLifecycleAction.installAction(StartStopLifecycleAction.java:41) [:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.microcontainer.ServiceControllerContext.install(ServiceControllerContext.java:301) [:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:894) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:641) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.installProfile(ProfileActivationService.java:207) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.register(ProfileActivationService.java:146) [:0.2.2]
+	at org.jboss.profileservice.AbstractProfileService.registerProfile(AbstractProfileService.java:133) [:0.2.2]
+	at org.jboss.profileservice.AbstractProfileService.registerProfile(AbstractProfileService.java:119) [:0.2.2]
+	at org.jboss.web.tomcat.service.ondemand.OnDemandContextProfileManager.start(OnDemandContextProfileManager.java:438) [:6.1.0.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction$JoinpointDispatchWrapper.execute(KernelControllerContextAction.java:257) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.ExecutionWrapper.execute(ExecutionWrapper.java:47) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchExecutionWrapper(KernelControllerContextAction.java:125) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchJoinPoint(KernelControllerContextAction.java:72) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.LifecycleAction.installActionInternal(LifecycleAction.java:202) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:54) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.ServiceController.doChange(ServiceController.java:671) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.ServiceController.start(ServiceController.java:443) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.microcontainer.jmx.ServiceControllerStartStopLifecycleCallback.install(ServiceControllerStartStopLifecycleCallback.java:44) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor242.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.beans.info.plugins.AbstractBeanInfo.invoke(AbstractBeanInfo.java:300) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.AbstractKernelControllerContext.invoke(AbstractKernelControllerContext.java:305) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractLifecycleCallbackItem.install(AbstractLifecycleCallbackItem.java:87) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleLifecycleCallbacks(AbstractController.java:2018) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleInstallLifecycleCallbacks(AbstractController.java:1983) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1091) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.ServiceController.doChange(ServiceController.java:671) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.ServiceController.start(ServiceController.java:443) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.microcontainer.jmx.ServiceControllerStartStopLifecycleCallback.install(ServiceControllerStartStopLifecycleCallback.java:44) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor242.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.beans.info.plugins.AbstractBeanInfo.invoke(AbstractBeanInfo.java:300) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.AbstractKernelControllerContext.invoke(AbstractKernelControllerContext.java:305) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractLifecycleCallbackItem.install(AbstractLifecycleCallbackItem.java:87) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleLifecycleCallbacks(AbstractController.java:2018) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleInstallLifecycleCallbacks(AbstractController.java:1983) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1091) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:894) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:641) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.ServiceController.doInstall(ServiceController.java:653) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.ServiceController.register(ServiceController.java:356) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.microcontainer.jmx.ServiceControllerRegistrationLifecycleCallback.install(ServiceControllerRegistrationLifecycleCallback.java:104) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor240.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.beans.info.plugins.AbstractBeanInfo.invoke(AbstractBeanInfo.java:300) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.AbstractKernelControllerContext.invoke(AbstractKernelControllerContext.java:305) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractLifecycleCallbackItem.install(AbstractLifecycleCallbackItem.java:87) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleLifecycleCallbacks(AbstractController.java:2018) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleInstallLifecycleCallbacks(AbstractController.java:1983) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1091) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.ServiceController.doChange(ServiceController.java:671) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.ServiceController.start(ServiceController.java:443) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.microcontainer.jmx.ServiceControllerStartStopLifecycleCallback.install(ServiceControllerStartStopLifecycleCallback.java:44) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor242.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.beans.info.plugins.AbstractBeanInfo.invoke(AbstractBeanInfo.java:300) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.AbstractKernelControllerContext.invoke(AbstractKernelControllerContext.java:305) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractLifecycleCallbackItem.install(AbstractLifecycleCallbackItem.java:87) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleLifecycleCallbacks(AbstractController.java:2018) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleInstallLifecycleCallbacks(AbstractController.java:1983) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1091) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:894) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:641) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.deploy(BeanMetaDataDeployer.java:182) [:2.2.2.GA]
+	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.deploy(BeanMetaDataDeployer.java:58) [:2.2.2.GA]
+	at org.jboss.deployers.spi.deployer.helpers.AbstractSimpleRealDeployer.internalDeploy(AbstractSimpleRealDeployer.java:63) [:2.2.2.GA]
+	at org.jboss.deployers.spi.deployer.helpers.AbstractRealDeployer.deploy(AbstractRealDeployer.java:55) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployerWrapper.deploy(DeployerWrapper.java:179) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doDeploy(DeployersImpl.java:1832) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doInstallParentFirst(DeployersImpl.java:1550) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doInstallParentFirst(DeployersImpl.java:1571) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.install(DeployersImpl.java:1491) [:2.2.2.GA]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1983) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.process(DeployersImpl.java:1076) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.main.MainDeployerImpl.process(MainDeployerImpl.java:679) [:2.2.2.GA]
+	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.process(MainDeployerPlugin.java:106) [:6.1.0.Final]
+	at org.jboss.profileservice.dependency.ProfileControllerContext$DelegateDeployer.process(ProfileControllerContext.java:143) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileDeployAction.deploy(ProfileDeployAction.java:151) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileDeployAction.installActionInternal(ProfileDeployAction.java:94) [:0.2.2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:54) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.start(ProfileActivationWrapper.java:190) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper.start(ProfileActivationWrapper.java:87) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activateProfile(ProfileActivationService.java:215) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activate(ProfileActivationService.java:159) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.activate(AbstractProfileServiceBootstrap.java:112) [:0.2.2]
+	at org.jboss.profileservice.resolver.BasicResolverFactory$ProfileResolverFacade.deploy(BasicResolverFactory.java:87) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.start(AbstractProfileServiceBootstrap.java:91) [:0.2.2]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:132) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:56) [:6.1.0.Final]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer.startBootstraps(AbstractServer.java:827) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer$StartServerTask.run(AbstractServer.java:417) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at java.lang.Thread.run(Unknown Source) [:1.8.0_111]
+
+20:41:28,413 ERROR [[/invoker]] Exception starting filter ReadOnlyAccessFilter: javax.servlet.ServletException: Failed to init ReadOnlyAccessFilter
+	at org.jboss.invocation.http.servlet.ReadOnlyAccessFilter.init(ReadOnlyAccessFilter.java:77) [:]
+	at org.apache.catalina.core.ApplicationFilterConfig.getFilter(ApplicationFilterConfig.java:447) [:6.1.0.Final]
+	at org.apache.catalina.core.StandardContext.filterStart(StandardContext.java:3246) [:6.1.0.Final]
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:3843) [:6.1.0.Final]
+	at org.jboss.web.tomcat.service.deployers.TomcatDeployment.performDeployInternal(TomcatDeployment.java:294) [:6.1.0.Final]
+	at org.jboss.web.tomcat.service.deployers.TomcatDeployment.performDeploy(TomcatDeployment.java:146) [:6.1.0.Final]
+	at org.jboss.web.deployers.AbstractWarDeployment.start(AbstractWarDeployment.java:476) [:6.1.0.Final]
+	at org.jboss.web.deployers.WebModule.startModule(WebModule.java:118) [:6.1.0.Final]
+	at org.jboss.web.deployers.WebModule.start(WebModule.java:95) [:6.1.0.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:157) [:6.0.0.GA]
+	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:96) [:6.0.0.GA]
+	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88) [:6.0.0.GA]
+	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:271) [:6.0.0.GA]
+	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:670) [:6.0.0.GA]
+	at org.jboss.system.microcontainer.ServiceProxy.invoke(ServiceProxy.java:206) [:2.2.0.SP2]
+	at com.sun.proxy.$Proxy43.start(Unknown Source)
+	at org.jboss.system.microcontainer.StartStopLifecycleAction.installAction(StartStopLifecycleAction.java:53) [:2.2.0.SP2]
+	at org.jboss.system.microcontainer.StartStopLifecycleAction.installAction(StartStopLifecycleAction.java:41) [:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.microcontainer.ServiceControllerContext.install(ServiceControllerContext.java:301) [:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:894) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:641) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.installProfile(ProfileActivationService.java:207) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.register(ProfileActivationService.java:146) [:0.2.2]
+	at org.jboss.profileservice.AbstractProfileService.registerProfile(AbstractProfileService.java:133) [:0.2.2]
+	at org.jboss.profileservice.AbstractProfileService.registerProfile(AbstractProfileService.java:119) [:0.2.2]
+	at org.jboss.web.tomcat.service.ondemand.OnDemandContextProfileManager.start(OnDemandContextProfileManager.java:438) [:6.1.0.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction$JoinpointDispatchWrapper.execute(KernelControllerContextAction.java:257) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.ExecutionWrapper.execute(ExecutionWrapper.java:47) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchExecutionWrapper(KernelControllerContextAction.java:125) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchJoinPoint(KernelControllerContextAction.java:72) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.LifecycleAction.installActionInternal(LifecycleAction.java:202) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:54) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.ServiceController.doChange(ServiceController.java:671) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.ServiceController.start(ServiceController.java:443) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.microcontainer.jmx.ServiceControllerStartStopLifecycleCallback.install(ServiceControllerStartStopLifecycleCallback.java:44) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor242.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.beans.info.plugins.AbstractBeanInfo.invoke(AbstractBeanInfo.java:300) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.AbstractKernelControllerContext.invoke(AbstractKernelControllerContext.java:305) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractLifecycleCallbackItem.install(AbstractLifecycleCallbackItem.java:87) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleLifecycleCallbacks(AbstractController.java:2018) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleInstallLifecycleCallbacks(AbstractController.java:1983) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1091) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.ServiceController.doChange(ServiceController.java:671) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.ServiceController.start(ServiceController.java:443) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.microcontainer.jmx.ServiceControllerStartStopLifecycleCallback.install(ServiceControllerStartStopLifecycleCallback.java:44) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor242.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.beans.info.plugins.AbstractBeanInfo.invoke(AbstractBeanInfo.java:300) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.AbstractKernelControllerContext.invoke(AbstractKernelControllerContext.java:305) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractLifecycleCallbackItem.install(AbstractLifecycleCallbackItem.java:87) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleLifecycleCallbacks(AbstractController.java:2018) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleInstallLifecycleCallbacks(AbstractController.java:1983) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1091) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:894) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:641) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.ServiceController.doInstall(ServiceController.java:653) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.ServiceController.register(ServiceController.java:356) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.microcontainer.jmx.ServiceControllerRegistrationLifecycleCallback.install(ServiceControllerRegistrationLifecycleCallback.java:104) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor240.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.beans.info.plugins.AbstractBeanInfo.invoke(AbstractBeanInfo.java:300) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.AbstractKernelControllerContext.invoke(AbstractKernelControllerContext.java:305) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractLifecycleCallbackItem.install(AbstractLifecycleCallbackItem.java:87) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleLifecycleCallbacks(AbstractController.java:2018) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleInstallLifecycleCallbacks(AbstractController.java:1983) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1091) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.ServiceController.doChange(ServiceController.java:671) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.ServiceController.start(ServiceController.java:443) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.microcontainer.jmx.ServiceControllerStartStopLifecycleCallback.install(ServiceControllerStartStopLifecycleCallback.java:44) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor242.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.beans.info.plugins.AbstractBeanInfo.invoke(AbstractBeanInfo.java:300) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.AbstractKernelControllerContext.invoke(AbstractKernelControllerContext.java:305) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractLifecycleCallbackItem.install(AbstractLifecycleCallbackItem.java:87) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleLifecycleCallbacks(AbstractController.java:2018) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleInstallLifecycleCallbacks(AbstractController.java:1983) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1091) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:894) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:641) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.deploy(BeanMetaDataDeployer.java:182) [:2.2.2.GA]
+	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.deploy(BeanMetaDataDeployer.java:58) [:2.2.2.GA]
+	at org.jboss.deployers.spi.deployer.helpers.AbstractSimpleRealDeployer.internalDeploy(AbstractSimpleRealDeployer.java:63) [:2.2.2.GA]
+	at org.jboss.deployers.spi.deployer.helpers.AbstractRealDeployer.deploy(AbstractRealDeployer.java:55) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployerWrapper.deploy(DeployerWrapper.java:179) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doDeploy(DeployersImpl.java:1832) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doInstallParentFirst(DeployersImpl.java:1550) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doInstallParentFirst(DeployersImpl.java:1571) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.install(DeployersImpl.java:1491) [:2.2.2.GA]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1983) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.process(DeployersImpl.java:1076) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.main.MainDeployerImpl.process(MainDeployerImpl.java:679) [:2.2.2.GA]
+	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.process(MainDeployerPlugin.java:106) [:6.1.0.Final]
+	at org.jboss.profileservice.dependency.ProfileControllerContext$DelegateDeployer.process(ProfileControllerContext.java:143) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileDeployAction.deploy(ProfileDeployAction.java:151) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileDeployAction.installActionInternal(ProfileDeployAction.java:94) [:0.2.2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:54) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.start(ProfileActivationWrapper.java:190) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper.start(ProfileActivationWrapper.java:87) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activateProfile(ProfileActivationService.java:215) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activate(ProfileActivationService.java:159) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.activate(AbstractProfileServiceBootstrap.java:112) [:0.2.2]
+	at org.jboss.profileservice.resolver.BasicResolverFactory$ProfileResolverFacade.deploy(BasicResolverFactory.java:87) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.start(AbstractProfileServiceBootstrap.java:91) [:0.2.2]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:132) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:56) [:6.1.0.Final]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer.startBootstraps(AbstractServer.java:827) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer$StartServerTask.run(AbstractServer.java:417) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at java.lang.Thread.run(Unknown Source) [:1.8.0_111]
+Caused by: javax.management.InstanceNotFoundException: jboss:service=NamingBeanImpl is not registered.
+	at org.jboss.mx.server.registry.BasicMBeanRegistry.get(BasicMBeanRegistry.java:529) [:6.0.0.GA]
+	at org.jboss.mx.server.MBeanServerImpl.getAttribute(MBeanServerImpl.java:561) [:6.0.0.GA]
+	at org.jboss.invocation.http.servlet.ReadOnlyAccessFilter.init(ReadOnlyAccessFilter.java:72) [:]
+	... 192 more
+
+20:41:28,419 ERROR [StandardContext] Error filterStart
+20:41:28,420 ERROR [StandardContext] Context [/invoker] startup failed due to previous errors
+20:41:28,429 ERROR [AbstractKernelController] Error installing to Start: name=jboss.web.deployment:war=/invoker state=Create mode=Manual requiredState=Installed: org.jboss.deployers.spi.DeploymentException: URL file:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/server/all/deploy/httpha-invoker.sar/invoker.war/ deployment failed
+	at org.jboss.web.tomcat.service.deployers.TomcatDeployment.performDeployInternal(TomcatDeployment.java:325) [:6.1.0.Final]
+	at org.jboss.web.tomcat.service.deployers.TomcatDeployment.performDeploy(TomcatDeployment.java:146) [:6.1.0.Final]
+	at org.jboss.web.deployers.AbstractWarDeployment.start(AbstractWarDeployment.java:476) [:6.1.0.Final]
+	at org.jboss.web.deployers.WebModule.startModule(WebModule.java:118) [:6.1.0.Final]
+	at org.jboss.web.deployers.WebModule.start(WebModule.java:95) [:6.1.0.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.mx.interceptor.ReflectedDispatcher.invoke(ReflectedDispatcher.java:157) [:6.0.0.GA]
+	at org.jboss.mx.server.Invocation.dispatch(Invocation.java:96) [:6.0.0.GA]
+	at org.jboss.mx.server.Invocation.invoke(Invocation.java:88) [:6.0.0.GA]
+	at org.jboss.mx.server.AbstractMBeanInvoker.invoke(AbstractMBeanInvoker.java:271) [:6.0.0.GA]
+	at org.jboss.mx.server.MBeanServerImpl.invoke(MBeanServerImpl.java:670) [:6.0.0.GA]
+	at org.jboss.system.microcontainer.ServiceProxy.invoke(ServiceProxy.java:206) [:2.2.0.SP2]
+	at com.sun.proxy.$Proxy43.start(Unknown Source)
+	at org.jboss.system.microcontainer.StartStopLifecycleAction.installAction(StartStopLifecycleAction.java:53) [:2.2.0.SP2]
+	at org.jboss.system.microcontainer.StartStopLifecycleAction.installAction(StartStopLifecycleAction.java:41) [:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.microcontainer.ServiceControllerContext.install(ServiceControllerContext.java:301) [:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:894) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:641) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.installProfile(ProfileActivationService.java:207) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.register(ProfileActivationService.java:146) [:0.2.2]
+	at org.jboss.profileservice.AbstractProfileService.registerProfile(AbstractProfileService.java:133) [:0.2.2]
+	at org.jboss.profileservice.AbstractProfileService.registerProfile(AbstractProfileService.java:119) [:0.2.2]
+	at org.jboss.web.tomcat.service.ondemand.OnDemandContextProfileManager.start(OnDemandContextProfileManager.java:438) [:6.1.0.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction$JoinpointDispatchWrapper.execute(KernelControllerContextAction.java:257) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.ExecutionWrapper.execute(ExecutionWrapper.java:47) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchExecutionWrapper(KernelControllerContextAction.java:125) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.KernelControllerContextAction.dispatchJoinPoint(KernelControllerContextAction.java:72) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.LifecycleAction.installActionInternal(LifecycleAction.java:202) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:54) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.ServiceController.doChange(ServiceController.java:671) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.ServiceController.start(ServiceController.java:443) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.microcontainer.jmx.ServiceControllerStartStopLifecycleCallback.install(ServiceControllerStartStopLifecycleCallback.java:44) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor242.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.beans.info.plugins.AbstractBeanInfo.invoke(AbstractBeanInfo.java:300) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.AbstractKernelControllerContext.invoke(AbstractKernelControllerContext.java:305) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractLifecycleCallbackItem.install(AbstractLifecycleCallbackItem.java:87) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleLifecycleCallbacks(AbstractController.java:2018) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleInstallLifecycleCallbacks(AbstractController.java:1983) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1091) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.ServiceController.doChange(ServiceController.java:671) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.ServiceController.start(ServiceController.java:443) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.microcontainer.jmx.ServiceControllerStartStopLifecycleCallback.install(ServiceControllerStartStopLifecycleCallback.java:44) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor242.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.beans.info.plugins.AbstractBeanInfo.invoke(AbstractBeanInfo.java:300) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.AbstractKernelControllerContext.invoke(AbstractKernelControllerContext.java:305) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractLifecycleCallbackItem.install(AbstractLifecycleCallbackItem.java:87) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleLifecycleCallbacks(AbstractController.java:2018) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleInstallLifecycleCallbacks(AbstractController.java:1983) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1091) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:894) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:641) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.ServiceController.doInstall(ServiceController.java:653) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.ServiceController.register(ServiceController.java:356) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.microcontainer.jmx.ServiceControllerRegistrationLifecycleCallback.install(ServiceControllerRegistrationLifecycleCallback.java:104) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor240.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.beans.info.plugins.AbstractBeanInfo.invoke(AbstractBeanInfo.java:300) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.AbstractKernelControllerContext.invoke(AbstractKernelControllerContext.java:305) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractLifecycleCallbackItem.install(AbstractLifecycleCallbackItem.java:87) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleLifecycleCallbacks(AbstractController.java:2018) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleInstallLifecycleCallbacks(AbstractController.java:1983) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1091) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.system.ServiceController.doChange(ServiceController.java:671) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.ServiceController.start(ServiceController.java:443) [:6.1.0.Final (Build SVNTag:JBoss_6.1.0.Final date: 20110816)]
+	at org.jboss.system.microcontainer.jmx.ServiceControllerStartStopLifecycleCallback.install(ServiceControllerStartStopLifecycleCallback.java:44) [:6.1.0.Final]
+	at sun.reflect.GeneratedMethodAccessor242.invoke(Unknown Source) [:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) [:1.8.0_111]
+	at org.jboss.reflect.plugins.introspection.ReflectionUtils.invoke(ReflectionUtils.java:60) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.reflect.plugins.introspection.ReflectMethodInfoImpl.invoke(ReflectMethodInfoImpl.java:168) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.joinpoint.plugins.BasicMethodJoinPoint.dispatch(BasicMethodJoinPoint.java:66) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.beans.info.plugins.AbstractBeanInfo.invoke(AbstractBeanInfo.java:300) [jboss-reflect.jar:2.2.1.SP1]
+	at org.jboss.kernel.plugins.dependency.AbstractKernelControllerContext.invoke(AbstractKernelControllerContext.java:305) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractLifecycleCallbackItem.install(AbstractLifecycleCallbackItem.java:87) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleLifecycleCallbacks(AbstractController.java:2018) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.handleInstallLifecycleCallbacks(AbstractController.java:1983) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1091) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:894) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:641) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.deploy(BeanMetaDataDeployer.java:182) [:2.2.2.GA]
+	at org.jboss.deployers.vfs.deployer.kernel.BeanMetaDataDeployer.deploy(BeanMetaDataDeployer.java:58) [:2.2.2.GA]
+	at org.jboss.deployers.spi.deployer.helpers.AbstractSimpleRealDeployer.internalDeploy(AbstractSimpleRealDeployer.java:63) [:2.2.2.GA]
+	at org.jboss.deployers.spi.deployer.helpers.AbstractRealDeployer.deploy(AbstractRealDeployer.java:55) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployerWrapper.deploy(DeployerWrapper.java:179) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doDeploy(DeployersImpl.java:1832) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doInstallParentFirst(DeployersImpl.java:1550) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.doInstallParentFirst(DeployersImpl.java:1571) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.install(DeployersImpl.java:1491) [:2.2.2.GA]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.change(DeployersImpl.java:1983) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.deployers.DeployersImpl.process(DeployersImpl.java:1076) [:2.2.2.GA]
+	at org.jboss.deployers.plugins.main.MainDeployerImpl.process(MainDeployerImpl.java:679) [:2.2.2.GA]
+	at org.jboss.system.server.profileservice.deployers.MainDeployerPlugin.process(MainDeployerPlugin.java:106) [:6.1.0.Final]
+	at org.jboss.profileservice.dependency.ProfileControllerContext$DelegateDeployer.process(ProfileControllerContext.java:143) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileDeployAction.deploy(ProfileDeployAction.java:151) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileDeployAction.installActionInternal(ProfileDeployAction.java:94) [:0.2.2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:54) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.kernel.plugins.dependency.InstallsAwareAction.installAction(InstallsAwareAction.java:42) [jboss-kernel.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.SimpleControllerContextAction.simpleInstallAction(SimpleControllerContextAction.java:62) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.action.AccessControllerContextAction.install(AccessControllerContextAction.java:71) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContextActions.install(AbstractControllerContextActions.java:51) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractControllerContext.install(AbstractControllerContext.java:379) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.install(AbstractController.java:2044) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.incrementState(AbstractController.java:1083) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.executeOrIncrementStateDirectly(AbstractController.java:1322) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1246) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.resolveContexts(AbstractController.java:1139) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:939) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.dependency.plugins.AbstractController.change(AbstractController.java:654) [jboss-dependency.jar:2.2.0.SP2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper$BasicProfileActivation.start(ProfileActivationWrapper.java:190) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationWrapper.start(ProfileActivationWrapper.java:87) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activateProfile(ProfileActivationService.java:215) [:0.2.2]
+	at org.jboss.profileservice.dependency.ProfileActivationService.activate(ProfileActivationService.java:159) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.activate(AbstractProfileServiceBootstrap.java:112) [:0.2.2]
+	at org.jboss.profileservice.resolver.BasicResolverFactory$ProfileResolverFacade.deploy(BasicResolverFactory.java:87) [:0.2.2]
+	at org.jboss.profileservice.bootstrap.AbstractProfileServiceBootstrap.start(AbstractProfileServiceBootstrap.java:91) [:0.2.2]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:132) [:6.1.0.Final]
+	at org.jboss.system.server.profileservice.bootstrap.BasicProfileServiceBootstrap.start(BasicProfileServiceBootstrap.java:56) [:6.1.0.Final]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer.startBootstraps(AbstractServer.java:827) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at org.jboss.bootstrap.impl.base.server.AbstractServer$StartServerTask.run(AbstractServer.java:417) [jboss-bootstrap-impl-base.jar:2.1.0-alpha-6]
+	at java.lang.Thread.run(Unknown Source) [:1.8.0_111]
+
+20:41:28,461 INFO  [RARDeployment] Required license terms exist, view vfs:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/server/all/deploy/jboss-local-jdbc.rar/META-INF/ra.xml
+20:41:28,471 INFO  [RARDeployment] Required license terms exist, view vfs:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/server/all/deploy/jboss-xa-jdbc.rar/META-INF/ra.xml
+20:41:28,476 INFO  [RARDeployment] Required license terms exist, view vfs:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/server/all/deploy/jms-ra.rar/META-INF/ra.xml
+20:41:28,487 INFO  [HornetQResourceAdapter] HornetQ resource adaptor started
+20:41:28,492 INFO  [RARDeployment] Required license terms exist, view vfs:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/server/all/deploy/mail-ra.rar/META-INF/ra.xml
+20:41:28,499 INFO  [RARDeployment] Required license terms exist, view vfs:/D:/EJB-FIAP-SCJ/ejb_prof/jboss6/server/all/deploy/quartz-ra.rar/META-INF/ra.xml
+20:41:28,556 INFO  [SimpleThreadPool] Job execution threads will use class loader of thread: Thread-2
+20:41:28,577 INFO  [SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20:41:28,577 INFO  [QuartzScheduler] Quartz Scheduler v.1.8.3 created.
+20:41:28,579 INFO  [RAMJobStore] RAMJobStore initialized.
+20:41:28,580 INFO  [QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v1.8.3) 'JBossQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+20:41:28,580 INFO  [StdSchedulerFactory] Quartz scheduler 'JBossQuartzScheduler' initialized from an externally opened InputStream.
+20:41:28,580 INFO  [StdSchedulerFactory] Quartz scheduler version: 1.8.3
+20:41:28,580 INFO  [QuartzScheduler] Scheduler JBossQuartzScheduler_$_NON_CLUSTERED started.
+20:41:29,341 INFO  [ConnectionFactoryBindingService] Bound ConnectionManager 'jboss.jca:service=DataSourceBinding,name=DefaultDS' to JNDI name 'java:DefaultDS'
+20:41:29,440 INFO  [TomcatDeployment] deploy, ctxPath=/juddi
+20:41:29,473 INFO  [RegistryServlet] Loading jUDDI configuration.
+20:41:29,478 INFO  [RegistryServlet] Resources loaded from: /WEB-INF/juddi.properties
+20:41:29,478 INFO  [RegistryServlet] Initializing jUDDI components.
+20:41:29,586 INFO  [ConnectionFactoryBindingService] Bound ConnectionManager 'jboss.jca:service=ConnectionFactoryBinding,name=JmsXA' to JNDI name 'java:JmsXA'
+20:41:29,632 INFO  [xnio] XNIO Version 2.1.0.CR2
+20:41:29,638 INFO  [nio] XNIO NIO Implementation Version 2.1.0.CR2
+20:41:29,763 INFO  [remoting] JBoss Remoting version 3.1.0.Beta2
+20:41:29,808 INFO  [TomcatDeployment] deploy, ctxPath=/
+20:41:29,847 INFO  [HornetQServerImpl] trying to deploy queue jms.queue.DLQ
+20:41:29,858 INFO  [HornetQServerImpl] trying to deploy queue jms.queue.ExpiryQueue
+20:41:29,870 INFO  [service] Removing bootstrap log handlers

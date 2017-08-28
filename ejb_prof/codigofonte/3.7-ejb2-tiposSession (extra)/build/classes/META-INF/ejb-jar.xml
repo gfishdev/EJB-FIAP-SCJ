@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ejb-jar PUBLIC 
+"-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" 
+"http://java.sun.com/dtd/ejb-jar_2_0.dtd">
+
+<ejb-jar>
+
+   <description></description>
+   <display-name>FIAP</display-name>
+
+   <enterprise-beans>   
+      <session>
+         <ejb-name>Calculadora</ejb-name>
+         <home>br.com.fiap.ejb.aula3.session.CalculadoraHome</home>
+         <remote>br.com.fiap.ejb.aula3.session.Calculadora</remote>
+         <ejb-class>br.com.fiap.ejb.aula3.session.CalculadoraBean</ejb-class>
+         <session-type>Stateless</session-type>
+         <transaction-type>Container</transaction-type> 
+      </session>
+
+      <session>
+         <ejb-name>CarrinhoCompras</ejb-name>
+         <home>br.com.fiap.ejb.aula3.session.CarrinhoComprasHome</home>
+         <remote>br.com.fiap.ejb.aula3.session.CarrinhoCompras</remote>
+         <ejb-class>br.com.fiap.ejb.aula3.session.CarrinhoComprasBean</ejb-class>
+         <session-type>Stateful</session-type>
+         <transaction-type>Container</transaction-type> 
+      </session>
+      
+      <session>
+         <ejb-name>CarrinhoCompras1</ejb-name>
+         <home>br.com.fiap.ejb.aula3.session.CarrinhoComprasHome</home>
+         <remote>br.com.fiap.ejb.aula3.session.CarrinhoCompras</remote>
+         <ejb-class>br.com.fiap.ejb.aula3.session.CarrinhoComprasBean</ejb-class>
+         <session-type>Stateless</session-type>
+         <transaction-type>Container</transaction-type> 
+      </session>
+   </enterprise-beans>
+   
+   <!-- Assembly Descriptor -->
+   <assembly-descriptor >
+   </assembly-descriptor>
+   
+</ejb-jar>
